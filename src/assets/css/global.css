@@ -1,0 +1,286 @@
+/*
+
+
+
+
+
+
+
+
+                СМОТРЕТЬ КОММЕТАРИИ С ПРИПИСКОЙ "TODO"!!!!
+
+
+
+
+
+
+
+*/
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: var(--fontDefault);
+    font-family: liberinus, sans-serif;
+}
+
+/* TODO: Прописать шрифты */
+/* Fonts */
+/*@font-face {*/
+/*    src: url("../fonts/libertinussans-bold.otf");*/
+/*    font-family: liberinus;*/
+/*    font-display: swap;*/
+/*    font-weight: 700;*/
+/*}*/
+/*@font-face {*/
+/*    src: url("../fonts/libertinussans-regular.otf");*/
+/*    font-family: liberinus;*/
+/*    font-display: swap;*/
+/*    font-weight: 400;*/
+/*}*/
+/*@font-face {*/
+/*    src: url("../fonts/Pushster-Regular.ttf");*/
+/*    font-family: pushster;*/
+/*    font-display: swap;*/
+/*    font-weight: 400;*/
+/*}*/
+/*@font-face {*/
+/*    src: url("../fonts/MADE Likes Script.otf");*/
+/*    font-family: mls;*/
+/*    font-display: swap;*/
+/*    font-weight: 400;*/
+/*}*/
+
+/* TODO: Прописать root'ы */
+/* Global CSS */
+:root{
+    --h1: 72px;
+    --h2: 48px;
+    --h3: 36px;
+    --h4: 28px;
+    --h5: 24px;
+    --h6: 20px;
+    --h7: 16px;
+    --fontDefault: 18px;
+    --colorMain: #005B7F;
+    --colorMainLight: #3B8DCD;
+    --colorWhite: #fff;
+    --colorBlackLight: #1c2e3d;
+    --colorBlack: #181818;
+    --borderRadiusSmall: 5px;
+    --borderRadius: 10px;
+    --borderRadiusBig: 20px;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    z-index: 9;
+    position: fixed;
+    width: 100%;
+}
+.header_relative{
+    position: relative;
+}
+.section{
+    display: grid;
+    grid-auto-flow: row;
+    justify-items: center;
+    align-content: center;
+    width: 100%;
+    padding: 100px 0;
+    position: relative;
+    z-index: 2;
+    overflow-x: hidden;
+}
+.container{
+    width: 100%;
+    padding: 0 150px;
+    display: grid;
+    grid-auto-flow: row;
+    justify-items: center;
+    align-content: start;
+    gap: 50px;
+}
+.grid{
+    display: grid;
+}
+.grid-row{
+    grid-auto-flow: column;
+}
+.grid-column{
+    grid-auto-flow: row;
+}
+.gap-5{
+    gap: 5px;
+}
+.gap-10{
+    gap: 10px;
+}
+.gap-15{
+    gap: 15px;
+}
+.gap-25{
+    gap: 25px;
+}
+.gap-50{
+    gap: 50px;
+}
+.gap-75{
+    gap: 75px;
+}
+.gap-100{
+    gap: 100px;
+}
+.margin-bottom-10{
+    margin-bottom: 10px;
+}
+.margin-bottom-25{
+    margin-bottom: 25px;
+}
+.margin-bottom-50{
+    margin-bottom: 50px;
+}
+.margin-bottom-75{
+    margin-bottom: 75px;
+}
+.margin-bottom-100{
+    margin-bottom: 100px;
+}
+.justify-content-start{
+    justify-content: start;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-end{
+    justify-content: end;
+}
+.justify-content-space-between{
+    justify-content: space-between;
+}
+.align-content-start{
+    align-content: start;
+}
+.align-content-center{
+    align-content: center;
+}
+.align-content-end{
+    align-content: end;
+}
+.align-content-space-between{
+    align-content: space-between;
+}
+.align-items-start{
+    align-items: start;
+}
+.align-items-center{
+    align-items: center;
+}
+.align-items-end{
+    align-items: end;
+}
+.justify-items-start{
+    justify-items: start;
+}
+.justify-items-center{
+    justify-items: center;
+}
+.justify-items-end{
+    justify-items: end;
+}
+.align-self-start{
+    align-self: start;
+}
+.align-self-center{
+    align-self: center;
+}
+.align-self-end{
+    align-self: end;
+}
+.justify-self-start{
+    justify-self: start;
+}
+.justify-self-center{
+    justify-self: center;
+}
+.justify-self-end{
+    justify-self: end;
+}
+/* TODO: изменить кнопку и ссылку */
+.link{
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--colorWhite);
+}
+.btn{
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--colorWhite);
+    background-color: var(--colorMain);
+    padding: 10px 20px;
+    border-radius: var(--borderRadiusSmall);
+    border: none;
+    outline: none;
+}
+.text-inherit{
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+}
+/* TODO: Прописать цвета как в примере ниже */
+/*.color-main{*/
+/*    color: var(--colorMain);*/
+/*}*/
+/*.color-main-light{*/
+/*    color: var(--colorMainLight);*/
+/*}*/
+/*.color-black{*/
+/*    color: var(--colorBlack);*/
+/*}*/
+/*.color-white{*/
+/*    color: var(--colorWhite);*/
+/*}*/
+/*.color-black-light{*/
+/*    color: var(--colorBlackLight);*/
+/*}*/
+/*.color-red{*/
+/*    color: #ce4545;*/
+/*}*/
+.h1{
+    font-size: var(--h1);
+}
+.h2{
+    font-size: var(--h2);
+}
+.h3{
+    font-size: var(--h3);
+}
+.h4{
+    font-size: var(--h4);
+}
+.h5{
+    font-size: var(--h5);
+}
+.h6{
+    font-size: var(--h6);
+}
+.h7{
+    font-size: var(--h7);
+}
+.text-alight-center{
+    text-align: center;
+}
+.weight-400{
+    font-weight: 400;
+}
+.weight-200{
+    font-weight: 200;
+}
+.weight-700{
+    font-weight: 700;
+}
+.width-100{
+    width: 100%;
+}
