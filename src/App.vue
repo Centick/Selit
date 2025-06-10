@@ -1,9 +1,7 @@
 <template>
     <!--  Шаблон страницы  -->
-    <header class="header_relative">
-        <RouterLink to="/">Home</RouterLink>
-    </header>
-    <RouterView />
+    <RouterView/>
+    <!-- <RouterLink to="/">Home</RouterLink> -->
 </template>
 
 <script setup lang="ts">

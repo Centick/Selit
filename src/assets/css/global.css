@@ -7,7 +7,7 @@
 
 
 
-                СМОТРЕТЬ КОММЕТАРИИ С ПРИПИСКОЙ "TODO"!!!!
+СМОТРЕТЬ КОММЕТАРИИ С ПРИПИСКОЙ "TODO"!!!!
 
 
 
@@ -22,55 +22,48 @@
     padding: 0;
     box-sizing: border-box;
     font-size: var(--fontDefault);
-    font-family: liberinus, sans-serif;
+    font-family: Root;
+    font-weight: 700;
 }
 
 /* TODO: Прописать шрифты */
 /* Fonts */
-/*@font-face {*/
-/*    src: url("../fonts/libertinussans-bold.otf");*/
-/*    font-family: liberinus;*/
-/*    font-display: swap;*/
-/*    font-weight: 700;*/
-/*}*/
-/*@font-face {*/
-/*    src: url("../fonts/libertinussans-regular.otf");*/
-/*    font-family: liberinus;*/
-/*    font-display: swap;*/
-/*    font-weight: 400;*/
-/*}*/
-/*@font-face {*/
-/*    src: url("../fonts/Pushster-Regular.ttf");*/
-/*    font-family: pushster;*/
-/*    font-display: swap;*/
-/*    font-weight: 400;*/
-/*}*/
-/*@font-face {*/
-/*    src: url("../fonts/MADE Likes Script.otf");*/
-/*    font-family: mls;*/
-/*    font-display: swap;*/
-/*    font-weight: 400;*/
-/*}*/
+@font-face {
+   src: url("../fonts/PT-Root-UI_Bold.ttf");
+   font-family: Root;
+   font-display: swap;
+   font-weight: 700;
+}
+@font-face {
+   src: url("../fonts/PT-Root-UI_Medium.ttf");
+   font-family: Root;
+   font-display: swap;
+   font-weight: 500;
+}
+@font-face {
+   src: url("../fonts/PT-Root-UI_VF.ttf");
+   font-family: Root;
+   font-display: swap;
+   font-weight: 300;
+}
 
 /* TODO: Прописать root'ы */
 /* Global CSS */
 :root{
     --h1: 72px;
-    --h2: 48px;
+    --h2: 45px;
     --h3: 36px;
     --h4: 28px;
     --h5: 24px;
     --h6: 20px;
     --h7: 16px;
     --fontDefault: 18px;
-    --colorMain: #005B7F;
-    --colorMainLight: #3B8DCD;
+    --colorMain: #006BE5;
     --colorWhite: #fff;
-    --colorBlackLight: #1c2e3d;
     --colorBlack: #181818;
-    --borderRadiusSmall: 5px;
-    --borderRadius: 10px;
-    --borderRadiusBig: 20px;
+    --borderRadiusSmall: 15px;
+    --borderRadius: 25px;
+    --borderRadiusBig: 40px;
 }
 html{
     scroll-behavior: smooth;
@@ -79,6 +72,7 @@ header{
     z-index: 9;
     position: fixed;
     width: 100%;
+    padding: 20px 0;
 }
 .header_relative{
     position: relative;
@@ -123,6 +117,9 @@ header{
 }
 .gap-25{
     gap: 25px;
+}
+.gap-30{
+    gap: 30px;
 }
 .gap-50{
     gap: 50px;
@@ -212,15 +209,15 @@ header{
 .link{
     cursor: pointer;
     text-decoration: none;
-    color: var(--colorWhite);
+    color: var(--colorBlack);
 }
 .btn{
     cursor: pointer;
     text-decoration: none;
     color: var(--colorWhite);
     background-color: var(--colorMain);
-    padding: 10px 20px;
-    border-radius: var(--borderRadiusSmall);
+    padding: 15px 25px;
+    border-radius: var(--borderRadius);
     border: none;
     outline: none;
 }
