@@ -55,7 +55,7 @@ body{
 /* TODO: Прописать root'ы */
 /* Global CSS */
 :root{
-    --h1: 74px;
+    --h1: 78px;
     --h2: 60px;
     --h3: 38px;
     --h4: 28px;
@@ -66,6 +66,7 @@ body{
     --colorMain: #006BE5;
     --colorWhite: #fff;
     --colorBlack: #343745;
+    
     --borderRadiusSmall: 15px;
     --borderRadius: 25px;
     --borderRadiusBig: 40px;

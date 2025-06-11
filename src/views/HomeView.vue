@@ -20,6 +20,7 @@
         <section class="section section-banner">
             <div class="container container-banner grid grid-column gap-25 justify-items-start align-content-start">
                 <h1 class="h1">Проектируем, поддерживаем и развиваем WEB-Проекты</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus enim rem, laborum quaerat ab exercitationem eaque dolor veniam, perspiciatis a, numquam ex sit recusandae fuga? Obcaecati, ratione. Corrupti, recusandae aspernatur?</p>
                 <div class="grid grid-row gap-10">
                     <span class="link link-banner">Landing</span>
                     <span class="link link-banner">Интернет магазины</span>
@@ -124,16 +125,15 @@
         </section>
 
         <section class="section">
+            <h2 class="h2">Мы не просто беремся, мы погружаемся в вашу проблему</h2>
             <div class="container">
-                <h3></h3>
+                
             </div>
         </section>
     </main>
 </template>
 
-<script lang="ts" setup>
-
-</script>
+<script lang="ts" setup></script>
 
 <style scoped>
     /* .btn-header{
@@ -151,7 +151,7 @@
         height: 100vh;
     }
 
-    h1{
+    .container-banner > h1, p{
         width: 70%;
     }
 
@@ -169,15 +169,20 @@
             "one two four"
             "one three four"
             "five three four"
-            "five three button";
+            "five three six";
         max-height: 700px;
     }
 
     .block_service{
         padding: 30px;
         border-radius: var(--borderRadius);
-        background-color: #d9d9d9;
+        background-color: #F2F5F7;
+        
     }   
+
+    .block_service > *{
+        font-weight: 500;
+    }
 
     .block_service--1{
         grid-area: one;
@@ -185,20 +190,39 @@
 
     .block_service--2{
         grid-area: two;
+        background-color: var(--colorBlack);
+        color: var(--colorWhite);
+    }
+
+    .block_service--2 > * {
+        color: var(--colorWhite);
     }
 
     .block_service--3{
         grid-area: three;
+        border: 1px solid var(--colorMain);
     }
+
     .block_service--4{
         grid-area: four;
     }
+
     .block_service--5{
+        background-color: var(--colorBlack);
+        color: var(--colorWhite);
         grid-area: five;
     }
-    .block_service--6{
-        grid-area: button;
+
+    .block_service--5 > *{
+        color: var(--colorWhite);
     }
+    
+    .block_service--6{
+        grid-area: six;
+        border: 1px solid var(--colorMain);
+    }
+
+    
 
     /* projects */
     .wrap_projects{
