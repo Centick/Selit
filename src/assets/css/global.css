@@ -22,8 +22,13 @@
     padding: 0;
     box-sizing: border-box;
     font-size: var(--fontDefault);
+    color: var(--colorBlack);
     font-family: Root;
     font-weight: 700;
+}
+
+body{
+    overflow-x: hidden;
 }
 
 /* TODO: Прописать шрифты */
@@ -50,9 +55,9 @@
 /* TODO: Прописать root'ы */
 /* Global CSS */
 :root{
-    --h1: 72px;
-    --h2: 45px;
-    --h3: 36px;
+    --h1: 74px;
+    --h2: 60px;
+    --h3: 38px;
     --h4: 28px;
     --h5: 24px;
     --h6: 20px;
@@ -60,7 +65,7 @@
     --fontDefault: 18px;
     --colorMain: #006BE5;
     --colorWhite: #fff;
-    --colorBlack: #181818;
+    --colorBlack: #343745;
     --borderRadiusSmall: 15px;
     --borderRadius: 25px;
     --borderRadiusBig: 40px;
@@ -90,7 +95,7 @@ header{
 }
 .container{
     width: 100%;
-    padding: 0 150px;
+    padding: 0 10%;
     display: grid;
     grid-auto-flow: row;
     justify-items: center;
