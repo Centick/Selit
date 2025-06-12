@@ -64,6 +64,7 @@ body{
     --h7: 16px;
     --fontDefault: 18px;
     --colorMain: #006BE5;
+    --colorGrey:  #f1f2f3;
     --colorWhite: #fff;
     --colorBlack: #343745;
     
@@ -83,6 +84,15 @@ header{
 .header_relative{
     position: relative;
 }
+footer{
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background-color: var(--colorBlack);
+    color: var(--colorWhite);
+    width: 100%;
+    padding-top: 100px;
+}
+
 .section{
     display: grid;
     grid-auto-flow: row;

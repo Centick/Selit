@@ -34,7 +34,7 @@
         <section class="section">
             <div class="container grid justyfy">
                 <h2 class="h2">Услуги</h2>
-                <div class="wrap_services grid gap-25">
+                <div class="wrap_services grid gap-15">
                     <div class="block_service block_service--1">
                         <h3 class="h3">Landin page</h3>
                         <span></span>
@@ -125,11 +125,55 @@
         </section>
 
         <section class="section">
-            <h2 class="h2">Мы не просто беремся, мы погружаемся в вашу проблему</h2>
-            <div class="container">
-                
+            <h2 class="h2">О нас</h2>
+            <div class="container container-about grid gap-15">
+                <div class="block-about block-about--1">
+                    <h3 class="h3">Selit - Lorem, ipsum dolor.</h3>
+                    <p></p>
+                </div>
+                <div class="block-about block-about--2">
+                    <h3 class="h2">25+</h3>
+                    <p>Крупных проектов за нашими плечами.</p>
+                </div>
+                <div class="block-about block-about--3">
+                    <h3 class="h4">Команда</h3>
+                </div>
+                <div class="block-about block-about--4 grid grid-column gap-15">
+                    <h3 class="h4">Наш стек</h3>
+                    <p >Постоянно прогрессируемся. Всегда готовы изучать новую технологию в рамках проекта, если незнакомы с ней
+                    </p>
+                    <div class="about-wrap-skill grid grid-row">
+                        <div class="about-skill">
+                            <!-- svg -->
+                        </div>
+                        <div class="about-skill">
+                            <!-- svg -->
+                        </div>
+                        <div class="about-skill">
+                            <!-- svg -->
+                        </div>
+                        <span class="about-skill">
+                            <!-- svg -->
+                        </span>
+                        <div class="about-skill">
+                            <!-- svg -->
+                        </div>
+                        <div class="about-skill">
+                            <!-- svg -->
+                        </div>
+                    </div>
+                    <span>Подробнее ></span>
+                </div>
+                <div class="block-about block-about--5">5</div>
+                <div class="block-about block-about--6">6</div>
             </div>
         </section>
+
+        <footer>
+            <div class="container">
+                asd
+            </div>
+        </footer>
     </main>
 </template>
 
@@ -176,7 +220,7 @@
     .block_service{
         padding: 30px;
         border-radius: var(--borderRadius);
-        background-color: #F2F5F7;
+        background-color: var(--colorGrey);
         
     }   
 
@@ -222,8 +266,6 @@
         border: 1px solid var(--colorMain);
     }
 
-    
-
     /* projects */
     .wrap_projects{
         grid-template-columns: 1fr 1fr;
@@ -248,5 +290,55 @@
 
     .wrap_character_project{
         width: fit-content;
+    }
+
+    /* about */
+    .container-about{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .block-about{
+        width: 100%;
+        padding: 30px;
+        border-radius: var(--borderRadius);
+        background-color: var(--colorGrey);
+    }
+
+    .block-about > p{
+        width: 100%;
+        font-weight: 500;
+    }
+
+    .block-about--1{
+        grid-area: 1 / 1 / 2 / 3;
+    }
+    .block-about--2{
+        grid-area: 1 / 3 / 2 / 4;
+    }
+    .block-about--3{
+        grid-area: 1 / 4 / 2 / 5;
+    }
+    .block-about--4{
+        grid-area: 2 / 1 / 3 / 2;
+    }
+    .about-wrap-skill{
+        width: fit-content;
+        margin-top: 50px;
+    }
+    .about-skill{
+        padding: 3px;
+        background-color: red;
+        border-radius: 50%;
+        width: 55px;
+        height: 55px;
+        border: 4px solid var(--colorGrey);
+        margin-right: -14px;
+    }
+    .block-about--5{
+        grid-area: 2 / 2 / 3 / 3;
+    }
+    .block-about--6{
+        grid-area: 2 / 3 / 3 / 5;
     }
 </style>
