@@ -125,7 +125,7 @@
         </section>
 
         <section class="section">
-            <h2 class="h2">О нас</h2>
+            <h2 class="h2 margin-bottom-50">О нас</h2>
             <div class="container container-about grid gap-15">
                 <div class="block-about block-about--1">
                     <h3 class="h3">Selit - Lorem, ipsum dolor.</h3>
@@ -162,10 +162,76 @@
                             <!-- svg -->
                         </div>
                     </div>
-                    <span>Подробнее ></span>
+                    <a href="#" class="link">Подробнее ></a>
                 </div>
                 <div class="block-about block-about--5">5</div>
                 <div class="block-about block-about--6">6</div>
+            </div>
+        </section>
+
+        <section class="section why__section">
+            <div class="container why__container justify-items-start gap-25">
+                <h2 class="h2 why__title justify-self-start">Почему мы?</h2>
+                <p class="why__text width-100">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aut beatae commodi deleniti dolorem eligendi exercitationem explicabo, harum illum ipsa officiis perferendis quod repudiandae rerum saepe sequi sit tempora totam!
+                </p>
+                <p class="why__subtext h5 weight-400 margin-bottom-25">
+                    Факты о нас:
+                </p>
+                <div class="why__inner grid width-100 gap-25">
+                    <div class="why-inner__card grid grid-column gap-10">
+                        <span class="why-card__number weight-700 h1">52+</span>
+                        <span class="weight-200 h7">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                    </div>
+                    <div class="why-inner__card grid grid-column gap-10">
+                        <span class="why-card__number weight-700 h1">228+</span>
+                        <span class="weight-200 h7">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                    </div>
+                    <div class="why-inner__card grid grid-column gap-10">
+                        <span class="why-card__number weight-700 h1">1337+</span>
+                        <span class="weight-200 h7">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                    </div>
+                    <div class="why-inner__card grid grid-column gap-10">
+                        <span class="why-card__number weight-700 h1">1488+</span>
+                        <span class="weight-200 h7">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                    </div>
+                    <div class="why-inner__card grid grid-column gap-10">
+                        <span class="why-card__number weight-700 h1">666+</span>
+                        <span class="weight-200 h7">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section tech__section">
+            <div class="container tech__container">
+                <h2 class="h2 why__title">Стек технологий</h2>
+                <div class="tech__inner gap-50 width-100">
+                    <img src="#" alt="#" class="tech-inner__card">
+                    <img src="#" alt="#" class="tech-inner__card">
+                    <img src="#" alt="#" class="tech-inner__card">
+                    <img src="#" alt="#" class="tech-inner__card">
+                    <img src="#" alt="#" class="tech-inner__card">
+                    <img src="#" alt="#" class="tech-inner__card">
+                    <img src="#" alt="#" class="tech-inner__card">
+                    <img src="#" alt="#" class="tech-inner__card">
+                    <img src="#" alt="#" class="tech-inner__card">
+                    <img src="#" alt="#" class="tech-inner__card">
+                    <img src="#" alt="#" class="tech-inner__card">
+                    <img src="#" alt="#" class="tech-inner__card">
+                    <img src="#" alt="#" class="tech-inner__card">
+                    <img src="#" alt="#" class="tech-inner__card">
+                    <img src="#" alt="#" class="tech-inner__card">
+                    <img src="#" alt="#" class="tech-inner__card">
+                    <img src="#" alt="#" class="tech-inner__card">
+                    <img src="#" alt="#" class="tech-inner__card">
+                    <img src="#" alt="#" class="tech-inner__card">
+                    <img src="#" alt="#" class="tech-inner__card">
+                    <img src="#" alt="#" class="tech-inner__card">
+                    <img src="#" alt="#" class="tech-inner__card">
+                    <img src="#" alt="#" class="tech-inner__card">
+                    <img src="#" alt="#" class="tech-inner__card">
+                </div>
             </div>
         </section>
 
@@ -177,7 +243,8 @@
     </main>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+</script>
 
 <style scoped>
     /* .btn-header{
@@ -340,5 +407,27 @@
     }
     .block-about--6{
         grid-area: 2 / 3 / 3 / 5;
+    }
+
+    .why-card__number{
+        color: var(--colorMain);
+        font-size: calc(var(--h1) + 36px);
+    }
+    .why-inner__card{
+        padding: 20px;
+        border-top: 1px solid var(--colorGrey);
+    }
+    .why__inner{
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    }
+    .tech__inner{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .tech-inner__card{
+        border-radius: var(--borderRadiusSmall);
+        background-color: var(--colorBlack);
+        width: 100px;
+        height: 100px;
     }
 </style>
