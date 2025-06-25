@@ -203,37 +203,6 @@
             </div>
         </section>
 
-        <section class="section tech__section">
-            <div class="container tech__container">
-                <h2 class="h2 why__title">Стек технологий</h2>
-                <div class="tech__inner gap-50 width-100">
-                    <img src="#" alt="#" class="tech-inner__card">
-                    <img src="#" alt="#" class="tech-inner__card">
-                    <img src="#" alt="#" class="tech-inner__card">
-                    <img src="#" alt="#" class="tech-inner__card">
-                    <img src="#" alt="#" class="tech-inner__card">
-                    <img src="#" alt="#" class="tech-inner__card">
-                    <img src="#" alt="#" class="tech-inner__card">
-                    <img src="#" alt="#" class="tech-inner__card">
-                    <img src="#" alt="#" class="tech-inner__card">
-                    <img src="#" alt="#" class="tech-inner__card">
-                    <img src="#" alt="#" class="tech-inner__card">
-                    <img src="#" alt="#" class="tech-inner__card">
-                    <img src="#" alt="#" class="tech-inner__card">
-                    <img src="#" alt="#" class="tech-inner__card">
-                    <img src="#" alt="#" class="tech-inner__card">
-                    <img src="#" alt="#" class="tech-inner__card">
-                    <img src="#" alt="#" class="tech-inner__card">
-                    <img src="#" alt="#" class="tech-inner__card">
-                    <img src="#" alt="#" class="tech-inner__card">
-                    <img src="#" alt="#" class="tech-inner__card">
-                    <img src="#" alt="#" class="tech-inner__card">
-                    <img src="#" alt="#" class="tech-inner__card">
-                    <img src="#" alt="#" class="tech-inner__card">
-                    <img src="#" alt="#" class="tech-inner__card">
-                </div>
-            </div>
-        </section>
 
         <footer>
             <div class="container">
@@ -243,8 +212,7 @@
     </main>
 </template>
 
-<script lang="ts" setup>
-</script>
+<script lang="ts" setup></script>
 
 <style scoped>
     /* .btn-header{
