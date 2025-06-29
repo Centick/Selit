@@ -188,36 +188,40 @@
         </section>
 
         <section class="section why__section">
-            <div class="container why__container justify-items-start gap-25">
-                <h2 class="h2 why__title justify-self-start">Почему мы?</h2>
-                <p class="why__text width-100">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aut beatae commodi deleniti dolorem eligendi exercitationem explicabo, harum illum ipsa officiis perferendis quod repudiandae rerum saepe sequi sit tempora totam!
-                </p>
-                <p class="why__subtext h5 weight-400 margin-bottom-25">
-                    Факты о нас:
-                </p>
-                <div class="why__inner grid width-100 gap-25">
-                    <div class="why-inner__card grid grid-column gap-10">
-                        <span class="why-card__number weight-700 h1">52+</span>
-                        <span class="weight-200 h7">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-                    </div>
-                    <div class="why-inner__card grid grid-column gap-10">
-                        <span class="why-card__number weight-700 h1">228+</span>
-                        <span class="weight-200 h7">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-                    </div>
-                    <div class="why-inner__card grid grid-column gap-10">
-                        <span class="why-card__number weight-700 h1">1337+</span>
-                        <span class="weight-200 h7">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-                    </div>
-                    <div class="why-inner__card grid grid-column gap-10">
-                        <span class="why-card__number weight-700 h1">1488+</span>
-                        <span class="weight-200 h7">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-                    </div>
-                    <div class="why-inner__card grid grid-column gap-10">
-                        <span class="why-card__number weight-700 h1">666+</span>
-                        <span class="weight-200 h7">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+            <div class="container why__container grid-column justify-items-start gap-25">
+                <div class="grid why-inner__card width-100">
+                    <h2 class="h2">Факты о нас</h2>
+                    <div class="grid grid-column">
+                        <span class="why-big_number">30+</span>
+                        <p class="why-text">проектов реализованно</p>
                     </div>
                 </div>
+                <div class="grid why-inner__card width-100">
+                    <div class="grid grid-column gap-10">
+                        <span class="h2">3 года</span>
+                        <p class="why-text">Делаем приложения для стартапов и бизнеса</p>
+                    </div>
+                    <div class="grid grid-column gap-10">
+                        <span class="h2">> 40</span>
+                        <p class="why-text">Положительных отзывов от различных заказчиков и пользователей</p>
+                    </div>
+                </div>
+                <div class="grid why-inner__card width-100">
+                    <div class="grid grid-column gap-10">
+                        <span class="h2">3 года</span>
+                        <p class="why-text">Делаем приложения для стартапов и бизнеса</p>
+                    </div>
+                    <div class="grid grid-column gap-10">
+                        <span class="h2">> 40</span>
+                        <p class="why-text">Положительных отзывов от различных заказчиков и пользователей</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section faq__section">
+            <div class="container faq__container">
+                <h2 class="h2 width-100">Часто задаваемые вопросы</h2>
             </div>
         </section>
 
@@ -409,25 +413,22 @@
         grid-area: 2 / 3 / 3 / 5;
     }
 
-    .why-card__number{
-        color: var(--colorMain);
-        font-size: calc(var(--h1) + 36px);
-    }
+    /* why */
     .why-inner__card{
         padding: 20px;
-        border-top: 1px solid var(--colorGrey);
+        border-bottom: 1px solid var(--colorGrey);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
-    .why__inner{
-        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    
+    .why-text{
+        color: grey;
     }
-    .tech__inner{
-        display: flex;
-        flex-flow: row wrap;
+
+    .why-big_number{
+        font-size: 120px;
     }
-    .tech-inner__card{
-        border-radius: var(--borderRadiusSmall);
-        background-color: var(--colorBlack);
-        width: 100px;
-        height: 100px;
-    }
+
+    /* faq */
+
 </style>
