@@ -136,7 +136,7 @@
                     <p>Крупных проектов за нашими плечами.</p>
                 </div>
                 <div class="block-about block-about--3">
-                    <h3 class="h4">Команда</h3>
+                    <h3 class="h4">Наш логотип будет тут </h3>
                 </div>
                 <div @click="emits('skills_modal')" class="block-about block-about--4 grid grid-column gap-15">
                     <h3 class="h4">Наш стек</h3>
@@ -144,22 +144,22 @@
                     </p>
                     <div class="about-wrap-skill grid grid-row">
                         <div class="about-skill">
-                            <!-- svg -->
+                            <img src="@/assets/img/icons/skills/figmaIcon.svg" alt="img">
                         </div>
                         <div class="about-skill">
-                            <!-- svg -->
+                            <img src="@/assets/img/icons/skills/laravelIcon.svg" alt="img">
                         </div>
                         <div class="about-skill">
-                            <!-- svg -->
+                            <img src="@/assets/img/icons/skills/nodeIcon.svg" alt="img">
                         </div>
                         <span class="about-skill">
-                            <!-- svg -->
+                            <img src="@/assets/img/icons/skills/DjangoIcon.svg" alt="img">
                         </span>
                         <div class="about-skill">
-                            <!-- svg -->
+                            <img src="@/assets/img/icons/skills/vueIcon.svg" alt="img">
                         </div>
                         <div class="about-skill">
-                            <!-- svg -->
+                            <img src="@/assets/img/icons/skills/dockerIcon.svg" alt="img">
                         </div>
                     </div>
                     <span class="link">Подробнее ></span>
@@ -399,12 +399,18 @@
     }
     .about-skill{
         padding: 3px;
-        background-color: red;
+        background-color: var(--colorWhite);
         border-radius: 50%;
         width: 55px;
         height: 55px;
         border: 4px solid var(--colorGrey);
         margin-right: -14px;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    }
+    .about-skill > img{
+        width: 90%;
     }
     .block-about--5{
         grid-area: 2 / 2 / 3 / 3;
