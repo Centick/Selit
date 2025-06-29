@@ -1,7 +1,7 @@
 <template>
     <section class="section skills__section grid justify-items-end">
         <div class="container skills__container grid justify-content-start gap-20">
-            <img class="cross" src="../assets/img/icons/cross.svg" alt="img">
+            <img @click.prevent="emits('close_skills_modal')" class="cross" src="../assets/img/icons/cross.svg" alt="img">
             <h3 class="h2 width-100">Технологии</h3>
             <p class="width-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores culpa eveniet, cumque beatae in sequi, deserunt inventore voluptate doloribus rem natus incidunt aperiam ad vero saepe ullam dolorum corporis nostrum!</p>
             <div class="skills_wrap width-100 gap-10">
@@ -33,7 +33,7 @@
                         <span>Django</span>
                         <!-- как пример - ромбик -->
                         <span>&#9674;</span>
-                        <span>ХУЙ_ЗНАЕТ</span>
+                        <span>Node.js</span>
                     </div>
                 </div>
 
@@ -78,6 +78,7 @@
 <script lang="ts" setup>
     // import { ref } from 'vue'
     
+    const emits = defineEmits(['close_skills_modal']);
 </script>
 
 <style scoped>

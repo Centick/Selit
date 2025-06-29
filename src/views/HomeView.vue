@@ -138,7 +138,7 @@
                 <div class="block-about block-about--3">
                     <h3 class="h4">Команда</h3>
                 </div>
-                <div class="block-about block-about--4 grid grid-column gap-15">
+                <div @click="emits('skills_modal')" class="block-about block-about--4 grid grid-column gap-15">
                     <h3 class="h4">Наш стек</h3>
                     <p >Постоянно прогрессируемся. Всегда готовы изучать новую технологию в рамках проекта, если незнакомы с ней
                     </p>
@@ -162,9 +162,27 @@
                             <!-- svg -->
                         </div>
                     </div>
-                    <a href="#" class="link">Подробнее ></a>
+                    <span class="link">Подробнее ></span>
                 </div>
-                <div class="block-about block-about--5">5</div>
+                <div class="block-about block-about--5 grid grid-column gap-15">
+                    <h3 class="h4">Отзывы</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil illo adipisci enim amet, laborum odio officiis corporis eos </p>
+                    <!-- <div class="about-wrap-skill grid grid-row">
+                        <div class="about-skill">
+                        </div>
+                        <div class="about-skill">
+                        </div>
+                        <div class="about-skill">
+                        </div>
+                        <span class="about-skill">
+                        </span>
+                        <div class="about-skill">
+                        </div>
+                        <div class="about-skill">
+                        </div>
+                    </div> -->
+                    <span class="link">Подробнее ></span>
+                </div>
                 <div class="block-about block-about--6">6</div>
             </div>
         </section>
@@ -212,8 +230,12 @@
     </main>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+    // import {Ref, ref, onMounted} from "vue"; 
 
+    const emits = defineEmits(['skills_modal'])
+</script>
+    
 <style scoped>
     /* .btn-header{
         border: 1px var(--colorMain);
@@ -348,15 +370,25 @@
     .block-about--1{
         grid-area: 1 / 1 / 2 / 3;
     }
+
     .block-about--2{
         grid-area: 1 / 3 / 2 / 4;
     }
+
     .block-about--3{
         grid-area: 1 / 4 / 2 / 5;
     }
+
     .block-about--4{
         grid-area: 2 / 1 / 3 / 2;
+        cursor: pointer;
+        transition: .15s linear all;
     }
+
+    .block-about--4:hover{
+        transform: translateY(-5px);
+    }
+
     .about-wrap-skill{
         width: fit-content;
         margin-top: 50px;
