@@ -83,25 +83,19 @@
 
 <style scoped>
     .skills__section{
-        right: 0;
         top: 0;
         position: fixed;
         width: 100vw;
         height: 100vh;
         z-index: 10;
         overflow: hidden;
-        background-color: rgba(0, 0, 0, 0.25);
-}
+    }
 
     .skills__container{
         height: 100vh;
         width: 40%;
         background-color: var(--colorWhite);
         padding: 20px 50px;
-    }
-
-    .skills_wrap{
-        
     }
 
     .skills_block{
