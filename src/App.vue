@@ -5,15 +5,18 @@
     />
     
     <SkillsComponent
-            :class="{'skills_active': skills_is_showed, 'skills_not_active': !skills_is_showed}"
+        :class="{'skills_active': skills_is_showed, 'skills_not_active': !skills_is_showed}"
         @close_skills_modal = closeSkillsModal()
     />
+
+    <Cursor/>
 </template>
 
 <script setup lang="ts">
     import { Ref, ref } from 'vue';
     import { RouterLink, RouterView } from 'vue-router';
     import SkillsComponent from '@/components/SkillsComponent.vue';
+    import Cursor from '@/components/CursorComponent.vue'
 
     const skills_is_showed: Ref<boolean> = ref(false);
 

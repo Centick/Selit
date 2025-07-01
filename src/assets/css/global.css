@@ -24,7 +24,7 @@
     font-size: var(--fontDefault);
     color: var(--colorBlack);
     font-family: Root;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 body{
@@ -55,16 +55,17 @@ body{
 /* TODO: Прописать root'ы */
 /* Global CSS */
 :root{
-    --h1: 78px;
-    --h2: 60px;
+    --h1: 76px;
+    --h2: 58px;
     --h3: 38px;
     --h4: 28px;
     --h5: 24px;
     --h6: 20px;
-    --h7: 16px;
     --fontDefault: 18px;
     --colorMain: #006BE5;
-    --colorGrey:  #f1f2f3;
+    /* возможные цвета */
+    /* --colorMain: #FF7F50; */
+    --colorGrey:  #f4f4f4;
     --colorWhite: #fff;
     --colorBlack: #343745;
     
@@ -231,12 +232,21 @@ footer{
     cursor: pointer;
     text-decoration: none;
     color: var(--colorWhite);
-    background-color: var(--colorMain);
-    padding: 15px 25px;
-    border-radius: var(--borderRadius);
+    background-color: var(--colorBlack);
+    padding: 25px 30px;
+    border-radius: var(--borderRadiusBig);
     border: none;
     outline: none;
+    position: relative;
+    overflow: hidden;
 }
+
+.btn > span{
+    position: relative;
+    z-index: 2;
+    color: var(--colorWhite);
+}
+
 .text-inherit{
     font-family: inherit;
     font-weight: inherit;
@@ -263,33 +273,36 @@ footer{
 /*}*/
 .h1{
     font-size: var(--h1);
+    font-weight: 700;
 }
 .h2{
     font-size: var(--h2);
+    font-weight: 700;
 }
 .h3{
     font-size: var(--h3);
+    font-weight: 700;
 }
 .h4{
     font-size: var(--h4);
+    font-weight: 700;
 }
 .h5{
     font-size: var(--h5);
+    font-weight: 700;
 }
+
 .h6{
     font-size: var(--h6);
-}
-.h7{
-    font-size: var(--h7);
 }
 .text-alight-center{
     text-align: center;
 }
-.weight-400{
-    font-weight: 400;
+.weight-500{
+    font-weight: 500;
 }
-.weight-200{
-    font-weight: 200;
+.weight-300{
+    font-weight: 300;
 }
 .weight-700{
     font-weight: 700;
