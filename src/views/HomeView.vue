@@ -133,11 +133,11 @@
             <h2 class="h2 margin-bottom-50">О нас</h2>
             <div class="container container-about grid gap-15">
                 <div class="block-about block-about--1">
-                    <h3 class="h3">Selit - Lorem, ipsum dolor.</h3>
+                    <h3 class="h3"><span class="text-inherit color-main">Selit</span> - Lorem, ipsum dolor.</h3>
                     <p></p>
                 </div>
                 <div class="block-about block-about--2">
-                    <h3 class="h2">25+</h3>
+                    <h3 class="h2">25<span class="text-inherit color-main">+</span></h3>
                     <p>Крупных проектов за нашими плечами.</p>
                 </div>
                 <div class="block-about block-about--3">
@@ -167,26 +167,26 @@
                             <img src="@/assets/img/icons/skills/dockerIcon.svg" alt="img">
                         </div>
                     </div>
-                    <span class="link">Подробнее ></span>
+                    <span class="link">Подробнее <span class="arrow text-inherit">&rarr;</span></span>
                 </div>
-                <div class="block-about block-about--5 grid grid-column gap-15">
-                    <h3 class="h4">Отзывы</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil illo adipisci enim amet, laborum odio officiis corporis eos </p>
-                    <!-- <div class="about-wrap-skill grid grid-row">
-                        <div class="about-skill">
-                        </div>
-                        <div class="about-skill">
-                        </div>
-                        <div class="about-skill">
-                        </div>
-                        <span class="about-skill">
-                        </span>
-                        <div class="about-skill">
-                        </div>
-                        <div class="about-skill">
-                        </div>
-                    </div> -->
-                    <span class="link">Подробнее ></span>
+                <div class="block-about block-about--5 grid grid-column gap-15 align-content-start">
+                    <h3 class="h4">Высокое качество услуг</h3>
+                    <p>Неограниченное количество бесплатных правок, которые не конфликтуют с исходным ТЗ. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+<!--                    <div class="about-wrap-skill grid grid-row">-->
+<!--                        <div class="about-skill">-->
+<!--                        </div>-->
+<!--                        <div class="about-skill">-->
+<!--                        </div>-->
+<!--                        <div class="about-skill">-->
+<!--                        </div>-->
+<!--                        <span class="about-skill">-->
+<!--                        </span>-->
+<!--                        <div class="about-skill">-->
+<!--                        </div>-->
+<!--                        <div class="about-skill">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <span class="link">Подробнее ></span>-->
                 </div>
                 <div class="block-about block-about--6">Хотелось бы видео но нет</div>
             </div>
@@ -197,27 +197,27 @@
                 <div class="grid why-inner__card width-100">
                     <h2 class="h2">Факты о нас</h2>
                     <div class="grid grid-column">
-                        <span class="why-big_number">30+</span>
+                        <span class="why-big_number">30<span class="text-inherit color-main">+</span></span>
                         <p class="why-text">проектов реализованно</p>
                     </div>
                 </div>
                 <div class="grid why-inner__card width-100">
                     <div class="grid grid-column gap-10">
-                        <span class="h2">3 года</span>
+                        <span class="h2"><span class="text-inherit color-main">3 года</span></span>
                         <p class="why-text">Делаем приложения для стартапов и бизнеса</p>
                     </div>
                     <div class="grid grid-column gap-10">
-                        <span class="h2">> 40</span>
+                        <span class="h2"><span class="text-inherit color-main">></span> 40</span>
                         <p class="why-text">Положительных отзывов от различных заказчиков и пользователей</p>
                     </div>
                 </div>
                 <div class="grid why-inner__card width-100">
                     <div class="grid grid-column gap-10">
-                        <span class="h2">3 года</span>
+                        <span class="h2"><span class="text-inherit color-main">3 года</span></span>
                         <p class="why-text">Делаем приложения для стартапов и бизнеса</p>
                     </div>
                     <div class="grid grid-column gap-10">
-                        <span class="h2">> 40</span>
+                        <span class="h2"><span class="text-inherit color-main">></span> 40</span>
                         <p class="why-text">Положительных отзывов от различных заказчиков и пользователей</p>
                     </div>
                 </div>
@@ -229,7 +229,7 @@
                 <h2 class="h2 faq__title weight-700">Часто задаваемые вопросы</h2>
                 <Accordion value="0" class="accordion__wrap">
                     <AccordionPanel value="1" class="accordion__item">
-                        <AccordionHeader class="accordion-item__title"><h4 class="accordion-item-title__text h4">Что нужно от меня, чтобы мы начали работу?</h4><div class="accordion__arrow"><svg viewBox="0 -4.5 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>arrow_up [#337]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-260.000000, -6684.000000)" fill="#000000"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M223.707692,6534.63378 L223.707692,6534.63378 C224.097436,6534.22888 224.097436,6533.57338 223.707692,6533.16951 L215.444127,6524.60657 C214.66364,6523.79781 213.397472,6523.79781 212.616986,6524.60657 L204.29246,6533.23165 C203.906714,6533.6324 203.901717,6534.27962 204.282467,6534.68555 C204.671211,6535.10081 205.31179,6535.10495 205.70653,6534.69695 L213.323521,6526.80297 C213.714264,6526.39807 214.346848,6526.39807 214.737591,6526.80297 L222.294621,6534.63378 C222.684365,6535.03868 223.317949,6535.03868 223.707692,6534.63378" id="arrow_up-[#337]"> </path> </g> </g> </g> </g></svg></div></AccordionHeader>
+                        <AccordionHeader class="accordion-item__title"><h4 class="accordion-item-title__text h4">Что нужно от меня, чтобы мы начали работу?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
                         <AccordionContent class="accordion-item__content">
                             <p class="accordion-item__text weight-500 text_accardion">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dolore est expedita impedit in ipsa laboriosam magnam maxime nihil odio, quae, saepe temporibus tenetur! Blanditiis culpa illum ipsum modi non.
@@ -237,7 +237,7 @@
                         </AccordionContent>
                     </AccordionPanel>
                     <AccordionPanel value="2" class="accordion__item">
-                        <AccordionHeader class="accordion-item__title"><h4 class="accordion-item-title__text h4">Можете предложить шаблонный сайт или готовое решение?</h4><div class="accordion__arrow"><svg viewBox="0 -4.5 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>arrow_up [#337]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-260.000000, -6684.000000)" fill="#000000"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M223.707692,6534.63378 L223.707692,6534.63378 C224.097436,6534.22888 224.097436,6533.57338 223.707692,6533.16951 L215.444127,6524.60657 C214.66364,6523.79781 213.397472,6523.79781 212.616986,6524.60657 L204.29246,6533.23165 C203.906714,6533.6324 203.901717,6534.27962 204.282467,6534.68555 C204.671211,6535.10081 205.31179,6535.10495 205.70653,6534.69695 L213.323521,6526.80297 C213.714264,6526.39807 214.346848,6526.39807 214.737591,6526.80297 L222.294621,6534.63378 C222.684365,6535.03868 223.317949,6535.03868 223.707692,6534.63378" id="arrow_up-[#337]"> </path> </g> </g> </g> </g></svg></div></AccordionHeader>
+                        <AccordionHeader class="accordion-item__title"><h4 class="accordion-item-title__text h4">Можете предложить шаблонный сайт или готовое решение?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
                         <AccordionContent class="accordion-item__content">
                             <p class="accordion-item__text weight-500 text_accardion">
                                Если вам необходим простой стартовый сайт, мы предложим экономичные варианты с использованием готовых шаблонов и конструкторов. Но наша основная специализация — создание уникальных и функциональных веб-решений, ориентированных на долгосрочную перспективу развития вашего бизнеса.
@@ -245,32 +245,32 @@
                         </AccordionContent>
                     </AccordionPanel>
                     <AccordionPanel value="3" class="accordion__item">
-                        <AccordionHeader class="accordion-item__title"><h4 class="accordion-item-title__text h4">Сколько времени занимает разработка сайта?</h4><div class="accordion__arrow"><svg viewBox="0 -4.5 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>arrow_up [#337]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-260.000000, -6684.000000)" fill="#000000"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M223.707692,6534.63378 L223.707692,6534.63378 C224.097436,6534.22888 224.097436,6533.57338 223.707692,6533.16951 L215.444127,6524.60657 C214.66364,6523.79781 213.397472,6523.79781 212.616986,6524.60657 L204.29246,6533.23165 C203.906714,6533.6324 203.901717,6534.27962 204.282467,6534.68555 C204.671211,6535.10081 205.31179,6535.10495 205.70653,6534.69695 L213.323521,6526.80297 C213.714264,6526.39807 214.346848,6526.39807 214.737591,6526.80297 L222.294621,6534.63378 C222.684365,6535.03868 223.317949,6535.03868 223.707692,6534.63378" id="arrow_up-[#337]"> </path> </g> </g> </g> </g></svg></div></AccordionHeader>
-                        <AccordionContent class="accordion-item__content">
+                        <AccordionHeader class="accordion-item__title"><h4 class="accordion-item-title__text h4">Сколько времени занимает разработка сайта?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
+                            <AccordionContent class="accordion-item__content">
                             <p class="accordion-item__text weight-500 text_accardion">
                                Разработка веб-сайта зависит от сложности проекта и включает этапы анализа требований, проектирования, программирования, тестирования и внедрения. Обычно срок варьируется от нескольких недель до месяцев. Простой одностраничник можно запустить за неделю-две, а полноценный корпоративный ресурс потребует порядка одного-трёх месяцев.
                             </p>
                         </AccordionContent>
                     </AccordionPanel>
                     <AccordionPanel value="4" class="accordion__item">
-                        <AccordionHeader class="accordion-item__title"><h4 class="accordion-item-title__text h4">Могу ли я вносить правки в процессе разработки?</h4><div class="accordion__arrow"><svg viewBox="0 -4.5 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>arrow_up [#337]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-260.000000, -6684.000000)" fill="#000000"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M223.707692,6534.63378 L223.707692,6534.63378 C224.097436,6534.22888 224.097436,6533.57338 223.707692,6533.16951 L215.444127,6524.60657 C214.66364,6523.79781 213.397472,6523.79781 212.616986,6524.60657 L204.29246,6533.23165 C203.906714,6533.6324 203.901717,6534.27962 204.282467,6534.68555 C204.671211,6535.10081 205.31179,6535.10495 205.70653,6534.69695 L213.323521,6526.80297 C213.714264,6526.39807 214.346848,6526.39807 214.737591,6526.80297 L222.294621,6534.63378 C222.684365,6535.03868 223.317949,6535.03868 223.707692,6534.63378" id="arrow_up-[#337]"> </path> </g> </g> </g> </g></svg></div></AccordionHeader>
-                        <AccordionContent class="accordion-item__content">
+                        <AccordionHeader class="accordion-item__title"><h4 class="accordion-item-title__text h4">Могу ли я вносить правки в процессе разработки?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
+                            <AccordionContent class="accordion-item__content">
                             <p class="accordion-item__text weight-500 text_accardion">
                                Безусловно! Ваше мнение крайне важно для нас. По ходу работы мы регулярно демонстрируем промежуточные результаты и согласовываем вносимые изменения. Процесс разработки прозрачен, и вы всегда будете осведомлены обо всех этапах.
                             </p>
                         </AccordionContent>
                     </AccordionPanel>
                     <AccordionPanel value="5" class="accordion__item">
-                        <AccordionHeader class="accordion-item__title"><h4 class="accordion-item-title__text h4 weight-700">Нужно ли заполнять контент самостоятельно или вы берёте это на себя?</h4><div class="accordion__arrow"><svg viewBox="0 -4.5 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>arrow_up [#337]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-260.000000, -6684.000000)" fill="#000000"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M223.707692,6534.63378 L223.707692,6534.63378 C224.097436,6534.22888 224.097436,6533.57338 223.707692,6533.16951 L215.444127,6524.60657 C214.66364,6523.79781 213.397472,6523.79781 212.616986,6524.60657 L204.29246,6533.23165 C203.906714,6533.6324 203.901717,6534.27962 204.282467,6534.68555 C204.671211,6535.10081 205.31179,6535.10495 205.70653,6534.69695 L213.323521,6526.80297 C213.714264,6526.39807 214.346848,6526.39807 214.737591,6526.80297 L222.294621,6534.63378 C222.684365,6535.03868 223.317949,6535.03868 223.707692,6534.63378" id="arrow_up-[#337]"> </path> </g> </g> </g> </g></svg></div></AccordionHeader>
-                        <AccordionContent class="accordion-item__content">
+                        <AccordionHeader class="accordion-item__title"><h4 class="accordion-item-title__text h4 weight-700">Нужно ли заполнять контент самостоятельно или вы берёте это на себя?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
+                            <AccordionContent class="accordion-item__content">
                             <p class="accordion-item__text weight-500 text_accardion">
                                Вы вправе решать, кто займётся наполнением сайта информацией. Наша команда готова оказать помощь в подготовке качественного контента, включающего тексты, фотографии, графику и видеоматериалы. Однако вы также можете воспользоваться услугами собственных авторов или специализированных агентств.
                             </p>
                         </AccordionContent>
                     </AccordionPanel>
                     <AccordionPanel value="6" class="accordion__item">
-                        <AccordionHeader class="accordion-item__title"><h4 class="accordion-item-title__text h4">Нужна ли поддержка сторонних разработчиков для управления моим сайтом?</h4><div class="accordion__arrow"><svg viewBox="0 -4.5 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>arrow_up [#337]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-260.000000, -6684.000000)" fill="#000000"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M223.707692,6534.63378 L223.707692,6534.63378 C224.097436,6534.22888 224.097436,6533.57338 223.707692,6533.16951 L215.444127,6524.60657 C214.66364,6523.79781 213.397472,6523.79781 212.616986,6524.60657 L204.29246,6533.23165 C203.906714,6533.6324 203.901717,6534.27962 204.282467,6534.68555 C204.671211,6535.10081 205.31179,6535.10495 205.70653,6534.69695 L213.323521,6526.80297 C213.714264,6526.39807 214.346848,6526.39807 214.737591,6526.80297 L222.294621,6534.63378 C222.684365,6535.03868 223.317949,6535.03868 223.707692,6534.63378" id="arrow_up-[#337]"> </path> </g> </g> </g> </g></svg></div></AccordionHeader>
-                        <AccordionContent class="accordion-item__content">
+                        <AccordionHeader class="accordion-item__title"><h4 class="accordion-item-title__text h4">Нужна ли поддержка сторонних разработчиков для управления моим сайтом?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
+                            <AccordionContent class="accordion-item__content">
                             <p class="accordion-item__text weight-500 text_accardion">
                                Нет, абсолютно не обязательно привлекать сторонних специалистов. Наши разработчики предоставляют подробную инструкцию по управлению сайтом, проводят обучение администраторов заказчика и оказывают послепродажную поддержку. Мы стараемся упростить процессы ведения сайта настолько, насколько это возможно.
                             </p>
@@ -309,8 +309,20 @@
     }
 
     .section-banner{
-        width: 100vw;
-        height: 100vh;
+        min-height: 100vh;
+    }
+    .section-banner::before{
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url("@/assets/img/ban/bg.png");
+        background-size: cover;
+        background-position: center bottom;
+        opacity: 0.1;
+        z-index: -1;
     }
 
     .container-banner > h1, p{
@@ -430,6 +442,15 @@
     }
     .about-skill > img{
         width: 90%;
+    }
+    .block-about--4:hover .arrow{
+        color: var(--colorMain);
+        left: 35px;
+    }
+    .block-about--4:hover .arrow::before{
+        color: var(--colorMain);
+        left: -20px;
+        transform: scaleX(5);
     }
     .block-about--5{
         grid-area: 2 / 2 / 3 / 3;

@@ -28,13 +28,13 @@
     border-radius: 10px;
 }
 .accordion__arrow{
-    font-size: 26px;
+    font-size: 42px;
 }
 .p-accordionheader-toggle-icon{
     display: none !important;
 }
 .accordion__arrow{
-    transform: rotate(180deg);
+    transform: rotate(0deg);
     transition: transform .3s ease;
 }
 .accordion__arrow svg{
@@ -45,5 +45,5 @@
     fill: black;
 }
 .p-accordionpanel-active .accordion__arrow{
-    transform: rotate(0deg);
+    transform: rotate(135deg);
 }
