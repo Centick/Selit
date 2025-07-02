@@ -34,7 +34,7 @@
         <section class="section">
             <div class="container grid grid-column">
                 <h2 class="h2 width-100">Услуги</h2>
-                <div class="wrap_services grid grid-column gap-15 width-100">
+                <div class="wrap_services grid grid-column width-100">
                     <div class="block_services grid align-items-start width-100">
                         <h4 class="h4">Разработка</h4>
                         <div class="name_services gap-10">
