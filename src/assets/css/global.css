@@ -62,7 +62,9 @@ body{
     --h5: 24px;
     --h6: 20px;
     --fontDefault: 18px;
-    --colorMain: #006BE5;
+    /* --colorMain: #006BE5; */
+    /* старый ^ */
+    --colorMain: #2F4EEA;
     /* возможные цвета */
     /* --colorMain: #FF7F50; */
     --colorGrey:  #f4f4f4;

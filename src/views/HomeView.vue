@@ -1,21 +1,7 @@
 <template>
+    <!-- Меню -->
+    <HeaderComponent/>
     <!--  Главная страница  -->
-    <header>
-        <div class="container align-content-center grid grid-row align-items-center justify-content-space-between">
-            <!-- <img src="" alt="img"> -->
-             <!-- пока так (до лого) -->
-            <h3 class="h3"><span style="color: var(--colorMain);" class="h3">S</span>elit</h3>
-            <nav class="grid grid-row align-content-center justify-content-space-between gap-30">
-                <a class="link" href="#">Кейсы</a>
-                <a class="link" href="#">Разработка</a>
-                <a class="link" href="#">Услуги</a>
-                <a class="link" href="#">О нас</a>
-                <a class="link" href="#">Контакты</a>
-            </nav>
-            <a class="link">Обсудить проект</a>
-        </div>
-    </header>
-
     <main>
         <section class="section section-banner">
             <div class="container container-banner grid grid-column gap-25 justify-items-start align-content-start">
@@ -229,7 +215,7 @@
                 <h2 class="h2 faq__title weight-700">Часто задаваемые вопросы</h2>
                 <Accordion value="0" class="accordion__wrap">
                     <AccordionPanel value="1" class="accordion__item">
-                        <AccordionHeader class="accordion-item__title"><h4 class="accordion-item-title__text h4">Что нужно от меня, чтобы мы начали работу?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
+                        <AccordionHeader class="accordion-item__title"><h4 class="accordion-item-title__text h4 weight-500">Что нужно от меня, чтобы мы начали работу?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
                         <AccordionContent class="accordion-item__content">
                             <p class="accordion-item__text weight-500 text_accardion">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dolore est expedita impedit in ipsa laboriosam magnam maxime nihil odio, quae, saepe temporibus tenetur! Blanditiis culpa illum ipsum modi non.
@@ -237,7 +223,7 @@
                         </AccordionContent>
                     </AccordionPanel>
                     <AccordionPanel value="2" class="accordion__item">
-                        <AccordionHeader class="accordion-item__title"><h4 class="accordion-item-title__text h4">Можете предложить шаблонный сайт или готовое решение?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
+                        <AccordionHeader class="accordion-item__title"><h4 class="accordion-item-title__text h4 weight-500">Можете предложить шаблонный сайт или готовое решение?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
                         <AccordionContent class="accordion-item__content">
                             <p class="accordion-item__text weight-500 text_accardion">
                                Если вам необходим простой стартовый сайт, мы предложим экономичные варианты с использованием готовых шаблонов и конструкторов. Но наша основная специализация — создание уникальных и функциональных веб-решений, ориентированных на долгосрочную перспективу развития вашего бизнеса.
@@ -245,7 +231,7 @@
                         </AccordionContent>
                     </AccordionPanel>
                     <AccordionPanel value="3" class="accordion__item">
-                        <AccordionHeader class="accordion-item__title"><h4 class="accordion-item-title__text h4">Сколько времени занимает разработка сайта?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
+                        <AccordionHeader class="accordion-item__title"><h4 class="accordion-item-title__text h4 weight-500">Сколько времени занимает разработка сайта?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
                             <AccordionContent class="accordion-item__content">
                             <p class="accordion-item__text weight-500 text_accardion">
                                Разработка веб-сайта зависит от сложности проекта и включает этапы анализа требований, проектирования, программирования, тестирования и внедрения. Обычно срок варьируется от нескольких недель до месяцев. Простой одностраничник можно запустить за неделю-две, а полноценный корпоративный ресурс потребует порядка одного-трёх месяцев.
@@ -253,7 +239,7 @@
                         </AccordionContent>
                     </AccordionPanel>
                     <AccordionPanel value="4" class="accordion__item">
-                        <AccordionHeader class="accordion-item__title"><h4 class="accordion-item-title__text h4">Могу ли я вносить правки в процессе разработки?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
+                        <AccordionHeader class="accordion-item__title"><h4 class="accordion-item-title__text h4 weight-500">Могу ли я вносить правки в процессе разработки?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
                             <AccordionContent class="accordion-item__content">
                             <p class="accordion-item__text weight-500 text_accardion">
                                Безусловно! Ваше мнение крайне важно для нас. По ходу работы мы регулярно демонстрируем промежуточные результаты и согласовываем вносимые изменения. Процесс разработки прозрачен, и вы всегда будете осведомлены обо всех этапах.
@@ -261,7 +247,7 @@
                         </AccordionContent>
                     </AccordionPanel>
                     <AccordionPanel value="5" class="accordion__item">
-                        <AccordionHeader class="accordion-item__title"><h4 class="accordion-item-title__text h4 weight-700">Нужно ли заполнять контент самостоятельно или вы берёте это на себя?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
+                        <AccordionHeader class="accordion-item__title"><h4 class="accordion-item-title__text h4 weight-500">Нужно ли заполнять контент самостоятельно или вы берёте это на себя?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
                             <AccordionContent class="accordion-item__content">
                             <p class="accordion-item__text weight-500 text_accardion">
                                Вы вправе решать, кто займётся наполнением сайта информацией. Наша команда готова оказать помощь в подготовке качественного контента, включающего тексты, фотографии, графику и видеоматериалы. Однако вы также можете воспользоваться услугами собственных авторов или специализированных агентств.
@@ -269,7 +255,7 @@
                         </AccordionContent>
                     </AccordionPanel>
                     <AccordionPanel value="6" class="accordion__item">
-                        <AccordionHeader class="accordion-item__title"><h4 class="accordion-item-title__text h4">Нужна ли поддержка сторонних разработчиков для управления моим сайтом?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
+                        <AccordionHeader class="accordion-item__title"><h4 class="accordion-item-title__text h4 weight-500">Нужна ли поддержка сторонних разработчиков для управления моим сайтом?</h4><div class="accordion__arrow weight-300 ">+</div></AccordionHeader>
                             <AccordionContent class="accordion-item__content">
                             <p class="accordion-item__text weight-500 text_accardion">
                                Нет, абсолютно не обязательно привлекать сторонних специалистов. Наши разработчики предоставляют подробную инструкцию по управлению сайтом, проводят обучение администраторов заказчика и оказывают послепродажную поддержку. Мы стараемся упростить процессы ведения сайта настолько, насколько это возможно.
@@ -298,16 +284,13 @@
     import AccordionHeader from 'primevue/accordionheader';
     import AccordionContent from 'primevue/accordioncontent';
 
+    import HeaderComponent from '@/components/HeaderComponent.vue';
+
     const emits = defineEmits(['skills_modal'])
 
 </script>
     
 <style scoped>
-    header{
-        background-color: var(--colorWhite);
-        z-index: 5;
-    }
-
     .section-banner{
         min-height: 100vh;
     }
@@ -334,7 +317,6 @@
         border: 1px rgba(128, 128, 128, 0.5) solid;
         border-radius: var(--borderRadius);
     }
-
     /* services */
     .block_services{
         grid-template-columns: 400px auto;
@@ -417,7 +399,7 @@
     .block-about--4{
         grid-area: 2 / 1 / 3 / 2;
         cursor: pointer;
-        transition: .15s linear all;
+        transition: .15s ease-in all;
     }
 
     .block-about--4:hover{
@@ -443,6 +425,7 @@
     .about-skill > img{
         width: 90%;
     }
+
     .block-about--4:hover .arrow{
         color: var(--colorMain);
         left: 35px;
@@ -479,5 +462,9 @@
 
     .text_accardion{
         padding: 15px 0;
+    }
+    
+    .accordion__item {
+        padding: 2px 0 !important;
     }
 </style>

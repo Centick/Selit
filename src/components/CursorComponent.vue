@@ -35,7 +35,7 @@
 
     const updateCirclePosition = () => {
         animationFrameId.value = requestAnimationFrame(updateCirclePosition);
-        const easingFactor = 0.08;
+        const easingFactor = 0.07;
 
         cursorPositionX.value += (targetX.value - cursorPositionX.value - 10) * easingFactor;
         cursorPositionY.value += (targetY.value - cursorPositionY.value - 10) * easingFactor;
