@@ -1,4 +1,6 @@
 <template>
+    <HeaderComponent></HeaderComponent>
+
     <!--  Шаблон страницы  -->
     <RouterView
         @skills_modal = isOpenedSkillsModal()
@@ -14,9 +16,10 @@
 </template>
 
 <script setup lang="ts">
-    import { Ref, ref } from 'vue';
+    import {onMounted, Ref, ref} from 'vue';
     import { RouterLink, RouterView } from 'vue-router';
-    import SkillsComponent from '@/components/SkillsComponent.vue';
+    import SkillsComponent from '@/components/SkillsComponent.vue'
+    import HeaderComponent from '@/components/HeaderComponent.vue';
     import Cursor from '@/components/CursorComponent.vue'
 
     const skills_is_showed: Ref<boolean> = ref(false);

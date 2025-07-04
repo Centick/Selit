@@ -1,6 +1,4 @@
 <template>
-    <!-- Меню -->
-    <HeaderComponent/>
     <!--  Главная страница  -->
     <main>
         <section class="section section-banner">
@@ -278,15 +276,13 @@
 </template>
 
 <script lang="ts" setup>
-    // import {Ref, ref, onMounted} from "vue";
+    import {Ref, ref} from "vue";
     import Accordion from 'primevue/accordion';
     import AccordionPanel from 'primevue/accordionpanel';
     import AccordionHeader from 'primevue/accordionheader';
     import AccordionContent from 'primevue/accordioncontent';
 
-    import HeaderComponent from '@/components/HeaderComponent.vue';
-
-    const emits = defineEmits(['skills_modal'])
+    const emits = defineEmits(['skills_modal']);
 
 </script>
     
@@ -428,12 +424,18 @@
 
     .block-about--4:hover .arrow{
         color: var(--colorMain);
-        left: 35px;
+        left: 13px;
+    }
+    .block-about--4:hover .link{
+        color: var(--colorMain);
+    }
+    .block-about--4 .link{
+        transition: color .3s ease;
     }
     .block-about--4:hover .arrow::before{
         color: var(--colorMain);
-        left: -20px;
-        transform: scaleX(5);
+        left: -10px;
+        transform: scaleX(2);
     }
     .block-about--5{
         grid-area: 2 / 2 / 3 / 3;
