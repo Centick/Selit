@@ -125,7 +125,7 @@
                     <p>Крупных проектов за нашими плечами.</p>
                 </div>
                 <div class="block-about block-about--3 grid align-items-center justify-content-center">
-                    <h3 class="weight-700">Selit</h3>
+                    <h3 class="weight-700">S</h3>
                 </div>
                 <div @click.prevent="isOpenedSkillsModal()" class="block-about block-about--4 grid grid-column gap-15">
                     <h3 class="h4">Наш стек</h3>
@@ -395,17 +395,17 @@
 
     .block-about--3 > h3{
         color: var(--colorWhite);
-        font-size: 120px;
+        font-size: 220px;
         position: relative;
     }
 
     .block-about--3 > h3:after{
         content: '';
         position: absolute;
-        top: 10px;
-        right: -15px;
-        width: 20px;    
-        height: 20px;    
+        top: 20px;
+        right: 0px;
+        width: 25px;    
+        height: 25px;    
         border-radius: 50%;
         background-color: var(--colorMain);
     }
