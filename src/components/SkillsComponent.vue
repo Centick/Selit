@@ -1,6 +1,6 @@
 <template>
-    <section class="section skills__section grid justify-items-end">
-        <div class="container skills__container grid justify-content-start gap-20">
+    <section class="section modal__section grid justify-items-end">
+        <div class="container modal__container grid justify-content-start gap-20">
             <img @click.prevent="emits('close_skills_modal')" class="cross" src="../assets/img/icons/cross.svg" alt="img">
             <h3 class="h2 width-100">Технологии</h3>
             <p class="width-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores culpa eveniet, cumque beatae in sequi, deserunt inventore voluptate doloribus rem natus incidunt aperiam ad vero saepe ullam dolorum corporis nostrum!</p>
@@ -79,25 +79,10 @@
     // import { ref } from 'vue'
     
     const emits = defineEmits(['close_skills_modal']);
+    
 </script>
 
 <style scoped>
-    .skills__section{
-        top: 0;
-        position: fixed;
-        width: 100vw;
-        height: 100vh;
-        z-index: 10;
-        overflow: hidden;
-    }
-
-    .skills__container{
-        height: 100vh;
-        width: 40%;
-        background-color: var(--colorWhite);
-        padding: 20px 50px;
-    }
-
     .skills_block{
         padding: 20px 0;
         border-bottom: 2px solid var(--colorGrey);
@@ -106,14 +91,5 @@
     .skills_title{
         font-size: 22px;
         /* color: ; */
-    }
-
-    .cross{
-        position: absolute;
-        top: 26px;
-        right: 50px;
-        width: 25px;
-        height: 25px;
-        cursor: pointer;
-    }
+    }    
 </style>

@@ -11,15 +11,23 @@
                 <a class="link header_link" href="#">О нас</a>
                 <a class="link header_link" href="#">Контакты</a>
             </nav>
-            <a class="link menu__btn">Обсудить проект <span class="arrow">&rarr;</span></a>
+            <a class="link link-special weight-700" @click.prevent="isOpenedApplicationModal()">Обсудить проект <img src="@/assets/img/icons/arrow.svg" alt=""></a>
         </div>
     </header>
+
+    <ApplicationComponent
+        v-show="application_is_showed"
+        :class="{'modal_active': application_is_showed, 'modal_not_active': !application_is_showed}"
+        @close_application_modal = closeApplicationModal()
+    />
 </template>
     
 <script lang="ts" setup>
     import {onMounted, ref, Ref} from "vue";
+    import ApplicationComponent from "./ApplicationComponent.vue";
 
     const is_header_shadowed: Ref<boolean> = ref(false);
+    const application_is_showed: Ref<boolean> = ref(false);
 
     const checkPositionForHeader = () => {
         is_header_shadowed.value = window.scrollY >= 50;
@@ -29,6 +37,14 @@
         window.addEventListener('scroll', checkPositionForHeader);
         checkPositionForHeader();
     });
+
+    const isOpenedApplicationModal = () => {
+        application_is_showed.value = true;
+        console.log(application_is_showed.value);
+    }
+    const closeApplicationModal = () => {
+        application_is_showed.value = false;
+    }
 </script>
 
 <style scoped>
@@ -47,7 +63,7 @@
         background-color: var(--colorMain);
         width: 0;
         height: 1px;
-        bottom: 1px;
+        bottom: 0px;
         left: 0;
         transition: 0.2s ease-in all;
     }
@@ -59,11 +75,5 @@
     .header_shadowed{
         box-shadow: #dfdfdf 0 1px 5px 0;
         background-color: var(--colorWhite);
-    }
-    .menu__btn{
-        transition: color .3s ease;
-    }
-    .menu__btn:hover{
-        color: var(--colorMain);
     }
 </style>

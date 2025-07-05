@@ -124,10 +124,10 @@
                     <h3 class="h2">25<span class="text-inherit color-main">+</span></h3>
                     <p>Крупных проектов за нашими плечами.</p>
                 </div>
-                <div class="block-about block-about--3">
-                    <h3 class="h4">Наш логотип будет тут </h3>
+                <div class="block-about block-about--3 grid align-items-center justify-content-center">
+                    <h3 class="weight-700">Selit</h3>
                 </div>
-                <div @click="emits('skills_modal')" class="block-about block-about--4 grid grid-column gap-15">
+                <div @click.prevent="isOpenedSkillsModal()" class="block-about block-about--4 grid grid-column gap-15">
                     <h3 class="h4">Наш стек</h3>
                     <p >Постоянно прогрессируемся. Всегда готовы изучать новую технологию в рамках проекта, если незнакомы с ней
                     </p>
@@ -156,25 +156,16 @@
                 <div class="block-about block-about--5 grid grid-column gap-15 align-content-start">
                     <h3 class="h4">Высокое качество услуг</h3>
                     <p>Неограниченное количество бесплатных правок, которые не конфликтуют с исходным ТЗ. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-<!--                    <div class="about-wrap-skill grid grid-row">-->
-<!--                        <div class="about-skill">-->
-<!--                        </div>-->
-<!--                        <div class="about-skill">-->
-<!--                        </div>-->
-<!--                        <div class="about-skill">-->
-<!--                        </div>-->
-<!--                        <span class="about-skill">-->
-<!--                        </span>-->
-<!--                        <div class="about-skill">-->
-<!--                        </div>-->
-<!--                        <div class="about-skill">-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <span class="link">Подробнее ></span>-->
                 </div>
                 <div class="block-about block-about--6">Хотелось бы видео но нет</div>
             </div>
         </section>
+
+        <SkillsComponent
+            v-show="skills_is_showed"
+            :class="{'modal_active': skills_is_showed, 'modal_not_active': !skills_is_showed}"
+            @close_skills_modal = closeSkillsModal()
+        />
 
         <section class="section why__section">
             <div class="container why__container grid-column justify-items-start gap-25">
@@ -282,8 +273,17 @@
     import AccordionHeader from 'primevue/accordionheader';
     import AccordionContent from 'primevue/accordioncontent';
 
-    const emits = defineEmits(['skills_modal']);
+    import SkillsComponent from '@/components/SkillsComponent.vue' 
 
+    const skills_is_showed: Ref<boolean> = ref(false);
+    
+    const isOpenedSkillsModal = () => {
+        skills_is_showed.value = true;
+        console.log(skills_is_showed.value);
+    }
+    const closeSkillsModal = () => {
+        skills_is_showed.value = false;
+    }
 </script>
     
 <style scoped>
@@ -390,6 +390,24 @@
 
     .block-about--3{
         grid-area: 1 / 4 / 2 / 5;
+        background-color: var(--colorBlack);
+    }
+
+    .block-about--3 > h3{
+        color: var(--colorWhite);
+        font-size: 120px;
+        position: relative;
+    }
+
+    .block-about--3 > h3:after{
+        content: '';
+        position: absolute;
+        top: 10px;
+        right: -15px;
+        width: 20px;    
+        height: 20px;    
+        border-radius: 50%;
+        background-color: var(--colorMain);
     }
 
     .block-about--4{
@@ -469,4 +487,6 @@
     .accordion__item {
         padding: 2px 0 !important;
     }
+
+     
 </style>
