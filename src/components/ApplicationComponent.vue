@@ -4,11 +4,11 @@
             <img class="cross" @click.prevent = "emits('close_application_modal')" src="../assets/img/icons/cross.svg" alt="img">
             <h3 class="h2 width-100">Обсудить проект</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quas id saepe suscipit ipsum voluptatibus doloribus quibusdam aperiam. Delectus cumque voluptates provident quas sunt deleniti natus reiciendis optio dolor exercitationem!</p>
-            <form action="#" class="modal-form width-100 grid grid-column gap-10">
+            <form @submit.prevent="onSubmit" action="#" class="modal-form width-100 grid grid-column gap-10">
                 <div class="width-100 grid grid-column gap-5">
                     <div class="grid grid-3rows gap-10">
                         <input class="input width-100 input--error" placeholder="Ваше имя" type="text">
-                        <input class="input width-100" placeholder="Телефон" type="phone">
+                        <input class="input width-100" placeholder="Телефон" type="tel" v-model="phoneNumber" :mask="'+# (###)-###-##-##'">
                         <input class="input width-100" placeholder="Почта" type="email">
                     </div>
                     <div class="grid grid-3rows gap-10">
@@ -25,7 +25,7 @@
                 </label>
                 <div class="wrap-submit grid grid-row justify-content-space-between align-items-center">
                     <p class="politicks">Нажимая на кнопку «Отправить», вы даете <br> согласие на <a class="weight-700" href="#">Политику конфиденциальности</a></p>
-                    <input type="button" class="btn width-fit-content" value="Отправить">
+                    <input type="submit" class="btn width-fit-content" value="Отправить">
                 </div>
                 
             </form>
@@ -37,6 +37,11 @@
     import { Ref, ref } from 'vue';
 
     const emits = defineEmits(['close_application_modal']);
+
+    const phoneNumber = ref("");
+    const onSubmit = () => {
+        alert(`Ваш номер телефона: ${phoneNumber.value}`);
+    };
 
     const errorText = {
         errorName: {
