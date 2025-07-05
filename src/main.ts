@@ -5,7 +5,7 @@ import { createApp } from 'vue';
 import App from '@/App.vue';
 import router from '@/router';
 import PrimeVue from 'primevue/config';
-import VMASK from 'vue-3-mask'; // импорт модуля v-mask
+import VMASK from 'vue-3-mask';
 
 
 const app = createApp(App)

@@ -125,7 +125,7 @@ footer{
     width: 100vw;
     height: 100vh;
     z-index: 10;
-    overflow: hidden;
+    overflow-x: visible;
 }
 
 .modal__container{
@@ -343,6 +343,22 @@ footer{
 }
 
 /* modal */
+@keyframes modal_shadow {
+    0%{
+        box-shadow: 0 0 200vw 200vw rgb(0, 0, 0, 0);
+    }
+    100%{
+        box-shadow: 0 0 200vw 200vw rgb(0, 0, 0, .4);
+    }
+}
+@keyframes modal_shadow_disable {
+    0%{
+        box-shadow: 0 0 200vw 200vw rgb(0, 0, 0, .4);
+    }
+    100%{
+        box-shadow: 0 0 200vw 200vw rgb(0, 0, 0, 0);
+    }
+}
 .modal_active{
     right: 0;
     transition: right .3s ease;
@@ -352,12 +368,11 @@ footer{
     transition: right .6s ease;
 }
 .modal_active .container{
-    box-shadow: 0 0 100vw 100vw rgb(0, 0, 0, .4);
-    transition: box-shadow 1s ease;
+    animation: modal_shadow .5s ease forwards;
+    animation-delay: .1s;
 }
 .modal_not_active .container{
-    box-shadow: 0 0 100vw 0 rgb(0, 0, 0, 0);
-    transition: box-shadow 1s ease;
+    animation: modal_shadow_disable .1s ease forwards;
 }
 
 .cross{

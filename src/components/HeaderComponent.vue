@@ -16,9 +16,8 @@
     </header>
 
     <ApplicationComponent
-        v-show="application_is_showed"
         :class="{'modal_active': application_is_showed, 'modal_not_active': !application_is_showed}"
-        @close_application_modal = closeApplicationModal()
+        @close='closeApplicationModal()'
     />
 </template>
     

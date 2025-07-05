@@ -1,7 +1,7 @@
 <template>
-    <section class="section modal__section grid justify-items-end">
-        <div class="container modal__container grid justify-content-start gap-20">
-            <img @click.prevent="emits('close_skills_modal')" class="cross" src="../assets/img/icons/cross.svg" alt="img">
+    <section @click.prevent="close()" class="section modal__section grid justify-items-end">
+        <div @click.prevent="container_clicked()" class="container modal__container grid justify-content-start gap-20">
+            <img @click.prevent="close()" class="cross" src="../assets/img/icons/cross.svg" alt="img">
             <h3 class="h2 width-100">Технологии</h3>
             <p class="width-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores culpa eveniet, cumque beatae in sequi, deserunt inventore voluptate doloribus rem natus incidunt aperiam ad vero saepe ullam dolorum corporis nostrum!</p>
             <div class="skills_wrap width-100 gap-10">
@@ -77,8 +77,25 @@
 
 <script lang="ts" setup>
     // import { ref } from 'vue'
-    
-    const emits = defineEmits(['close_skills_modal']);
+
+    import {ref, Ref} from "vue";
+
+    const emits = defineEmits(['close']);
+
+    const is_container_clicked: Ref<boolean> = ref(false);
+
+    const close = () => {
+        if(!is_container_clicked.value){
+            emits('close');
+        }
+    };
+
+    const container_clicked = () => {
+        is_container_clicked.value = true;
+        setTimeout(() => {
+            is_container_clicked.value = false;
+        }, 100);
+    };
     
 </script>
 

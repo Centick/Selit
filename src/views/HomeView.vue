@@ -162,9 +162,8 @@
         </section>
 
         <SkillsComponent
-            v-show="skills_is_showed"
             :class="{'modal_active': skills_is_showed, 'modal_not_active': !skills_is_showed}"
-            @close_skills_modal = closeSkillsModal()
+            @close = closeSkillsModal()
         />
 
         <section class="section why__section">
