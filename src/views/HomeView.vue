@@ -124,9 +124,7 @@
                     <h3 class="h2">25<span class="text-inherit color-main">+</span></h3>
                     <p>Крупных проектов за нашими плечами.</p>
                 </div>
-                <div class="block-about block-about--3 grid align-items-center justify-content-center">
-                    <h3 class="weight-700">S</h3>
-                </div>
+                <div class="block-about block-about--3 grid align-items-center justify-content-center"></div>
                 <div @click.prevent="isOpenedSkillsModal()" class="block-about block-about--4 grid grid-column gap-15">
                     <h3 class="h4">Наш стек</h3>
                     <p >Постоянно прогрессируемся. Всегда готовы изучать новую технологию в рамках проекта, если незнакомы с ней
@@ -389,24 +387,9 @@
 
     .block-about--3{
         grid-area: 1 / 4 / 2 / 5;
-        background-color: var(--colorBlack);
-    }
-
-    .block-about--3 > h3{
-        color: var(--colorWhite);
-        font-size: 220px;
-        position: relative;
-    }
-
-    .block-about--3 > h3:after{
-        content: '';
-        position: absolute;
-        top: 20px;
-        right: 0px;
-        width: 25px;    
-        height: 25px;    
-        border-radius: 50%;
-        background-color: var(--colorMain);
+        background-image: url("@/assets/img/brend/logo-mini.svg");
+        background-position: center center;
+        background-size: cover;
     }
 
     .block-about--4{
