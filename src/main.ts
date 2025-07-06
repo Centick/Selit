@@ -6,7 +6,7 @@ import App from '@/App.vue';
 import router from '@/router';
 import PrimeVue from 'primevue/config';
 import VMASK from 'vue-3-mask';
-
+import '@/scripts/buttons.ts';
 
 const app = createApp(App)
 

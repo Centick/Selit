@@ -56,6 +56,6 @@
         background-color: var(--colorMain);
         pointer-events: none;
         z-index: 100;
+        transition: opacity .1s ease;
     }
-    
 </style>
