@@ -25,10 +25,10 @@
                 </label>
                 <div class="wrap-submit grid grid-row align-self-end justify-content-space-between align-items-center">
                     <p class="politicks">Нажимая на кнопку «Отправить», вы даете <br> согласие на <a class="weight-700" href="#">Политику конфиденциальности</a></p>
-                    <div class="application-send">
-                        <input type="submit" class="btn width-fit-content h6" value="Отправить">
+                    <button type="submit"  class="btn width-fit-content application-send">
+                        <span class="h6">Отправить</span>
                         <img src="@/assets/img/icons/send.svg" width="100px" alt="img">
-                    </div>
+                    </button>
                 </div>
             </form>
         </div>
@@ -151,12 +151,6 @@
 
     .application-send{
         position: relative;
-        /* display: flex;
-        justify-content: end;
-        align-content: center; */
-    }
-
-    .application-send > input{
         padding-right: 60px;
     }
 
@@ -167,6 +161,7 @@
         width: 22px;
         transform: rotate(45deg);
         cursor: pointer;
+        z-index: 4;
     }
 
 </style>

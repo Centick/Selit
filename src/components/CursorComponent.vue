@@ -1,9 +1,18 @@
 <template>
-    <div :style="circleStyle" class="cursor-circle"></div>
+    <div :style="circleStyle" class="cursor-circle" :class="{'cursor-circle--pointer': currentCursor}"></div>
 </template>
 
 <script lang="ts" setup>
-    import { ref, onMounted, onBeforeUnmount, computed } from 'vue';    
+    import { colorScheme } from '@primeuix/themes/aura/autocomplete';
+import { isStringLiteral } from 'typescript';
+    import { Ref, ref, onMounted, onBeforeUnmount, computed } from 'vue';  
+    
+    const currentCursor: Ref<boolean> = ref(false);
+    const trackCursor = (event: any): void => {
+        const target = event.target;
+        const style = window.getComputedStyle(target);
+        currentCursor.value = (style.cursor == 'pointer')
+    };
 
     const targetX = ref(0);
     const targetY = ref(0);
@@ -15,6 +24,7 @@
 
     onMounted(() => {
         window.addEventListener('mousemove', handleMouseMove);
+        window.addEventListener('mousemove', trackCursor);
         window.requestAnimationFrame(updateCirclePosition);
     });
 
@@ -56,6 +66,14 @@
         background-color: var(--colorMain);
         pointer-events: none;
         z-index: 100;
-        transition: opacity .1s ease;
+        transition: scale .2s ease;
+    }
+
+    .cursor-circle--pointer{
+        opacity: .3 !important;
+        /* border-radius: 5px; */
+        scale: 2.4;
+        background: green;
+        transition: scale .2s ease-in;
     }
 </style>

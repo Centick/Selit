@@ -13,7 +13,7 @@ window.onload = () => {
                     btn.append(circle);
                     let cursor = document.querySelector('.cursor-circle');
                     if(cursor){
-                        cursor.style.opacity = '0';
+                        cursor.style.display = "none";
                     }
                 }
             }
@@ -24,7 +24,7 @@ window.onload = () => {
                     circle.classList.add('btn__circle_disable');
                     let cursor = document.querySelector('.cursor-circle');
                     if(cursor){
-                        cursor.style.opacity = '1';
+                        cursor.style.display = 'block';
                     }
                     setTimeout(() => {
                         circle.remove();

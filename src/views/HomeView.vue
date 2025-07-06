@@ -44,7 +44,7 @@
                     <div class="block_services grid align-items-start width-100">
                         <h4 class="h4">Дизайн</h4>
                         <div class="name_services gap-10">
-                            <a class="link service_link" href="#">Lorem.</a>
+                            <a class="link service_link" href="#">UI/UX - аудит</a>
                             <a class="link service_link" href="#">Lorem, ipsum.</a>
                         </div>
                     </div>
@@ -258,6 +258,7 @@
                 asd
             </div>
         </footer>
+        
     </main>
 
     
@@ -332,6 +333,11 @@
         padding: 20px 30px ;
         border-radius: var(--borderRadiusBig);
         background-color: var(--colorGrey);
+        transition: .1s ease-in all;
+    }
+
+    .service_link:hover{
+        transform: translateY(-8px);
     }
 
     /* projects */
