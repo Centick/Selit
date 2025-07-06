@@ -39,10 +39,12 @@
 
     const isOpenedApplicationModal = () => {
         application_is_showed.value = true;
-        console.log(application_is_showed.value);
+        document.body.style.overflowY = "hidden";
+        console.log(document.body.style)
     }
     const closeApplicationModal = () => {
         application_is_showed.value = false;
+        document.body.style.overflowY = "visible";
     }
 </script>
 

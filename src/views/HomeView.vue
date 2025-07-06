@@ -117,7 +117,7 @@
             <h2 class="h2 margin-bottom-50">О нас</h2>
             <div class="container container-about grid gap-15">
                 <div class="block-about block-about--1">
-                    <h3 class="h3"><span class="text-inherit color-main">Selit</span> - Lorem, ipsum dolor.</h3>
+                    <h3 class="h3"><span class="text-inherit color-main">Selit</span> - Разработка цифровых решений под ваши задачи</h3>
                     <p></p>
                 </div>
                 <div class="block-about block-about--2">
@@ -270,16 +270,17 @@
     import AccordionHeader from 'primevue/accordionheader';
     import AccordionContent from 'primevue/accordioncontent';
 
-    import SkillsComponent from '@/components/SkillsComponent.vue' 
+    import SkillsComponent from '@/components/SkillsComponent.vue';
 
     const skills_is_showed: Ref<boolean> = ref(false);
     
     const isOpenedSkillsModal = () => {
         skills_is_showed.value = true;
-        console.log(skills_is_showed.value);
+        document.body.style.overflowY = "hidden";
     }
     const closeSkillsModal = () => {
         skills_is_showed.value = false;
+        document.body.style.overflowY = "visible";
     }
 </script>
     

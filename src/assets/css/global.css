@@ -28,7 +28,18 @@
 }
 
 body{
-    overflow-x: hidden;
+    overflow-x: visible;
+}
+
+body::-webkit-scrollbar {
+  width: 6px;              
+}
+body::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);  
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #afafaf; 
+  border-radius: 20px;      
 }
 
 /* TODO: Прописать шрифты */
@@ -361,11 +372,11 @@ footer{
 }
 .modal_active{
     right: 0;
-    transition: right .3s ease;
+    transition: right .4s cubic-bezier(0.2, 0.47, 0.54, 0.99);
 }
 .modal_not_active{
     right: -100vw;
-    transition: right .6s ease;
+    transition: right .5s cubic-bezier(0.2, 0.47, 0.54, 0.99);
 }
 .modal_active .container{
     animation: modal_shadow .5s ease forwards;
