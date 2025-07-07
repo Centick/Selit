@@ -2,9 +2,9 @@
     <!--  Главная страница  -->
     <main>
         <section class="section section-banner">
-            <div class="container container-banner grid grid-column gap-25 justify-items-start align-content-start">
-                <h1 class="h1">Проектируем, поддерживаем и развиваем WEB-Проекты</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus enim rem, laborum quaerat ab exercitationem eaque dolor veniam, perspiciatis a, numquam ex sit recusandae fuga? Obcaecati, ratione. Corrupti, recusandae aspernatur?</p>
+            <div class="container container-banner grid grid-column gap-25 justify-items-center align-content-center">
+                <h1 class="h1 banner_h1">Разрабатываем, продвигаем и развиваем  web-сервисы</h1>
+                <p>Помогаем бизнесу автоматизировать процессы и повышать лояльность клиентов, а стартапам быстро выводить продукт на рынок</p>
                 <div class="grid grid-row gap-10">
                     <span class="link link-banner">Landing</span>
                     <span class="link link-banner">Интернет магазины</span>
@@ -251,13 +251,6 @@
                 </Accordion>
             </div>
         </section>
-
-
-        <footer>
-            <div class="container">
-                asd
-            </div>
-        </footer>
         
     </main>
 
@@ -303,7 +296,13 @@
         z-index: -1;
     }
 
-    .container-banner > h1, p{
+    .container-banner > p{
+        text-align: center;
+        font-size: 20px;
+        width: 50%;
+    }
+    .container-banner > h1{
+        text-align: center;
         width: 70%;
     }
 
@@ -470,7 +469,7 @@
     /* accardion */
 
     .text_accardion{
-        padding: 15px 0;
+        padding-bottom: 15px;
     }
     
     .accordion__item {
