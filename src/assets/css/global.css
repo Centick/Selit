@@ -11,7 +11,7 @@
 
 body{
     overflow-x: visible;
-    user-select: none;
+    /* user-select: none; */
 }
 
 body::-webkit-scrollbar {

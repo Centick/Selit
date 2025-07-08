@@ -117,7 +117,7 @@
             <h2 class="h2 margin-bottom-50">О нас</h2>
             <div class="container container-about grid gap-15">
                 <div class="block-about block-about--1">
-                    <h3 class="h3"><span class="text-inherit color-main">Selit</span> - Разработка цифровых решений под ваши задачи</h3>
+                    <h3 class="h3"><span class="text-inherit color-main">Selit</span> - Разработка web-решений под ваши задачи</h3>
                     <p></p>
                 </div>
                 <div class="block-about block-about--2">
@@ -127,7 +127,7 @@
                 <div class="block-about block-about--3 grid align-items-center justify-content-center"></div>
                 <div @click.prevent="isOpenedSkillsModal()" class="block-about block-about--4 grid grid-column gap-15">
                     <h3 class="h4">Наш стек</h3>
-                    <p >Постоянно прогрессируемся. Всегда готовы изучать новую технологию в рамках проекта, если незнакомы с ней
+                    <p >Мы постоянно развиваемся и открыты к освоению новых технологий, необходимых для реализации проектов.
                     </p>
                     <div class="about-wrap-skill grid grid-row">
                         <div class="about-skill">

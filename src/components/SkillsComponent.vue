@@ -3,70 +3,64 @@
         <div @click.prevent="container_clicked()" class="container modal__container grid justify-content-start gap-20">
             <img @click.prevent="close()" class="cross" src="../assets/img/icons/cross.svg" alt="img">
             <h3 class="h2 width-100">Технологии</h3>
-            <p class="width-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores culpa eveniet, cumque beatae in sequi, deserunt inventore voluptate doloribus rem natus incidunt aperiam ad vero saepe ullam dolorum corporis nostrum!</p>
+            <p>Раздел «Технологии» отражает наши инструменты и решения. Постоянно осваивая новинки, мы достигаем лучших результатов. Применяем проверенные и инновационные методы, адаптированные под каждый проект. Клиенты получают актуальные знания благодаря регулярному обновлению раздела.</p>
             <div class="skills_wrap width-100 gap-10">
-                <div class="skills_block grid grid-row justify-content-space-between">
+                <div class="skills_block grid grid-row align-items-start justify-content-space-between justify-items-start gap-50">
                     <span class="skills_title">Frontend</span>
-                    <div style="max-width: 50%;" class="grid grid-row gap-10">
+                    <div class="flex-wrap gap-10 align-items-center">
                         <span>JavaScript</span>
-                        <!-- как пример - ромбик -->
-                        <span>&#9674;</span>
+                        <div class="ball-mainColor"></div>
                         <span>TypeScript</span>
-                        <!-- как пример - ромбик -->
-                        <span>&#9674;</span>
+                        <div class="ball-mainColor"></div>
                         <span>Vue.js</span>
-                        <!-- как пример - ромбик -->
-                        <span>&#9674;</span>
+                        <div class="ball-mainColor"></div>
                         <span>React</span>
                     </div>
                 </div>
                 
-                <div class="skills_block grid grid-row justify-content-space-between">
-                    <span class="skills_title">Backend</span>
-                    <div style="max-width: 50%;" class="grid grid-row gap-10">
+                <div class="skills_block grid grid-row align-items-start justify-content-space-between gap-75">
+                    <span class="skills_title grid">Backend</span>
+                    <div class="flex-wrap gap-10 align-items-center">
                         <span>PHP8</span>
-                        <!-- как пример - ромбик -->
-                        <span>&#9674;</span>
+                        <div class="ball-mainColor"></div>
                         <span>Laravel</span>
-                        <!-- как пример - ромбик -->
-                        <span>&#9674;</span>
+                        <div class="ball-mainColor"></div>
                         <span>Django</span>
-                        <!-- как пример - ромбик -->
-                        <span>&#9674;</span>
+                        <div class="ball-mainColor"></div>
                         <span>Node.js</span>
                     </div>
                 </div>
 
-                <div class="skills_block grid grid-row justify-content-space-between">
+                <div class="skills_block grid grid-row align-items-start justify-content-space-between gap-50">
                     <span class="skills_title">База данных</span>
-                    <div style="max-width: 50%;" class="grid grid-row gap-10">
+                    <div class="flex-wrap gap-10 align-items-center">
                         <span>MySQL</span>
-                        <span>&#9674;</span>
+                        <div class="ball-mainColor"></div>
                         <span>SQLite</span>
                     </div>
                 </div>
 
-                <div class="skills_block grid grid-row justify-content-space-between">
+                <div class="skills_block grid grid-row align-items-start  justify-content-space-between gap-100">
                     <span class="skills_title">Дизайна</span>
-                    <div style="max-width: 50%;" class="grid grid-row gap-10">
+                    <div class="flex-wrap gap-10 align-items-center">
                         <span>Figma</span>
-                        <span>&#9674;</span>
+                        <div class="ball-mainColor"></div>
                         <span>Photoshop</span>
-                        <span>&#9674;</span>
+                        <div class="ball-mainColor"></div>
                         <span>Illustrator</span>
                     </div>
                 </div>
 
-                <div class="skills_block grid grid-row justify-content-space-between">
+                <div class="skills_block grid grid-row align-items-start justify-content-space-between gap-50">
                     <span class="skills_title">CMS</span>
-                    <div style="max-width: 50%;" class="grid grid-row gap-10">
+                    <div class="flex-wrap gap-10 align-items-center">
                         <span>Wordpress</span>
                     </div>
                 </div>
 
-                <div class="skills_block grid grid-row justify-content-space-between">
+                <div class="skills_block grid grid-row align-items-start justify-content-space-between gap-50">
                     <span class="skills_title">Другое</span>
-                    <div style="max-width: 50%;" class="grid grid-row gap-10">
+                    <div class="flex-wrap gap-10 align-items-center">
                         <span>asd</span>
                     </div>
                 </div>
@@ -101,12 +95,26 @@
 
 <style scoped>
     .skills_block{
-        padding: 20px 0;
+        padding: 30px 0;
         border-bottom: 2px solid var(--colorGrey);
     }
 
     .skills_title{
         font-size: 22px;
         /* color: ; */
-    }    
+    }
+
+    .ball-mainColor{
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: var(--colorMain);
+    }
+
+    .flex-wrap{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        /* max-width: 90%; */
+    }
 </style>

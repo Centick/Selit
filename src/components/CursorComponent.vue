@@ -11,7 +11,7 @@ import { isStringLiteral } from 'typescript';
     const trackCursor = (event: any): void => {
         const target = event.target;
         const style = window.getComputedStyle(target);
-        currentCursor.value = (style.cursor == 'pointer')
+        currentCursor.value = (style.cursor == 'pointer' || style.cursor == 'text')
     };
 
     const targetX = ref(0);
