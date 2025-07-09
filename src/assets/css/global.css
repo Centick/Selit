@@ -56,15 +56,11 @@ body::-webkit-scrollbar-thumb {
     --h5: 24px;
     --h6: 20px;
     --fontDefault: 18px;
-    /* --colorMain: #006BE5; */
-    /* старый ^ */
     --colorMain: #2F4EEA;
     --colorMainDark: #1933b3;
-    /* возможные цвета */
-    /* --colorMain: #FF7F50; */
     --colorGrey:  #f4f4f4;
     --colorWhite: #fff;
-    --colorBlack: #313237;
+    --colorBlack: #292929;
     
     --borderRadiusSmall: 10px;
     --borderRadius: 25px;
@@ -84,8 +80,8 @@ header{
 
 }
 footer{
-    border-top-left-radius: 150px;
-    border-top-right-radius: 150px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
     background-color: var(--colorBlack);
     color: var(--colorWhite);
     width: 100%;

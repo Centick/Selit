@@ -5,13 +5,7 @@
             <div class="container container-banner grid grid-column gap-25 justify-items-center align-content-center">
                 <h1 class="h1 banner_h1">Разрабатываем, продвигаем и развиваем  web-сервисы</h1>
                 <p>Помогаем бизнесу автоматизировать процессы и повышать лояльность клиентов, а стартапам быстро выводить продукт на рынок</p>
-                <div class="grid grid-row gap-10">
-                    <span class="link link-banner">Landing</span>
-                    <span class="link link-banner">Интернет магазины</span>
-                    <span class="link link-banner">Корпоративные сайты</span>
-                    <span class="link link-banner">Сайт-каталог</span>
-                    <span class="link link-banner">E-commerce</span>
-                </div>
+                <button class="btn"><span class="h6">Оценить проект</span></button>
             </div>
         </section>
 
@@ -127,7 +121,7 @@
                 <div class="block-about block-about--3 grid align-items-center justify-content-center"></div>
                 <div @click.prevent="isOpenedSkillsModal()" class="block-about block-about--4 grid grid-column gap-15">
                     <h3 class="h4">Наш стек</h3>
-                    <p >Мы постоянно развиваемся и открыты к освоению новых технологий, необходимых для реализации проектов.
+                    <p >Мы постоянно развиваемся и открыты к освоению новых технологий, необходимых для реализации проектов, даже если ранее с ними не сталкивались.
                     </p>
                     <div class="about-wrap-skill grid grid-row">
                         <div class="about-skill">
@@ -167,7 +161,7 @@
         <section class="section why__section">
             <div class="container why__container grid-column justify-items-start gap-25">
                 <div class="grid why-inner__card width-100">
-                    <h2 class="h2">Факты о нас</h2>
+                    <h2 class="h2">Факты о Selit</h2>
                     <div class="grid grid-column">
                         <span class="why-big_number">30<span class="text-inherit color-main">+</span></span>
                         <p class="why-text">проектов реализованно</p>
@@ -179,7 +173,7 @@
                         <p class="why-text">Делаем приложения для стартапов и бизнеса</p>
                     </div>
                     <div class="grid grid-column gap-10">
-                        <span class="h2"><span class="text-inherit color-main">></span> 40</span>
+                        <span class="h2"><span class="text-inherit color-main"></span> 40</span>
                         <p class="why-text">Положительных отзывов от различных заказчиков и пользователей</p>
                     </div>
                 </div>
@@ -189,7 +183,7 @@
                         <p class="why-text">Делаем приложения для стартапов и бизнеса</p>
                     </div>
                     <div class="grid grid-column gap-10">
-                        <span class="h2"><span class="text-inherit color-main">></span> 40</span>
+                        <span class="h2"><span class="text-inherit color-main"></span> 40</span>
                         <p class="why-text">Положительных отзывов от различных заказчиков и пользователей</p>
                     </div>
                 </div>

@@ -45,7 +45,7 @@ import { isStringLiteral } from 'typescript';
 
     const updateCirclePosition = () => {
         animationFrameId.value = requestAnimationFrame(updateCirclePosition);
-        const easingFactor = 0.07;
+        const easingFactor = 0.065;
 
         cursorPositionX.value += (targetX.value - cursorPositionX.value - 10) * easingFactor;
         cursorPositionY.value += (targetY.value - cursorPositionY.value - 10) * easingFactor;
