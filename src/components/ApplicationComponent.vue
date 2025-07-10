@@ -4,17 +4,17 @@
             <img class="cross" @click.prevent="close()" src="../assets/img/icons/cross.svg" alt="img">
             <h3 class="h2 width-100">Обсудить проект</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quas id saepe suscipit ipsum voluptatibus doloribus quibusdam aperiam. Delectus cumque voluptates provident quas sunt deleniti natus reiciendis optio dolor exercitationem!</p>
-            <form @submit.prevent="onSubmit" action="#" class="modal-form width-100 grid grid-column gap-10">
+            <form class="modal-form width-100 grid grid-column gap-10">
                 <div class="width-100 grid grid-column gap-5">
                     <div class="grid grid-3rows gap-10">
-                        <input class="input width-100 input--error" placeholder="Ваше имя" type="text">
-                        <MaskInput class="input width-100" placeholder="Телефон" type="tel" v-model="phoneNumber" mask="+# (###)-###-##-##" />
-                        <input class="input width-100" placeholder="Почта" type="email">
+                        <input v-model="name" :class="{'input--error': nameError}" id="name-input" class="input width-100" placeholder="Ваше имя" type="text">
+                        <MaskInput :class="{'input--error': phoneError}" id="phone-input" class="input width-100" placeholder="Телефон" type="tel" v-model="phone" mask="+# (###)-###-##-##" />
+                        <input :class="{'input--error': emailError}" v-model="email" id="email-input" class="input width-100" placeholder="Почта" type="email">
                     </div>
                     <div class="grid grid-3rows gap-10">
-                        <span class="error-text">Имя не должно содержать специсимволов</span>
-                        <span class="error-text"></span>
-                        <span class="error-text"></span>
+                        <span class="error-text">{{ nameError }}</span>
+                        <span class="error-text">{{ phoneError }}</span>
+                        <span class="error-text">{{ emailError }}</span>
                     </div>
                     <textarea class="input width-100 input_textarea" name="" id="" placeholder="Расскажите о проекте"></textarea>
                 </div>
@@ -25,7 +25,7 @@
                 </label>
                 <div class="wrap-submit grid grid-row align-self-end justify-content-space-between align-items-center">
                     <p class="politicks">Нажимая на кнопку «Отправить», вы даете <br> согласие на <a class="weight-700" href="#">Политику конфиденциальности</a></p>
-                    <button type="submit"  class="btn width-fit-content application-send">
+                    <button @click.prevent="onSubmit" type="submit" class="btn width-fit-content application-send">
                         <span class="h6">Отправить</span>
                         <img src="@/assets/img/icons/send.svg" width="100px" alt="img">
                     </button>
@@ -36,15 +36,55 @@
 </template>
 
 <script lang="ts" setup>
-    import { Ref, ref } from 'vue';
+    import { ref } from 'vue';
+    import type { Ref } from "vue";
     import { MaskInput } from 'vue-3-mask';
 
     const emits = defineEmits(['close']);
 
-    const phoneNumber: Ref<string> = ref("");
+    const phone: Ref<string> = ref("");
+    const name: Ref<string> = ref("");
+    const email: Ref<string> = ref("");
+
+    const phoneError: Ref<string> = ref("");
+    const nameError: Ref<string> = ref("");
+    const emailError: Ref<string> = ref("");
+
     const is_container_clicked: Ref<boolean> = ref(false);
     const onSubmit = () => {
-        alert(`Ваш номер телефона: ${phoneNumber.value}`);
+        // Name Validate
+        if(!name.value.trim()){
+            nameError.value = errorText.errorName.emptyInput;
+        }
+        else{
+            nameError.value = '';
+        }
+
+        // Phone Validate
+        if(!phone.value.trim()){
+            phoneError.value = errorText.errorPhone.emptyInput;
+        }
+        else if(phone.value.length !== 18){
+            phoneError.value = errorText.errorPhone.incorrectInput;
+        }
+        else{
+            phoneError.value = '';
+        }
+
+        // Email Validate
+        if(!email.value.trim()){
+            emailError.value = errorText.errorEmail.emptyInput;
+        }
+        else if(!email.value.includes('@') ||  !email.value.includes('.') || email.value[-1] === '.' || email.value[email.value.indexOf('@') + 1] === '.' || email.value[0] === '@'){
+            emailError.value = errorText.errorEmail.incorrectInput;
+        }
+        else{
+            emailError.value = '';
+        }
+
+        if(!nameError.value && !emailError.value && !phoneError.value){
+            alert(`Умница`);
+        }
     };
 
     const close = () => {
@@ -62,8 +102,7 @@
 
     const errorText = {
         errorName: {
-            emptyInput: 'Имя обязательно',
-            incorrectInput: 'Имя не должно содержать спецсимволы'
+            emptyInput: 'Имя обязательно'
         },
         errorPhone: {
             emptyInput: 'Телефон обязателен',

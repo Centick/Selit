@@ -7,6 +7,7 @@ import router from '@/router';
 import PrimeVue from 'primevue/config';
 import VMASK from 'vue-3-mask';
 import '@/scripts/buttons.ts';
+import '@/scripts/smoth_scroll.min.js';
 
 const app = createApp(App)
 

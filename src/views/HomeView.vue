@@ -163,27 +163,27 @@
                 <div class="grid why-inner__card width-100">
                     <h2 class="h2">Факты о Selit</h2>
                     <div class="grid grid-column">
-                        <span class="why-big_number">30<span class="text-inherit color-main">+</span></span>
+                        <span class="why-big_number"><span class="number_counting text-inherit number_counting_highest">30</span><span class="text-inherit color-main">+</span></span>
                         <p class="why-text">проектов реализованно</p>
                     </div>
                 </div>
                 <div class="grid why-inner__card width-100">
                     <div class="grid grid-column gap-10">
-                        <span class="h2"><span class="text-inherit color-main">3 года</span></span>
+                        <span class="h2"><span class="text-inherit color-main number_counting">3</span> года</span>
                         <p class="why-text">Делаем приложения для стартапов и бизнеса</p>
                     </div>
                     <div class="grid grid-column gap-10">
-                        <span class="h2"><span class="text-inherit color-main"></span> 40</span>
+                        <span class="h2 number_counting color-main">40</span>
                         <p class="why-text">Положительных отзывов от различных заказчиков и пользователей</p>
                     </div>
                 </div>
                 <div class="grid why-inner__card width-100">
                     <div class="grid grid-column gap-10">
-                        <span class="h2"><span class="text-inherit color-main">3 года</span></span>
+                        <span class="h2"><span class="text-inherit number_counting color-main">3</span> года</span>
                         <p class="why-text">Делаем приложения для стартапов и бизнеса</p>
                     </div>
                     <div class="grid grid-column gap-10">
-                        <span class="h2"><span class="text-inherit color-main"></span> 40</span>
+                        <span class="h2 number_counting color-main">40</span>
                         <p class="why-text">Положительных отзывов от различных заказчиков и пользователей</p>
                     </div>
                 </div>
@@ -252,7 +252,8 @@
 </template>
 
 <script lang="ts" setup>
-    import {Ref, ref} from "vue";
+import {onMounted, ref} from "vue";
+    import type { Ref } from "vue";
     import Accordion from 'primevue/accordion';
     import AccordionPanel from 'primevue/accordionpanel';
     import AccordionHeader from 'primevue/accordionheader';
@@ -265,11 +266,42 @@
     const isOpenedSkillsModal = () => {
         skills_is_showed.value = true;
         document.body.style.overflowY = "hidden";
-    }
+    };
     const closeSkillsModal = () => {
         skills_is_showed.value = false;
         document.body.style.overflowY = "visible";
-    }
+    };
+
+    onMounted(() => {
+        // Counting Numbers
+        let numbers = Array.from(document.querySelectorAll('.number_counting')) as HTMLElement[];
+        let number_highest = document.querySelector('.number_counting_highest') as HTMLElement;
+        let counted: boolean[] = [];
+        let max_numbers: number[] = [];
+        const time_for_numbers: number = 500;
+        for(let i of numbers){counted.push(false); max_numbers.push(Number(i.textContent)); i.textContent = '0'}
+
+        window.addEventListener("scroll", (e) => {
+            let number_highest_size = number_highest.getBoundingClientRect();
+            if(number_highest_size.top + number_highest_size.height + 50 <= window.innerHeight && number_highest_size.top >= -(number_highest_size.height + 50)) {
+                numbers.forEach(number => {
+                    if(!counted[numbers.indexOf(number)]){
+                        counted[numbers.indexOf(number)] = true;
+                        let max: number = max_numbers[numbers.indexOf(number)];
+                        setTimeout(() => {
+                            let interval: number = setInterval(() => {
+                                number.textContent = String(Number(number.textContent) + 1);
+                                if(Number(number.textContent) >= max){
+                                    number.textContent = `${max}`;
+                                    clearInterval(interval);
+                                }
+                            }, time_for_numbers / max);
+                        }, 250);
+                    }
+                });
+            }
+        });
+    });
 </script>
     
 <style scoped>

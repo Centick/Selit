@@ -8,6 +8,10 @@
                 <div class="skills_block grid grid-row align-items-start justify-content-space-between justify-items-start gap-50">
                     <span class="skills_title">Frontend</span>
                     <div class="flex-wrap gap-10 align-items-center">
+                        <span>HTML</span>
+                        <div class="ball-mainColor"></div>
+                        <span>CSS</span>
+                        <div class="ball-mainColor"></div>
                         <span>JavaScript</span>
                         <div class="ball-mainColor"></div>
                         <span>TypeScript</span>
@@ -21,22 +25,30 @@
                 <div class="skills_block grid grid-row align-items-start justify-content-space-between gap-75">
                     <span class="skills_title grid">Backend</span>
                     <div class="flex-wrap gap-10 align-items-center">
-                        <span>PHP8</span>
+                        <span>PHP</span>
                         <div class="ball-mainColor"></div>
                         <span>Laravel</span>
                         <div class="ball-mainColor"></div>
                         <span>Django</span>
                         <div class="ball-mainColor"></div>
-                        <span>Node.js</span>
+                        <span>Express.js</span>
+                        <div class="ball-mainColor"></div>
+                        <span>Nuxt.js</span>
                     </div>
                 </div>
 
                 <div class="skills_block grid grid-row align-items-start justify-content-space-between gap-50">
-                    <span class="skills_title">База данных</span>
+                    <span class="skills_title">СУБД</span>
                     <div class="flex-wrap gap-10 align-items-center">
                         <span>MySQL</span>
                         <div class="ball-mainColor"></div>
-                        <span>SQLite</span>
+                        <span>MariaDB</span>
+                        <div class="ball-mainColor"></div>
+                        <span>PostgreSQL</span>
+                        <div class="ball-mainColor"></div>
+                        <span>MongoDB</span>
+                        <div class="ball-mainColor"></div>
+                        <span>Redis</span>
                     </div>
                 </div>
 
@@ -61,7 +73,13 @@
                 <div class="skills_block grid grid-row align-items-start justify-content-space-between gap-50">
                     <span class="skills_title">Другое</span>
                     <div class="flex-wrap gap-10 align-items-center">
-                        <span>asd</span>
+                        <span>RestAPI</span>
+                        <div class="ball-mainColor"></div>
+                        <span>SSR</span>
+                        <div class="ball-mainColor"></div>
+                        <span>MVC</span>
+                        <div class="ball-mainColor"></div>
+                        <span>SPA</span>
                     </div>
                 </div>
             </div>
@@ -70,9 +88,8 @@
 </template>
 
 <script lang="ts" setup>
-    // import { ref } from 'vue'
-
-    import {ref, Ref} from "vue";
+    import { ref } from "vue";
+    import type { Ref } from "vue";
 
     const emits = defineEmits(['close']);
 

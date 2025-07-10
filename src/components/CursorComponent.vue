@@ -3,9 +3,8 @@
 </template>
 
 <script lang="ts" setup>
-    import { colorScheme } from '@primeuix/themes/aura/autocomplete';
-import { isStringLiteral } from 'typescript';
-    import { Ref, ref, onMounted, onBeforeUnmount, computed } from 'vue';  
+    import { ref, onMounted, onBeforeUnmount, computed } from 'vue';
+    import type { Ref } from "vue";
     
     const currentCursor: Ref<boolean> = ref(false);
     const trackCursor = (event: any): void => {

@@ -267,7 +267,7 @@ footer{
         scale: 30;
     }
     100%{
-        scale: 1;
+        scale: 0;
     }
 }
 .btn__circle{

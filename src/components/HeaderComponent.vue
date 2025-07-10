@@ -22,7 +22,8 @@
 </template>
     
 <script lang="ts" setup>
-    import {onMounted, ref, Ref} from "vue";
+    import {onMounted, ref} from "vue";
+    import type { Ref } from "vue";
     import ApplicationComponent from "./ApplicationComponent.vue";
 
     const is_header_shadowed: Ref<boolean> = ref(false);
@@ -33,7 +34,7 @@
     };
 
     onMounted(()=>{
-        window.addEventListener('scroll', checkPositionForHeader);
+        window.onscroll = checkPositionForHeader;
         checkPositionForHeader();
     });
 
