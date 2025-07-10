@@ -3,7 +3,7 @@
     <main>
         <section class="section section-banner">
             <div class="container container-banner grid grid-column gap-25 justify-items-center align-content-center">
-                <h1 class="h1 banner_h1">Разрабатываем, продвигаем и развиваем  web-сервисы</h1>
+                <h1 class="h1 banner_h1"><span class="line">Разрабатываем</span>, продвигаем и развиваем <span class="line">Web-сервисы</span></h1>
                 <p>Помогаем бизнесу автоматизировать процессы и повышать лояльность клиентов, а стартапам быстро выводить продукт на рынок</p>
                 <button class="btn"><span class="h6">Оценить проект</span></button>
             </div>
@@ -298,6 +298,20 @@
     .container-banner > h1{
         text-align: center;
         width: 70%;
+    }
+
+    .line{
+         position: relative;
+    }
+
+    .line::before{
+        content: '';
+        position: absolute;
+        height: 4px;
+        left: 0;
+        bottom: 10px;
+        width: 100%;
+        background-color: var(--colorBlack);
     }
 
     .link-banner{

@@ -36,16 +36,13 @@ import { isStringLiteral } from 'typescript';
     });
 
     const handleMouseMove = (event: MouseEvent): void => {
-        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-        const scrollLeft = document.documentElement.scrollLeft || document.body.scrollLeft;
-
-        targetX.value = event.clientX + scrollLeft;
-        targetY.value = event.clientY + scrollTop;
+        targetX.value = event.clientX;
+        targetY.value = event.clientY;
     };
 
     const updateCirclePosition = () => {
         animationFrameId.value = requestAnimationFrame(updateCirclePosition);
-        const easingFactor = 0.065;
+        const easingFactor = 0.07;
 
         cursorPositionX.value += (targetX.value - cursorPositionX.value - 10) * easingFactor;
         cursorPositionY.value += (targetY.value - cursorPositionY.value - 10) * easingFactor;
@@ -59,7 +56,7 @@ import { isStringLiteral } from 'typescript';
 
 <style scoped>
     .cursor-circle {
-        position: absolute;
+        position: fixed;
         width: 20px;
         height: 20px;
         border-radius: 50%;
