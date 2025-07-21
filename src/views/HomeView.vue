@@ -5,7 +5,7 @@
             <div class="container container-banner grid grid-column gap-25 justify-items-center align-content-center">
                 <h1 class="h1 banner_h1"><span class="line">Разрабатываем</span>, продвигаем и развиваем <span class="line">Web-сервисы</span></h1>
                 <p>Помогаем бизнесу автоматизировать процессы и повышать лояльность клиентов, а стартапам быстро выводить продукт на рынок</p>
-                <button class="btn"><span class="h6">Оценить проект</span></button>
+                <button class="btn"><span class="h6 span_btn">Оценить проект</span></button>
             </div>
         </section>
 
@@ -103,7 +103,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="btn"><span class="h6">Смотреть все проекты</span></button>
+                <button class="btn"><span class="h6 span_btn">Смотреть все проекты</span></button>
             </div>
         </section>
 
@@ -195,7 +195,7 @@
                 <h2 class="h2 faq__title weight-700">Часто задаваемые вопросы</h2>
                 <Accordion value="0" class="accordion__wrap">
                     <AccordionPanel value="1" class="accordion__item">
-                        <AccordionHeader class="accordion-item__title"><h4 class="accordion-item-title__text h4 weight-500">Что нужно от меня, чтобы мы начали работу?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
+                        <AccordionHeader class="accordion-item__title"><h4 class="span_btn accordion-item-title__text h4 weight-500">Что нужно от меня, чтобы мы начали работу?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
                         <AccordionContent class="accordion-item__content">
                             <p class="accordion-item__text weight-500 text_accardion">
                                 От Вас потребуется четкое техническое задание, исходные материалы (если имеются), например, логотип или иные медиафайлы, Ваши пожелания или элементы, которые вы хотели бы видеть.
@@ -203,7 +203,7 @@
                         </AccordionContent>
                     </AccordionPanel>
                     <AccordionPanel value="2" class="accordion__item">
-                        <AccordionHeader class="accordion-item__title"><h4 class="accordion-item-title__text h4 weight-500">Можете предложить шаблонный сайт или готовое решение?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
+                        <AccordionHeader class="accordion-item__title"><h4 class="span_btn accordion-item-title__text h4 weight-500">Можете предложить шаблонный сайт или готовое решение?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
                         <AccordionContent class="accordion-item__content">
                             <p class="accordion-item__text weight-500 text_accardion">
                                Если вам необходим простой стартовый сайт, мы предложим экономичные варианты с использованием готовых шаблонов и конструкторов. Но наша основная специализация — создание уникальных и функциональных веб-решений, ориентированных на долгосрочную перспективу развития вашего бизнеса.
@@ -211,7 +211,7 @@
                         </AccordionContent>
                     </AccordionPanel>
                     <AccordionPanel value="3" class="accordion__item">
-                        <AccordionHeader class="accordion-item__title"><h4 class="accordion-item-title__text h4 weight-500">Сколько времени занимает разработка сайта?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
+                        <AccordionHeader class="accordion-item__title"><h4 class="span_btn accordion-item-title__text h4 weight-500">Сколько времени занимает разработка сайта?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
                             <AccordionContent class="accordion-item__content">
                             <p class="accordion-item__text weight-500 text_accardion">
                                Разработка веб-сайта зависит от сложности проекта и включает этапы анализа требований, проектирования, программирования, тестирования и внедрения. Обычно срок варьируется от нескольких недель до месяцев. Простой одностраничник можно запустить за неделю-две, а полноценный корпоративный ресурс потребует порядка одного-трёх месяцев.
@@ -219,7 +219,7 @@
                         </AccordionContent>
                     </AccordionPanel>
                     <AccordionPanel value="4" class="accordion__item">
-                        <AccordionHeader class="accordion-item__title"><h4 class="accordion-item-title__text h4 weight-500">Могу ли я вносить правки в процессе разработки?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
+                        <AccordionHeader class="accordion-item__title"><h4 class="span_btn accordion-item-title__text h4 weight-500">Могу ли я вносить правки в процессе разработки?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
                             <AccordionContent class="accordion-item__content">
                             <p class="accordion-item__text weight-500 text_accardion">
                                Безусловно! Ваше мнение крайне важно для нас. По ходу работы мы регулярно демонстрируем промежуточные результаты и согласовываем вносимые изменения. Процесс разработки прозрачен, и вы всегда будете осведомлены обо всех этапах.
@@ -227,7 +227,7 @@
                         </AccordionContent>
                     </AccordionPanel>
                     <AccordionPanel value="5" class="accordion__item">
-                        <AccordionHeader class="accordion-item__title"><h4 class="accordion-item-title__text h4 weight-500">Нужно ли заполнять контент самостоятельно или вы берёте это на себя?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
+                        <AccordionHeader class="accordion-item__title"><h4 class="span_btn accordion-item-title__text h4 weight-500">Нужно ли заполнять контент самостоятельно или вы берёте это на себя?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
                             <AccordionContent class="accordion-item__content">
                             <p class="accordion-item__text weight-500 text_accardion">
                                Вы вправе решать, кто займётся наполнением сайта информацией. Наша команда готова оказать помощь в подготовке качественного контента, включающего тексты, фотографии, графику и видеоматериалы. Однако вы также можете воспользоваться услугами собственных авторов или специализированных агентств.
@@ -235,7 +235,7 @@
                         </AccordionContent>
                     </AccordionPanel>
                     <AccordionPanel value="6" class="accordion__item">
-                        <AccordionHeader class="accordion-item__title"><h4 class="accordion-item-title__text h4 weight-500">Нужна ли поддержка сторонних разработчиков для управления моим сайтом?</h4><div class="accordion__arrow weight-300 ">+</div></AccordionHeader>
+                        <AccordionHeader class="accordion-item__title"><h4 class="span_btn accordion-item-title__text h4 weight-500">Нужна ли поддержка сторонних разработчиков для управления моим сайтом?</h4><div class="accordion__arrow weight-300 ">+</div></AccordionHeader>
                             <AccordionContent class="accordion-item__content">
                             <p class="accordion-item__text weight-500 text_accardion">
                                Нет, абсолютно не обязательно привлекать сторонних специалистов. Наши разработчики предоставляют подробную инструкцию по управлению сайтом, проводят обучение администраторов заказчика и оказывают послепродажную поддержку. Мы стараемся упростить процессы ведения сайта настолько, насколько это возможно.
@@ -536,7 +536,7 @@
     .block-about--4{
         grid-area: 2 / 1 / 3 / 2;
         cursor: pointer;
-        transition: .15s ease-in top;
+        transition: bottom .15s ease-in;
         scale: 1.1;
         rotate: 2deg;
         z-index: 1;
@@ -554,7 +554,7 @@
     }
 
     .block-about--4:hover{
-        top: -5px;
+        bottom: 5px;
     }
 
     .about-wrap-skill{

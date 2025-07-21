@@ -10,7 +10,7 @@
 }
 
 body{
-    overflow-x: visible;
+    overflow-x: hidden;
     /* user-select: none; */
 }
 
@@ -100,7 +100,7 @@ footer{
     padding: 100px 0;
     position: relative;
     z-index: 2;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 .container{
     width: 100%;
@@ -443,9 +443,18 @@ footer{
 .link-special:hover{
     background-position: 0;
 }
-
 .link-special > img{
     /* position: absolute; */
     width: 22px;
     fill: red;
+}
+.dot{
+    position: fixed;
+    background-color: #0ae448;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 50%;
+    will-change: transform, opacity;
+    pointer-events: none;
+    z-index: 999;
 }
