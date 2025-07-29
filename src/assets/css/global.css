@@ -56,7 +56,7 @@ body::-webkit-scrollbar-thumb {
     --h5: 24px;
     --h6: 20px;
     --fontDefault: 18px;
-    --colorMain: #2F4EEA;
+    --colorMain: #3762FD;
     --colorMainDark: #1933b3;
     /* --colorMain: orange; */
     --colorGrey:  #f4f4f4;
@@ -254,6 +254,7 @@ footer{
     position: relative;
     overflow: hidden;
 }
+
 @keyframes btn_circle_open{
     0%{
         scale: 1;

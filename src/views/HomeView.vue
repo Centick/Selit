@@ -29,15 +29,8 @@
                             <a class="link service_link" href="#">CMS</a>
                             <a class="link service_link" href="#">Техническое сопровождение</a>
                             <a class="link service_link" href="#">SEO-продвижение</a>
-<<<<<<< HEAD
                             <a class="link service_link" href="#">Консалтинг</a>
                         </div> 
-=======
-                            <a class="link service_link" href="#">Переделка сайта</a>
-                            <a class="link service_link" href="#">Разработка Backend'а</a>
-                            <a class="link service_link" href="#">Разработка Frontend'а</a>
-                        </div>
->>>>>>> 07d1c48559580b60dcb7eb3d2229734e3d518217
                     </div>
                     <div class="block_services grid align-items-start width-100">
                         <h4 class="h4">Дизайн</h4>
@@ -178,18 +171,90 @@
                         <p class="why-text">Делаем приложения для стартапов и бизнеса</p>
                     </div>
                     <div class="grid grid-column gap-10">
-                        <span class="h2 number_counting color-main">40</span>
-                        <p class="why-text">Положительных отзывов от различных заказчиков и пользователей</p>
+                        <span class="h2"><span class="text-inherit number_counting color-main">6</span> человек</span>
+                        <p class="why-text">занимаются вашим проектом днем и ночью</p>
                     </div>
                 </div>
                 <div class="grid why-inner__card width-100">
                     <div class="grid grid-column gap-10">
-                        <span class="h2"><span class="text-inherit number_counting color-main">3</span> года</span>
-                        <p class="why-text">Делаем приложения для стартапов и бизнеса</p>
+                        <span class="h2"><span class="text-inherit number_counting color-main">18</span> побед</span>
+                        <p class="why-text">в различных хакатонах и конкурсах наших разработчиков</p>
                     </div>
                     <div class="grid grid-column gap-10">
-                        <span class="h2 number_counting color-main">40</span>
-                        <p class="why-text">Положительных отзывов от различных заказчиков и пользователей</p>
+                        <span class="h2"><span class="text-inherit number_counting color-main">96</span> процентов</span>
+                        <p class="why-text">уровень удовлетворенности клиентов</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h3 class="h2">Наши цены</h3>
+                <div class="wrap_price grid gap-15 width-100">
+                    <div class="price grid align-content-end gap-15">
+                        <span class="price_time">3-5 дней</span>
+                        <div class="grid gap-5">
+                            <h3 class="h4 price_title">Landing page</h3>
+                            <p class="weight-300 price-text">Быстрый способ донести информацию до клиентов</p>
+                        </div>
+                        <text class="weight-700 h6 price_money">от 20 000 ₽</text>
+                    </div>
+                    <div class="price grid align-content-end gap-15">
+                        <span class="price_time">3-5 дней</span>
+                        <div class="grid gap-5">
+                            <h3 class="h4 price_title">Интернет-магазин</h3>
+                            <p class="weight-300 price-text">Высококонверсионный инструмент для ваших онлайн-продаж</p>
+                        </div>
+                        <text class="weight-700 h6 price_money">от 20 000 ₽</text>
+                    </div>
+                    <div class="price grid align-content-end gap-15">
+                        <span class="price_time">3-5 дней</span>
+                        <div class="grid gap-5">
+                            <h3 class="h4 price_title">Landing page</h3>
+                            <p class="weight-300 price-text">Быстрый способ донести информацию до клиентов</p>
+                        </div>
+                        <text class="h6 price_money">от 20 000 ₽</text>
+                    </div>
+                    <div class="price grid align-content-end gap-15">
+                        <span class="price_time">3-5 дней</span>
+                        <div class="grid gap-5">
+                            <h3 class="h4 price_title">Landing page</h3>
+                            <p class="weight-300 price-text">Быстрый способ донести информацию до клиентов</p>
+                        </div>
+                        <text class="h6 price_money">от 20 000 ₽</text>
+                    </div>
+                    <div class="price grid align-content-end gap-15">
+                        <span class="price_time">3-5 дней</span>
+                        <div class="grid gap-5">
+                            <h3 class="h4 price_title">Landing page</h3>
+                            <p class="weight-300 price-text">Быстрый способ донести информацию до клиентов</p>
+                        </div>
+                        <text class="h6 price_money">от 20 000 ₽</text>
+                    </div>
+                    <div class="price grid align-content-end gap-15">
+                        <span class="price_time">3-5 дней</span>
+                        <div class="grid gap-5">
+                            <h3 class="h4 price_title">Landing page</h3>
+                            <p class="weight-300 price-text">Быстрый способ донести информацию до клиентов</p>
+                        </div>
+                        <text class="h6 price_money">от 20 000 ₽</text>
+                    </div>
+                    <div class="price grid align-content-end gap-15">
+                        <span class="price_time">3-5 дней</span>
+                        <div class="grid gap-5">
+                            <h3 class="h4 price_title">Landing page</h3>
+                            <p class="weight-300 price-text">Быстрый способ донести информацию до клиентов</p>
+                        </div>
+                        <text class="h6 price_money">от 20 000 ₽</text>
+                    </div>
+                    <div class="price grid align-content-end gap-15">
+                        <span class="price_time">3-5 дней</span>
+                        <div class="grid gap-5">
+                            <h3 class="h4 price_title">Landing page</h3>
+                            <p class="weight-300 price-text">Быстрый способ донести информацию до клиентов</p>
+                        </div>
+                        <text class="h6 price_money">от 20 000 ₽</text>
                     </div>
                 </div>
             </div>
@@ -359,7 +424,7 @@
         let number_highest = document.querySelector('.number_counting_highest') as HTMLElement;
         let counted: boolean[] = [];
         let max_numbers: number[] = [];
-        const time_for_numbers: number = 500;
+        const time_for_numbers: number = 800;
         for(let i of numbers){counted.push(false); max_numbers.push(Number(i.textContent)); i.textContent = '0'}
 
         window.addEventListener("scroll", (e) => {
@@ -377,7 +442,7 @@
                                     clearInterval(interval);
                                 }
                             }, time_for_numbers / max);
-                        }, 250);
+                        }, 350);
                     }
                 });
             }
@@ -541,7 +606,7 @@
     .block-about--4{
         grid-area: 2 / 1 / 3 / 2;
         cursor: pointer;
-        transition: bottom .15s ease-in;
+        transition: bottom .2s ease-in;
         scale: 1.1;
         rotate: 2deg;
         z-index: 1;
@@ -618,6 +683,68 @@
 
     .why-big_number{
         font-size: 120px;
+    }
+
+    .wrap_price{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .wrap_price > p{
+        padding: 30px;
+        justify-items: end;
+    }
+
+    .price{
+        width: 100%;
+        min-height: 250px;
+        padding: 30px;
+        border-radius: var(--borderRadius);
+        background-color: var(--colorGrey);
+        position: relative;
+        cursor: pointer;
+    }
+
+    .price::after{
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+        content: '↗';
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: 20px;
+        right: 20px;
+        border-radius: 50%;
+        background-color: var(--colorWhite)
+    }
+
+    .price:nth-child(3n){
+        background-color: var(--colorMain);
+    }
+    .price:nth-child(3n) *{
+        color: var(--colorWhite);
+        border-color: var(--colorWhite);
+    }
+
+    .price:nth-child(3n + 1){
+        background-color: var(--colorBlack);
+    }
+    .price:nth-child(3n + 1) *{
+        color: var(--colorWhite);
+        border-color: var(--colorWhite);
+    }
+
+    .price_time{
+        padding: 5px 10px;
+        border: var(--colorMain) 1px solid;
+        width: fit-content;
+        border-radius: 50px;
+        font-size: 16px;
+    }
+
+    .price-text{
+        font-size: 16px;
+        width: 90%;
     }
 
     /* accardion */
