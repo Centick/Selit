@@ -696,7 +696,7 @@
 
     .price{
         width: 100%;
-        min-height: 250px;
+        min-height: 300px;
         padding: 30px;
         border-radius: var(--borderRadius);
         background-color: var(--colorGrey);
