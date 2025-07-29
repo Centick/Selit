@@ -33,7 +33,7 @@
                             <a class="link service_link" href="#">Техническое сопровождение</a>
                             <a class="link service_link" href="#">SEO-продвижение</a>
                             <a class="link service_link" href="#">Консалтинг</a>
-                        </div>
+                        </div> 
                     </div>
                     <div class="block_services grid align-items-start width-100">
                         <h4 class="h4">Дизайн</h4>

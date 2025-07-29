@@ -17,6 +17,7 @@
     "v-mask": "^2.3.0",
     "vue": "^3.5.13",
     "vue-3-mask": "^0.0.1-alpha",
+    "vue-marquee-component": "^1.0.0",
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
