@@ -21,7 +21,7 @@
                                 </div>
                             </div>
                             <div class="grid grid-column justify-items-end align-content-start gap-10">
-                                <button class="btn btn--white"><span class="h6">Обсудить проект</span></button>
+                                <button class="btn btn--white"><span class="h6 span_btn">Обсудить проект</span></button>
                                 <a href="#" class="link footer_link h3">Заполнить Бриф</a>
                             </div>
                         </div>
@@ -114,6 +114,11 @@
 
     .btn--white > span{
         color: var(--colorBlack);
+        transition: color .2s ease;
+    }
+
+    .btn--white:hover > span{
+        color: var(--colorWhite);
     }
 
     .footer_phrase{

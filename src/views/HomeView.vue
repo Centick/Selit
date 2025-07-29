@@ -5,7 +5,7 @@
             <div class="container container-banner grid grid-column gap-25 justify-items-center align-content-center">
                 <h1 class="h1 banner_h1"><span class="line">Разрабатываем</span>, продвигаем и развиваем <span class="line">Web-сервисы</span></h1>
                 <p>Помогаем бизнесу автоматизировать процессы и повышать лояльность клиентов, а стартапам быстро выводить продукт на рынок</p>
-                <button class="btn"><span class="h6">Оценить проект</span></button>
+                <button class="btn"><span class="h6 span_btn">Оценить проект</span></button>
             </div>
         </section>
 
@@ -16,14 +16,11 @@
                     <div class="block_services grid align-items-start width-100">
                         <h4 class="h4">Разработка</h4>
                         <div class="name_services gap-10">
-                            <a class="link service_link" href="#">landing</a>
+                            <a class="link service_link" href="#">Landing</a>
                             <a class="link service_link" href="#">eCommerce</a>
                             <a class="link service_link" href="#">Интернет-магазины</a>
-                            <a class="link service_link" href="#">веб-сервисов</a>
-                            <a class="link service_link" href="#">landing</a>
-                            <a class="link service_link" href="#">landing</a>
-                            <a class="link service_link" href="#">eCommerce</a>
-                            <a class="link service_link" href="#">eCommerce</a>
+                            <a class="link service_link" href="#">Веб-приложений</a>
+                            <a class="link service_link" href="#">Многостраничных сайтов</a>
                         </div>
                     </div>
                     <div class="block_services grid align-items-start width-100">
@@ -32,14 +29,22 @@
                             <a class="link service_link" href="#">CMS</a>
                             <a class="link service_link" href="#">Техническое сопровождение</a>
                             <a class="link service_link" href="#">SEO-продвижение</a>
+<<<<<<< HEAD
                             <a class="link service_link" href="#">Консалтинг</a>
                         </div> 
+=======
+                            <a class="link service_link" href="#">Переделка сайта</a>
+                            <a class="link service_link" href="#">Разработка Backend'а</a>
+                            <a class="link service_link" href="#">Разработка Frontend'а</a>
+                        </div>
+>>>>>>> 07d1c48559580b60dcb7eb3d2229734e3d518217
                     </div>
                     <div class="block_services grid align-items-start width-100">
                         <h4 class="h4">Дизайн</h4>
                         <div class="name_services gap-10">
-                            <a class="link service_link" href="#">UI/UX - аудит</a>
-                            <a class="link service_link" href="#">Lorem, ipsum.</a>
+                            <a class="link service_link" href="#">Разработка веб-дизайна</a>
+                            <a class="link service_link" href="#">Верстка</a>
+                            <a class="link service_link" href="#">Помощь со стилистикой</a>
                         </div>
                     </div>
                 </div>
@@ -103,7 +108,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="btn"><span class="h6">Смотреть все проекты</span></button>
+                <button class="btn"><span class="h6 span_btn">Смотреть все проекты</span></button>
             </div>
         </section>
 
@@ -195,15 +200,15 @@
                 <h2 class="h2 faq__title weight-700">Часто задаваемые вопросы</h2>
                 <Accordion value="0" class="accordion__wrap">
                     <AccordionPanel value="1" class="accordion__item">
-                        <AccordionHeader class="accordion-item__title"><h4 class="accordion-item-title__text h4 weight-500">Что нужно от меня, чтобы мы начали работу?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
+                        <AccordionHeader class="accordion-item__title"><h4 class="span_btn accordion-item-title__text h4 weight-500">Что нужно от меня, чтобы мы начали работу?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
                         <AccordionContent class="accordion-item__content">
                             <p class="accordion-item__text weight-500 text_accardion">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dolore est expedita impedit in ipsa laboriosam magnam maxime nihil odio, quae, saepe temporibus tenetur! Blanditiis culpa illum ipsum modi non.
+                                От Вас потребуется четкое техническое задание, исходные материалы (если имеются), например, логотип или иные медиафайлы, Ваши пожелания или элементы, которые вы хотели бы видеть.
                             </p>
                         </AccordionContent>
                     </AccordionPanel>
                     <AccordionPanel value="2" class="accordion__item">
-                        <AccordionHeader class="accordion-item__title"><h4 class="accordion-item-title__text h4 weight-500">Можете предложить шаблонный сайт или готовое решение?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
+                        <AccordionHeader class="accordion-item__title"><h4 class="span_btn accordion-item-title__text h4 weight-500">Можете предложить шаблонный сайт или готовое решение?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
                         <AccordionContent class="accordion-item__content">
                             <p class="accordion-item__text weight-500 text_accardion">
                                Если вам необходим простой стартовый сайт, мы предложим экономичные варианты с использованием готовых шаблонов и конструкторов. Но наша основная специализация — создание уникальных и функциональных веб-решений, ориентированных на долгосрочную перспективу развития вашего бизнеса.
@@ -211,7 +216,7 @@
                         </AccordionContent>
                     </AccordionPanel>
                     <AccordionPanel value="3" class="accordion__item">
-                        <AccordionHeader class="accordion-item__title"><h4 class="accordion-item-title__text h4 weight-500">Сколько времени занимает разработка сайта?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
+                        <AccordionHeader class="accordion-item__title"><h4 class="span_btn accordion-item-title__text h4 weight-500">Сколько времени занимает разработка сайта?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
                             <AccordionContent class="accordion-item__content">
                             <p class="accordion-item__text weight-500 text_accardion">
                                Разработка веб-сайта зависит от сложности проекта и включает этапы анализа требований, проектирования, программирования, тестирования и внедрения. Обычно срок варьируется от нескольких недель до месяцев. Простой одностраничник можно запустить за неделю-две, а полноценный корпоративный ресурс потребует порядка одного-трёх месяцев.
@@ -219,7 +224,7 @@
                         </AccordionContent>
                     </AccordionPanel>
                     <AccordionPanel value="4" class="accordion__item">
-                        <AccordionHeader class="accordion-item__title"><h4 class="accordion-item-title__text h4 weight-500">Могу ли я вносить правки в процессе разработки?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
+                        <AccordionHeader class="accordion-item__title"><h4 class="span_btn accordion-item-title__text h4 weight-500">Могу ли я вносить правки в процессе разработки?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
                             <AccordionContent class="accordion-item__content">
                             <p class="accordion-item__text weight-500 text_accardion">
                                Безусловно! Ваше мнение крайне важно для нас. По ходу работы мы регулярно демонстрируем промежуточные результаты и согласовываем вносимые изменения. Процесс разработки прозрачен, и вы всегда будете осведомлены обо всех этапах.
@@ -227,7 +232,7 @@
                         </AccordionContent>
                     </AccordionPanel>
                     <AccordionPanel value="5" class="accordion__item">
-                        <AccordionHeader class="accordion-item__title"><h4 class="accordion-item-title__text h4 weight-500">Нужно ли заполнять контент самостоятельно или вы берёте это на себя?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
+                        <AccordionHeader class="accordion-item__title"><h4 class="span_btn accordion-item-title__text h4 weight-500">Нужно ли заполнять контент самостоятельно или вы берёте это на себя?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
                             <AccordionContent class="accordion-item__content">
                             <p class="accordion-item__text weight-500 text_accardion">
                                Вы вправе решать, кто займётся наполнением сайта информацией. Наша команда готова оказать помощь в подготовке качественного контента, включающего тексты, фотографии, графику и видеоматериалы. Однако вы также можете воспользоваться услугами собственных авторов или специализированных агентств.
@@ -235,7 +240,7 @@
                         </AccordionContent>
                     </AccordionPanel>
                     <AccordionPanel value="6" class="accordion__item">
-                        <AccordionHeader class="accordion-item__title"><h4 class="accordion-item-title__text h4 weight-500">Нужна ли поддержка сторонних разработчиков для управления моим сайтом?</h4><div class="accordion__arrow weight-300 ">+</div></AccordionHeader>
+                        <AccordionHeader class="accordion-item__title"><h4 class="span_btn accordion-item-title__text h4 weight-500">Нужна ли поддержка сторонних разработчиков для управления моим сайтом?</h4><div class="accordion__arrow weight-300 ">+</div></AccordionHeader>
                             <AccordionContent class="accordion-item__content">
                             <p class="accordion-item__text weight-500 text_accardion">
                                Нет, абсолютно не обязательно привлекать сторонних специалистов. Наши разработчики предоставляют подробную инструкцию по управлению сайтом, проводят обучение администраторов заказчика и оказывают послепродажную поддержку. Мы стараемся упростить процессы ведения сайта настолько, насколько это возможно.
@@ -252,7 +257,9 @@
 </template>
 
 <script lang="ts" setup>
-import {onMounted, ref} from "vue";
+    import {onMounted, ref} from "vue";
+    import {gsap} from 'gsap';
+    import ScrollTrigger from "gsap/ScrollTrigger";
     import type { Ref } from "vue";
     import Accordion from 'primevue/accordion';
     import AccordionPanel from 'primevue/accordionpanel';
@@ -273,6 +280,80 @@ import {onMounted, ref} from "vue";
     };
 
     onMounted(() => {
+        // GSAP Setup
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.to('.block-about--1', {
+            scrollTrigger: {
+                trigger: '.block-about--1',
+                start: 'top bottom',
+                end: 'bottom center',
+                scrub: true
+            },
+            x: 0,
+            y: 0,
+            rotation: 0,
+            scale: 1
+        });
+        gsap.to('.block-about--2', {
+            scrollTrigger: {
+                trigger: '.block-about--2',
+                start: 'top bottom',
+                end: 'bottom center',
+                scrub: true
+            },
+            x: 0,
+            y: 0,
+            rotation: 0,
+            scale: 1
+        });
+        gsap.to('.block-about--3', {
+            scrollTrigger: {
+                trigger: '.block-about--3',
+                start: 'top bottom',
+                end: 'bottom center',
+                scrub: true
+            },
+            x: 0,
+            y: 0,
+            rotation: 0,
+            scale: 1
+        });
+        gsap.to('.block-about--4', {
+            scrollTrigger: {
+                trigger: '.block-about--1',
+                start: 'top bottom',
+                end: 'bottom center',
+                scrub: true
+            },
+            x: 0,
+            y: 0,
+            rotation: 0,
+            scale: 1
+        });
+        gsap.to('.block-about--5', {
+            scrollTrigger: {
+                trigger: '.block-about--1',
+                start: 'top bottom',
+                end: 'bottom center',
+                scrub: true
+            },
+            x: 0,
+            y: 0,
+            rotation: 0,
+            scale: 1
+        });
+        gsap.to('.block-about--6', {
+            scrollTrigger: {
+                trigger: '.block-about--1',
+                start: 'top bottom',
+                end: 'bottom center',
+                scrub: true
+            },
+            x: 0,
+            y: 0,
+            rotation: 0,
+            scale: 1
+        });
         // Counting Numbers
         let numbers = Array.from(document.querySelectorAll('.number_counting')) as HTMLElement[];
         let number_highest = document.querySelector('.number_counting_highest') as HTMLElement;
@@ -332,6 +413,15 @@ import {onMounted, ref} from "vue";
         width: 70%;
     }
 
+    @keyframes line_loading {
+        0%{
+            width: 0;
+        }
+        100%{
+            width: 100%;
+        }
+    }
+
     .line{
          position: relative;
     }
@@ -341,9 +431,10 @@ import {onMounted, ref} from "vue";
         position: absolute;
         height: 4px;
         left: 0;
-        bottom: 10px;
+        bottom: 3px;
         width: 100%;
         background-color: var(--colorBlack);
+        animation: line_loading 1s ease;
     }
 
     .link-banner{
@@ -416,6 +507,7 @@ import {onMounted, ref} from "vue";
         padding: 30px;
         border-radius: var(--borderRadius);
         background-color: var(--colorGrey);
+        z-index: -1;
     }
 
     .block-about > p{
@@ -425,10 +517,15 @@ import {onMounted, ref} from "vue";
 
     .block-about--1{
         grid-area: 1 / 1 / 2 / 3;
+        scale: 1.1;
+        rotate: -2deg;
+        translate: -100px -100px;
     }
 
     .block-about--2{
         grid-area: 1 / 3 / 2 / 4;
+        scale: 1.1;
+        translate: 0 -100px;
     }
 
     .block-about--3{
@@ -436,16 +533,33 @@ import {onMounted, ref} from "vue";
         background-image: url("@/assets/img/brend/logo-mini.svg");
         background-position: center center;
         background-size: cover;
+        scale: 1.1;
+        rotate: 2deg;
+        translate: 100px -100px;
     }
 
     .block-about--4{
         grid-area: 2 / 1 / 3 / 2;
         cursor: pointer;
-        transition: .15s ease-in all;
+        transition: bottom .15s ease-in;
+        scale: 1.1;
+        rotate: 2deg;
+        z-index: 1;
+        position: relative;
+        translate: -100px 100px;
+    }
+    .block-about--5{
+        scale: 1.1;
+        translate: 0 100px;
+    }
+    .block-about--6{
+        scale: 1.1;
+        rotate: -2deg;
+        translate: 100px 100px;
     }
 
     .block-about--4:hover{
-        transform: translateY(-5px);
+        bottom: 5px;
     }
 
     .about-wrap-skill{
