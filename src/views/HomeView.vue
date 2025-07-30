@@ -112,7 +112,7 @@
                     <h3 class="h3"><span class="text-inherit color-main">Selit</span> - Разработка web-решений под ваши задачи</h3>
                     <p></p>
                 </div>
-                <div class="block-about block-about--3 grid grid-column align-content-start justify-content-start align-content-space-between">
+                <div class="block-about block-about--3 grid grid-column align-content-start justify-content-start align-content-space-between gap-50">
                     <h3 class="h3 text-align-center">Процесс разработки</h3>
                     <div class="grid grid-column gap-50">
                         <div class="grid grid-row development_wrap align-items-center gap-25">
@@ -130,7 +130,7 @@
                             </div>
                         </div>
                         <div class="grid grid-row development_wrap align-items-center gap-25">
-                            <span class="h1 color-main big_number text-align-center">3</span>
+                            <span class="h1 color-main big_number big_number--lust  text-align-center">3</span>
                             <div class="grid grid-column align-items-start justify-content-start gap-15">
                                 <h4 class="h4">Готовим и представляем оценку</h4>
                                 <p>После того как заполните форму, менеджер свяжется с вами в течение 24 часов и договорится о встрече. На встрече мы познакомимся и обсудим задачу. Также поговорим о предварительном бюджете и сроках.</p>
@@ -477,7 +477,7 @@
     }
     .container-banner > .banner_h1{
         text-align: center;
-        width: 70%;
+        width: 80%;
     }
 
     @keyframes line_loading {
@@ -614,6 +614,9 @@
     .development_wrap{
         grid-template-columns: 50px 1fr;
     }
+    .development_wrap > div{
+        width: 90%;
+    }
 
     .big_number{
         font-size: 82px;
@@ -628,6 +631,10 @@
         border: 1px dashed var(--colorBlack);
         height: 60px;
         border-radius: 10px;
+    }
+
+    .big_number--lust::after{
+        display: none;
     }
 
     .block-about--4:hover{
@@ -786,5 +793,6 @@
         padding: 2px 0 !important;
     }
 
-     
+    /* media */
+    
 </style>
