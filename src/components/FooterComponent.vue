@@ -22,7 +22,7 @@
                             </div>
                             <div class="grid grid-column justify-items-end align-content-start gap-10">
                                 <button class="btn btn--white"><span class="h6 span_btn">Обсудить проект</span></button>
-                                <a href="#" class="link footer_link h3">Заполнить Бриф</a>
+                                <a href="#" class="link footer_link h3" style="text-align: end;">Заполнить Бриф</a>
                             </div>
                         </div>
                     </div>
@@ -69,7 +69,7 @@
                     </div>
                 </div>
                 <div class="wrap_card grid align-items-center justify-items-center">
-                    <img src="../assets/img/footer/card.svg" alt="img">
+                    <img src="../assets/img/footer/card2.svg" alt="img">
                 </div>
             </div>
             <img class="footer_phrase" src="@/assets/img/footer/footer-phrase.svg" alt="img">

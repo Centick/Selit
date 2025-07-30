@@ -106,20 +106,45 @@
         </section>
 
         <section class="section">
-            <h2 class="h2 margin-bottom-50">О нас</h2>
+            <h2 class="h2 margin-bottom-50">Интересно, как мы работаем?</h2>
             <div class="container container-about grid gap-15">
                 <div class="block-about block-about--1">
                     <h3 class="h3"><span class="text-inherit color-main">Selit</span> - Разработка web-решений под ваши задачи</h3>
                     <p></p>
                 </div>
-                <div class="block-about block-about--2">
-                    <h3 class="h2">25<span class="text-inherit color-main">+</span></h3>
-                    <p>Крупных проектов за нашими плечами.</p>
+                <div class="block-about block-about--3 grid grid-column align-content-start justify-content-start align-content-space-between">
+                    <h3 class="h3 text-align-center">Процесс разработки</h3>
+                    <div class="grid grid-column gap-50">
+                        <div class="grid grid-row development_wrap align-items-center gap-25">
+                            <span class="h1 color-main big_number text-align-center">1</span>
+                            <div class="grid grid-column align-items-start justify-content-start gap-15">
+                                <h4 class="h4">Созваниваемся</h4>
+                                <p>После того как заполните форму, менеджер свяжется с вами в течение 24 часов и договорится о встрече. На встрече мы познакомимся и обсудим задачу. Также поговорим о предварительном бюджете и сроках.</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-row development_wrap align-items-center gap-25">
+                            <span class="h1 color-main big_number text-align-center">2</span>
+                            <div class="grid grid-column align-items-start justify-content-start gap-15">
+                                <h4 class="h4">Погружаемся в детали проекта</h4>
+                                <p>После того как заполните форму, менеджер свяжется с вами в течение 24 часов и договорится о встрече. На встрече мы познакомимся и обсудим задачу. Также поговорим о предварительном бюджете и сроках.</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-row development_wrap align-items-center gap-25">
+                            <span class="h1 color-main big_number text-align-center">3</span>
+                            <div class="grid grid-column align-items-start justify-content-start gap-15">
+                                <h4 class="h4">Готовим и представляем оценку</h4>
+                                <p>После того как заполните форму, менеджер свяжется с вами в течение 24 часов и договорится о встрече. На встрече мы познакомимся и обсудим задачу. Также поговорим о предварительном бюджете и сроках.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid justify-content-end">
+                        <img src="@/assets/img/brend/slogan1.svg" alt="img">
+                    </div>
+                    
                 </div>
-                <div class="block-about block-about--3 grid align-items-center justify-content-center"></div>
                 <div @click.prevent="isOpenedSkillsModal()" class="block-about block-about--4 grid grid-column gap-15">
                     <h3 class="h4">Наш стек</h3>
-                    <p >Мы постоянно развиваемся и открыты к освоению новых технологий, необходимых для реализации проектов, даже если ранее с ними не сталкивались.
+                    <p>Мы постоянно развиваемся и открыты к освоению новых технологий, необходимых для реализации проектов, даже если ранее с ними не сталкивались.
                     </p>
                     <div class="about-wrap-skill grid grid-row">
                         <div class="about-skill">
@@ -145,9 +170,8 @@
                 </div>
                 <div class="block-about block-about--5 grid grid-column gap-15 align-content-start">
                     <h3 class="h4">Высокое качество услуг</h3>
-                    <p>Неограниченное количество бесплатных правок, которые не конфликтуют с исходным ТЗ. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <p>Неограниченное количество бесплатных правок, которые не конфликтуют с исходным техническим заданием </p>
                 </div>
-                <div class="block-about block-about--6">Хотелось бы видео но нет</div>
             </div>
         </section>
 
@@ -161,7 +185,7 @@
                 <div class="grid why-inner__card width-100">
                     <h2 class="h2">Факты о Selit</h2>
                     <div class="grid grid-column">
-                        <span class="why-big_number"><span class="number_counting text-inherit number_counting_highest">30</span><span class="text-inherit color-main">+</span></span>
+                        <span class="why-big_number"><span class="number_counting text-inherit number_counting_highest weight-700">30</span><span class="text-inherit color-main">+</span></span>
                         <p class="why-text">проектов реализованно</p>
                     </div>
                 </div>
@@ -192,6 +216,7 @@
             <div class="container">
                 <h3 class="h2">Наши цены</h3>
                 <div class="wrap_price grid gap-15 width-100">
+                    <div></div>
                     <div class="price grid align-content-end gap-15">
                         <span class="price_time">3-5 дней</span>
                         <div class="grid gap-5">
@@ -359,23 +384,11 @@
             rotation: 0,
             scale: 1
         });
-        gsap.to('.block-about--2', {
-            scrollTrigger: {
-                trigger: '.block-about--2',
-                start: 'top bottom',
-                end: 'bottom center',
-                scrub: true
-            },
-            x: 0,
-            y: 0,
-            rotation: 0,
-            scale: 1
-        });
         gsap.to('.block-about--3', {
             scrollTrigger: {
                 trigger: '.block-about--3',
                 start: 'top bottom',
-                end: 'bottom center',
+                end: 'center center',
                 scrub: true
             },
             x: 0,
@@ -400,18 +413,7 @@
                 trigger: '.block-about--1',
                 start: 'top bottom',
                 end: 'bottom center',
-                scrub: true
-            },
-            x: 0,
-            y: 0,
-            rotation: 0,
-            scale: 1
-        });
-        gsap.to('.block-about--6', {
-            scrollTrigger: {
-                trigger: '.block-about--1',
-                start: 'top bottom',
-                end: 'bottom center',
+                
                 scrub: true
             },
             x: 0,
@@ -473,7 +475,7 @@
         font-size: 20px;
         width: 50%;
     }
-    .container-banner > h1{
+    .container-banner > .banner_h1{
         text-align: center;
         width: 70%;
     }
@@ -587,17 +589,8 @@
         translate: -100px -100px;
     }
 
-    .block-about--2{
-        grid-area: 1 / 3 / 2 / 4;
-        scale: 1.1;
-        translate: 0 -100px;
-    }
-
     .block-about--3{
-        grid-area: 1 / 4 / 2 / 5;
-        background-image: url("@/assets/img/brend/logo-mini.svg");
-        background-position: center center;
-        background-size: cover;
+        grid-area: 1 / 3 / 3 / 5;
         scale: 1.1;
         rotate: 2deg;
         translate: 100px -100px;
@@ -617,10 +610,24 @@
         scale: 1.1;
         translate: 0 100px;
     }
-    .block-about--6{
-        scale: 1.1;
-        rotate: -2deg;
-        translate: 100px 100px;
+
+    .development_wrap{
+        grid-template-columns: 50px 1fr;
+    }
+
+    .big_number{
+        font-size: 82px;
+        position: relative;
+    }
+
+    .big_number::after{
+        content: '';
+        position: absolute;
+        bottom: -64px;
+        right: 50%;
+        border: 1px dashed var(--colorBlack);
+        height: 60px;
+        border-radius: 10px;
     }
 
     .block-about--4:hover{
@@ -685,8 +692,10 @@
         font-size: 120px;
     }
 
+    /* why */
+
     .wrap_price{
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
 
     .wrap_price > p{
@@ -702,13 +711,33 @@
         background-color: var(--colorGrey);
         position: relative;
         cursor: pointer;
+        transition: .1s ease-in all;
+        
+    }
+
+    .price:hover{
+        transform: translateY(-4px);
+    }
+
+    .price::before{
+        z-index: 2;
+        content: '';
+        background-image: url('@/assets/img/icons/arrow-bold.svg');
+        background-size: cover;
+        background-position: center center;
+        width: 16px;
+        height: 11px;
+        position: absolute;
+        top: 34px;
+        right: 31px;
+        transform: rotate(-45deg);
     }
 
     .price::after{
         display: flex;
         justify-content: center;
         font-size: 25px;
-        content: '↗';
+        content: '';
         position: absolute;
         width: 40px;
         height: 40px;
