@@ -34,7 +34,7 @@
 
             for (let i = 0; i < dotCount; i++) {
                 const dot = document.createElement("div");
-                dot.classList.add("dot");
+                dot.classList.add(gsap.utils.random(["dot", "triangle", "rect"]));
 
                 document.body.appendChild(dot);
 
@@ -61,7 +61,7 @@
                             physics2D: {
                                 velocity: gsap.utils.random(500, 1000),
                                 angle: gsap.utils.random(0, 360),
-                                gravity: 1500
+                                gravity: 3000
                             },
                             autoAlpha: 0,
                             ease: "none"

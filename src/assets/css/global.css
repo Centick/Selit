@@ -448,6 +448,14 @@ footer{
     width: 22px;
     fill: red;
 }
+@keyframes particle_rotate {
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
 .dot{
     position: fixed;
     background-color: #0ae448;
@@ -457,6 +465,25 @@ footer{
     will-change: transform, opacity;
     pointer-events: none;
     z-index: 999;
+}
+.rect{
+    position: fixed;
+    background-color: #0ae448;
+    width: 1.5vw;
+    height: 1.5vw;
+    will-change: transform, opacity;
+    pointer-events: none;
+    z-index: 999;
+}
+.triangle{
+    position: fixed;
+    background-color: #0ae448;
+    width: 1.5vw;
+    height: 1.5vw;
+    will-change: transform, opacity;
+    pointer-events: none;
+    z-index: 999;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
 @media (max-width: 1480px) {

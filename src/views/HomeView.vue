@@ -9,6 +9,8 @@
             </div>
         </section>
 
+        <MarqueeComponent></MarqueeComponent>
+
         <section class="section">
             <div class="container grid grid-column">
                 <h2 class="h2 width-100">Услуги</h2>
@@ -355,8 +357,8 @@
     import AccordionPanel from 'primevue/accordionpanel';
     import AccordionHeader from 'primevue/accordionheader';
     import AccordionContent from 'primevue/accordioncontent';
-
     import SkillsComponent from '@/components/SkillsComponent.vue';
+    import MarqueeComponent from "@/components/MarqueeComponent.vue";
 
     const skills_is_showed: Ref<boolean> = ref(false);
     
