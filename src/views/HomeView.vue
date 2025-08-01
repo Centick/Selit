@@ -6,10 +6,11 @@
                 <h1 class="h1 banner_h1"><span class="line">Разрабатываем</span>, продвигаем и развиваем <span class="line">Web-сервисы</span></h1>
                 <p>Помогаем бизнесу автоматизировать процессы и повышать лояльность клиентов, а стартапам быстро выводить продукт на рынок</p>
                 <button class="btn"><span class="h6 span_btn">Оценить проект</span></button>
+                <MarqueeComponent></MarqueeComponent>
             </div>
         </section>
 
-        <MarqueeComponent></MarqueeComponent>
+        
 
         <section class="section">
             <div class="container grid grid-column">
@@ -457,6 +458,7 @@
 <style scoped>
     .section-banner{
         min-height: 100vh;
+        position: relative;
     }
     .section-banner::before{
         content: '';

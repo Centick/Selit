@@ -77,7 +77,8 @@
     }
     .marquee_parent{
         width: 100%;
-        position: relative;
+        position: absolute;
+        bottom: 20px;
     }
     h1 {
         font-size: 2em;
@@ -176,7 +177,7 @@
         }
         .marquee_parent{
             width: 100%;
-            position: relative;
+            position: absolute;
             padding: 100px 0;
         }
     }
