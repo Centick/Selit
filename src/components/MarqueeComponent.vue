@@ -156,29 +156,12 @@
         }
     }
 
-    @media (max-width: 1024px) {
-        .item{
-            font-size: 18px;
-            margin: 4px 0;
+    @media(max-width: 768px){
+        .item img{
+            height: 4vh;
         }
-
-        .items-wrap {
-            gap: 10px;
-        }
-        .items {
-            gap: 10px;
-        }
-    }
-    @media(max-width: 576px){
-        .wrap{
-            transform: rotate(-4deg);
-            position: absolute;
-            width: 100%;
-        }
-        .marquee_parent{
-            width: 100%;
-            position: absolute;
-            padding: 100px 0;
+        .item_small img{
+            height: 2vh;
         }
     }
 

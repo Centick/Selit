@@ -456,39 +456,43 @@ footer{
         rotate: 360deg;
     }
 }
-.dot{
-    position: fixed;
-    background-color: #0ae448;
-    width: 1.5vw;
-    height: 1.5vw;
-    border-radius: 50%;
-    will-change: transform, opacity;
-    pointer-events: none;
-    z-index: 999;
-}
-.rect{
-    position: fixed;
-    background-color: #0ae448;
-    width: 1.5vw;
-    height: 1.5vw;
-    will-change: transform, opacity;
-    pointer-events: none;
-    z-index: 999;
-}
-.triangle{
-    position: fixed;
-    background-color: #0ae448;
-    width: 1.5vw;
-    height: 1.5vw;
-    will-change: transform, opacity;
-    pointer-events: none;
-    z-index: 999;
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-}
-
 @media (max-width: 1480px) {
-    .container{
-        padding: 0 2%;
+    .container {
+        padding: 0 5%;
     }
 }
-
+@media (max-width: 1280px) {
+    :root{
+        --h1: 68px;
+        --h2: 50px;
+        --h3: 28px;
+        --h4: 24px;
+        --h5: 22px;
+        --h6: 20px;
+    }
+}
+@media (max-width: 1024px) {
+    :root{
+        --h1: 60px;
+        --h2: 44px;
+        --h3: 24px;
+        --h4: 22px;
+        --h5: 20px;
+        --h6: 18px;
+        --fontDefault: 16px;
+    }
+}
+@media (max-width: 768px) {
+    :root{
+        --h1: 40px;
+        --h2: 36px;
+        --h3: 20px;
+        --h4: 19px;
+        --h5: 18px;
+        --h6: 15px;
+        --fontDefault: 14px;
+    }
+    .btn{
+        padding: 15px 20px;
+    }
+}

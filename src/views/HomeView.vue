@@ -373,57 +373,60 @@
     };
 
     onMounted(() => {
-        // GSAP Setup
-        gsap.registerPlugin(ScrollTrigger);
-        gsap.to('.block-about--1', {
-            scrollTrigger: {
-                trigger: '.block-about--1',
-                start: 'top bottom',
-                end: 'bottom center',
-                scrub: true
-            },
-            x: 0,
-            y: 0,
-            rotation: 0,
-            scale: 1
-        });
-        gsap.to('.block-about--3', {
-            scrollTrigger: {
-                trigger: '.block-about--3',
-                start: 'top bottom',
-                end: 'center center',
-                scrub: true
-            },
-            x: 0,
-            y: 0,
-            rotation: 0,
-            scale: 1
-        });
-        gsap.to('.block-about--4', {
-            scrollTrigger: {
-                trigger: '.block-about--1',
-                start: 'top bottom',
-                end: 'bottom center',
-                scrub: true
-            },
-            x: 0,
-            y: 0,
-            rotation: 0,
-            scale: 1
-        });
-        gsap.to('.block-about--5', {
-            scrollTrigger: {
-                trigger: '.block-about--1',
-                start: 'top bottom',
-                end: 'bottom center',
-                
-                scrub: true
-            },
-            x: 0,
-            y: 0,
-            rotation: 0,
-            scale: 1
-        });
+        if(window.outerWidth > 576){
+            // GSAP Setup
+            gsap.registerPlugin(ScrollTrigger);
+            gsap.to('.block-about--1', {
+                scrollTrigger: {
+                    trigger: '.block-about--1',
+                    start: 'top bottom',
+                    end: 'bottom center',
+                    scrub: true
+                },
+                x: 0,
+                y: 0,
+                rotation: 0,
+                scale: 1
+            });
+            gsap.to('.block-about--3', {
+                scrollTrigger: {
+                    trigger: '.block-about--3',
+                    start: 'top bottom',
+                    end: 'center center',
+                    scrub: true
+                },
+                x: 0,
+                y: 0,
+                rotation: 0,
+                scale: 1
+            });
+            gsap.to('.block-about--4', {
+                scrollTrigger: {
+                    trigger: '.block-about--1',
+                    start: 'top bottom',
+                    end: 'bottom center',
+                    scrub: true
+                },
+                x: 0,
+                y: 0,
+                rotation: 0,
+                scale: 1
+            });
+            gsap.to('.block-about--5', {
+                scrollTrigger: {
+                    trigger: '.block-about--1',
+                    start: 'top bottom',
+                    end: 'bottom center',
+
+                    scrub: true
+                },
+                x: 0,
+                y: 0,
+                rotation: 0,
+                scale: 1
+            });
+        }
+
         // Counting Numbers
         let numbers = Array.from(document.querySelectorAll('.number_counting')) as HTMLElement[];
         let number_highest = document.querySelector('.number_counting_highest') as HTMLElement;
@@ -798,5 +801,74 @@
     }
 
     /* media */
-    
+    @media (max-width: 1024px) {
+        .block_services{
+            grid-template-columns: 1fr 2fr;
+        }
+        .wrap_projects{
+            grid-template-columns: 1fr;
+        }
+        .container-about{
+            grid-template-columns: 1fr;
+            grid-template-rows: unset;
+        }
+        .block-about--1{
+            grid-area: unset;
+            display: none;
+        }
+        .block-about--3{
+            grid-area: unset;
+        }
+        .block-about--4{
+            grid-area: unset;
+        }
+        .block-about--5{
+            grid-area: unset;
+        }
+        .container-banner > p{
+            font-size: var(--fontDefault);
+        }
+    }
+    @media (max-width: 576px) {
+        .why-inner__card{
+            grid-template-columns: 1fr;
+            padding: 0;
+            border-bottom: none;
+        }
+        .why-inner__card div{
+            border-bottom: 1px solid var(--colorGrey);
+            padding: 20px 0;
+        }
+        .why__container{
+            gap: 0;
+        }
+        .why-big_number{
+            font-size: 80px;
+        }
+        .block-about--1{
+            scale: 1;
+            rotate: 0deg;
+            translate: 0 0;
+        }
+
+        .block-about--3{
+            scale: 1;
+            rotate: 0deg;
+            translate: 0 0;
+        }
+
+        .block-about--4{
+            scale: 1;
+            rotate: 0deg;
+            translate: 0 0;
+        }
+        .block-about--5{
+            scale: 1;
+            translate: 0 0;
+            rotate: 0deg;
+        }
+        .block-about--3 img{
+            width: 100%;
+        }
+    }
 </style>

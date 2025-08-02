@@ -6,7 +6,7 @@
                     <div>
                         <span class="h6">Свяжитесь с нами</span>
                         <div class="grid grid-2rows">
-                            <div class="grid grid-column gap-5 justify-content-start">
+                            <div class="grid grid-column gap-5 justify-content-start footer__main-info">
                                 <a href="mail:hello@selit.ru" class="link footer_link h2">hello@selit.ru</a>
                                 <a href="tel:+7 909 223 90 03" class="link footer_link h2">+7&nbsp;909&nbsp;223&nbsp;90&nbsp;03</a>
                                 <div class="grid grid-row align-items-center justify-content-start gap-25">
@@ -20,7 +20,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="grid grid-column justify-items-end align-content-start gap-10">
+                            <div class="grid grid-column justify-items-end align-content-start gap-10 footer__submain-info">
                                 <button class="btn btn--white"><span class="h6 span_btn">Обсудить проект</span></button>
                                 <a href="#" class="link footer_link h3" style="text-align: end;">Заполнить Бриф</a>
                             </div>
@@ -68,7 +68,7 @@
                         <a href="#">Политика конфиденциальности</a>
                     </div>
                 </div>
-                <div class="wrap_card grid align-items-center justify-items-center">
+                <div class="footer__card_text wrap_card grid align-items-center justify-items-center">
                     <img src="../assets/img/footer/card2.svg" alt="img">
                 </div>
             </div>
@@ -153,5 +153,25 @@
 
     .footer_link:hover::before{
         width: 100%;
+    }
+    @media (max-width: 768px) {
+        .footer__card_text{
+            display: none;
+        }
+        .grid-2rows_new{
+            grid-template-columns: 1fr;
+        }
+        footer{
+            padding: 70px 0;
+        }
+        .grid-2rows{
+            grid-template-columns: 1fr;
+        }
+        .footer__main-info{
+            margin-bottom: 10px;
+        }
+        .footer__submain-info{
+            justify-content: start;
+        }
     }
 </style>

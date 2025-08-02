@@ -72,4 +72,9 @@
         background: green;
         transition: scale .2s ease-in;
     }
+    @media (max-width: 768px) {
+        .cursor-circle{
+            display: none;
+        }
+    }
 </style>
