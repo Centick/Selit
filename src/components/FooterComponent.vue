@@ -64,7 +64,7 @@
                         </div>
                     </div>
                     <div class="grid grid-row align-items-start justify-content-space-between gap-15">
-                        <p>© 2025 Selit Digital Production</p>
+                        <p>© 2025 Selit</p>
                         <a href="#">Политика конфиденциальности</a>
                     </div>
                 </div>
@@ -154,24 +154,35 @@
     .footer_link:hover::before{
         width: 100%;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
         .footer__card_text{
             display: none;
         }
+
         .grid-2rows_new{
             grid-template-columns: 1fr;
         }
+    }
+    @media (max-width: 768px) {
         footer{
-            padding: 70px 0;
-        }
-        .grid-2rows{
-            grid-template-columns: 1fr;
+            padding: 50px 0;
+            border-top-left-radius: 35px;
+            border-top-right-radius: 35px;
         }
         .footer__main-info{
             margin-bottom: 10px;
         }
+    }
+
+    @media (max-width: 576px) {
+        .grid-2rows{
+            grid-template-columns: 1fr;
+            gap: 25px;
+        }
+        
         .footer__submain-info{
-            justify-content: start;
+            justify-items: stretch;
+            justify-content: normal;
         }
     }
 </style>

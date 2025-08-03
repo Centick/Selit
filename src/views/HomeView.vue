@@ -221,6 +221,7 @@
                 <div class="wrap_price grid gap-15 width-100">
                     <div></div>
                     <div class="price grid align-content-end gap-15">
+                        <img class="price-3dObject price-3dObject--lightning" src="../assets/img/3d-icons/3d-lightning.svg" alt="img">
                         <span class="price_time">3-5 дней</span>
                         <div class="grid gap-5">
                             <h3 class="h4 price_title">Landing page</h3>
@@ -237,6 +238,16 @@
                         <text class="weight-700 h6 price_money">от 20 000 ₽</text>
                     </div>
                     <div class="price grid align-content-end gap-15">
+                        <img class="price-3dObject price-3dObject--arrow" src="../assets/img/3d-icons/3d-arrow.svg" alt="img">
+                        <span class="price_time">3-5 дней</span>
+                        <div class="grid gap-5">
+                            <h3 class="h4 price_title">Landing page</h3>
+                            <p class="weight-300 price-text">Быстрый способ донести информацию до клиентов</p>
+                        </div>
+                        <text class="h6 price_money">от 20 000 ₽</text>
+                    </div>
+                    <div class="price grid align-content-end gap-15">
+                        <img class="price-3dObject price-3dObject--plat" src="../assets/img/3d-icons/3d-plat.svg" alt="img">
                         <span class="price_time">3-5 дней</span>
                         <div class="grid gap-5">
                             <h3 class="h4 price_title">Landing page</h3>
@@ -253,14 +264,7 @@
                         <text class="h6 price_money">от 20 000 ₽</text>
                     </div>
                     <div class="price grid align-content-end gap-15">
-                        <span class="price_time">3-5 дней</span>
-                        <div class="grid gap-5">
-                            <h3 class="h4 price_title">Landing page</h3>
-                            <p class="weight-300 price-text">Быстрый способ донести информацию до клиентов</p>
-                        </div>
-                        <text class="h6 price_money">от 20 000 ₽</text>
-                    </div>
-                    <div class="price grid align-content-end gap-15">
+                        <img class="price-3dObject price-3dObject--star" src="../assets/img/3d-icons/3d-star.svg" alt="img">
                         <span class="price_time">3-5 дней</span>
                         <div class="grid gap-5">
                             <h3 class="h4 price_title">Landing page</h3>
@@ -293,7 +297,7 @@
                 <h2 class="h2 faq__title weight-700">Часто задаваемые вопросы</h2>
                 <Accordion value="0" class="accordion__wrap">
                     <AccordionPanel value="1" class="accordion__item">
-                        <AccordionHeader class="accordion-item__title"><h4 class="span_btn accordion-item-title__text h4 weight-500">Что нужно от меня, чтобы мы начали работу?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
+                        <AccordionHeader class="accordion-item__title"><h4 class="span_btn accordion-item-title__text h5 weight-500">Что нужно от меня, чтобы мы начали работу?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
                         <AccordionContent class="accordion-item__content">
                             <p class="accordion-item__text weight-500 text_accardion">
                                 От Вас потребуется четкое техническое задание, исходные материалы (если имеются), например, логотип или иные медиафайлы, Ваши пожелания или элементы, которые вы хотели бы видеть.
@@ -301,7 +305,7 @@
                         </AccordionContent>
                     </AccordionPanel>
                     <AccordionPanel value="2" class="accordion__item">
-                        <AccordionHeader class="accordion-item__title"><h4 class="span_btn accordion-item-title__text h4 weight-500">Можете предложить шаблонный сайт или готовое решение?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
+                        <AccordionHeader class="accordion-item__title"><h4 class="span_btn accordion-item-title__text h5 weight-500">Можете предложить шаблонный сайт или готовое решение?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
                         <AccordionContent class="accordion-item__content">
                             <p class="accordion-item__text weight-500 text_accardion">
                                Если вам необходим простой стартовый сайт, мы предложим экономичные варианты с использованием готовых шаблонов и конструкторов. Но наша основная специализация — создание уникальных и функциональных веб-решений, ориентированных на долгосрочную перспективу развития вашего бизнеса.
@@ -309,7 +313,7 @@
                         </AccordionContent>
                     </AccordionPanel>
                     <AccordionPanel value="3" class="accordion__item">
-                        <AccordionHeader class="accordion-item__title"><h4 class="span_btn accordion-item-title__text h4 weight-500">Сколько времени занимает разработка сайта?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
+                        <AccordionHeader class="accordion-item__title"><h4 class="span_btn accordion-item-title__text h5 weight-500">Сколько времени занимает разработка сайта?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
                             <AccordionContent class="accordion-item__content">
                             <p class="accordion-item__text weight-500 text_accardion">
                                Разработка веб-сайта зависит от сложности проекта и включает этапы анализа требований, проектирования, программирования, тестирования и внедрения. Обычно срок варьируется от нескольких недель до месяцев. Простой одностраничник можно запустить за неделю-две, а полноценный корпоративный ресурс потребует порядка одного-трёх месяцев.
@@ -317,7 +321,7 @@
                         </AccordionContent>
                     </AccordionPanel>
                     <AccordionPanel value="4" class="accordion__item">
-                        <AccordionHeader class="accordion-item__title"><h4 class="span_btn accordion-item-title__text h4 weight-500">Могу ли я вносить правки в процессе разработки?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
+                        <AccordionHeader class="accordion-item__title"><h4 class="span_btn accordion-item-title__text h5 weight-500">Могу ли я вносить правки в процессе разработки?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
                             <AccordionContent class="accordion-item__content">
                             <p class="accordion-item__text weight-500 text_accardion">
                                Безусловно! Ваше мнение крайне важно для нас. По ходу работы мы регулярно демонстрируем промежуточные результаты и согласовываем вносимые изменения. Процесс разработки прозрачен, и вы всегда будете осведомлены обо всех этапах.
@@ -325,7 +329,7 @@
                         </AccordionContent>
                     </AccordionPanel>
                     <AccordionPanel value="5" class="accordion__item">
-                        <AccordionHeader class="accordion-item__title"><h4 class="span_btn accordion-item-title__text h4 weight-500">Нужно ли заполнять контент самостоятельно или вы берёте это на себя?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
+                        <AccordionHeader class="accordion-item__title"><h4 class="span_btn accordion-item-title__text h5 weight-500">Нужно ли заполнять контент самостоятельно или вы берёте это на себя?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
                             <AccordionContent class="accordion-item__content">
                             <p class="accordion-item__text weight-500 text_accardion">
                                Вы вправе решать, кто займётся наполнением сайта информацией. Наша команда готова оказать помощь в подготовке качественного контента, включающего тексты, фотографии, графику и видеоматериалы. Однако вы также можете воспользоваться услугами собственных авторов или специализированных агентств.
@@ -333,7 +337,7 @@
                         </AccordionContent>
                     </AccordionPanel>
                     <AccordionPanel value="6" class="accordion__item">
-                        <AccordionHeader class="accordion-item__title"><h4 class="span_btn accordion-item-title__text h4 weight-500">Нужна ли поддержка сторонних разработчиков для управления моим сайтом?</h4><div class="accordion__arrow weight-300 ">+</div></AccordionHeader>
+                        <AccordionHeader class="accordion-item__title"><h4 class="span_btn accordion-item-title__text h5 weight-500">Нужна ли поддержка сторонних разработчиков для управления моим сайтом?</h4><div class="accordion__arrow weight-300 ">+</div></AccordionHeader>
                             <AccordionContent class="accordion-item__content">
                             <p class="accordion-item__text weight-500 text_accardion">
                                Нет, абсолютно не обязательно привлекать сторонних специалистов. Наши разработчики предоставляют подробную инструкцию по управлению сайтом, проводят обучение администраторов заказчика и оказывают послепродажную поддержку. Мы стараемся упростить процессы ведения сайта настолько, насколько это возможно.
@@ -601,6 +605,7 @@
         scale: 1.1;
         rotate: 2deg;
         translate: 100px -100px;
+
     }
 
     .block-about--4{
@@ -612,6 +617,11 @@
         z-index: 1;
         position: relative;
         translate: -100px 100px;
+        background-color: var(--colorBlack);
+    }
+
+    .block-about--4 *{
+        color: var(--colorWhite);
     }
     .block-about--5{
         scale: 1.1;
@@ -619,7 +629,7 @@
     }
 
     .development_wrap{
-        grid-template-columns: 50px 1fr;
+        grid-template-columns: 60px 1fr;
     }
     .development_wrap > div{
         width: 90%;
@@ -658,7 +668,7 @@
         border-radius: 50%;
         width: 55px;
         height: 55px;
-        border: 4px solid var(--colorGrey);
+        border: 4px solid var(--colorBlack);
         margin-right: -18px;
         display: flex; 
         justify-content: center;
@@ -685,6 +695,11 @@
     }
     .block-about--5{
         grid-area: 2 / 2 / 3 / 3;
+        background-color: var(--colorMain);
+    }
+
+    .block-about--5  *{
+        color: var(--colorWhite);
     }
     .block-about--6{
         grid-area: 2 / 3 / 3 / 5;
@@ -726,7 +741,50 @@
         position: relative;
         cursor: pointer;
         transition: .1s ease-in all;
+        overflow: hidden;
         
+    }
+
+    .price-3dObject{
+        position: absolute;
+        z-index: 0; 
+        pointer-events: none;
+    }
+
+    .price-3dObject--lightning{
+        top: -20px;
+        right: -10px;
+        width: 180px;
+    }
+
+    .price-3dObject--arrow{
+        top: -75px;
+        right: 0;
+        width: 290px;
+    }
+
+    .price-3dObject--plat{
+        top: -30px;
+        right: -30px;
+        width: 240px;
+    }
+
+    .price-3dObject--star{
+        top: -15px;
+        right: -15px;
+        width: 230px;
+    }
+
+    .price_title{
+        z-index: 3;
+    }
+
+    .price-text{
+        z-index: 3;
+    }
+
+    .price_money{
+        z-index: 3;
     }
 
     .price:hover{
@@ -783,6 +841,7 @@
         width: fit-content;
         border-radius: 50px;
         font-size: 16px;
+        z-index: 3;
     }
 
     .price-text{
@@ -802,10 +861,14 @@
 
     /* media */
     @media (max-width: 1024px) {
-        .block_services{
-            grid-template-columns: 1fr 2fr;
+        .banner_h1{
+            width: 100% !important;
         }
-        .wrap_projects{
+
+        .container-banner > p{
+            width: 90%;
+        }
+        .block_services{
             grid-template-columns: 1fr;
         }
         .container-about{
@@ -814,7 +877,6 @@
         }
         .block-about--1{
             grid-area: unset;
-            display: none;
         }
         .block-about--3{
             grid-area: unset;
@@ -829,6 +891,13 @@
             font-size: var(--fontDefault);
         }
     }
+
+    @media (max-width: 768px) {
+        .wrap_projects{
+            grid-template-columns: 1fr;
+        }
+    }
+    
     @media (max-width: 576px) {
         .why-inner__card{
             grid-template-columns: 1fr;
@@ -855,6 +924,14 @@
             scale: 1;
             rotate: 0deg;
             translate: 0 0;
+        }
+
+        .development_wrap{
+            grid-template-columns: 1fr;
+        }
+
+        .development_wrap > div{
+            width: 100%;
         }
 
         .block-about--4{

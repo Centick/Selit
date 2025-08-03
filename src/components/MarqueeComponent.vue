@@ -97,7 +97,7 @@
     .items {
         flex-shrink: 0;
         display: flex;
-        gap: 5px;
+        gap: 25px;
         justify-content: space-around;
         min-width: 100%;
     }
@@ -124,7 +124,7 @@
     .marquee__border{
         height: 100%;
         width: 1px;
-        background-color: var(--colorGrey);
+        /* background-color: var(--colorGrey); */
     }
     .reverce {
         animation-direction: reverse;
@@ -158,10 +158,10 @@
 
     @media(max-width: 768px){
         .item img{
-            height: 4vh;
+            height: 6vh;
         }
         .item_small img{
-            height: 2vh;
+            height: 3vh;
         }
     }
 
