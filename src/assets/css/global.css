@@ -514,6 +514,14 @@ footer{
 
     .modal__container {
         padding: 20px 20px !important;
+        gap: 20px;
+    }
+
+    .cross{
+        width: 20px;
+        height: 20px;
+        top: 20px;
+        right: 20px;
     }
 }
 

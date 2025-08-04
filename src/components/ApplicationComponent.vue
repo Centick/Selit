@@ -23,7 +23,7 @@
                     <span class="input_file-text weight-700" >Прикрепить файл</span>
                     <input id="TZfile" multiple type="file">
                 </label>
-                <div class="wrap-submit grid grid-row align-self-end justify-content-space-between align-items-center">
+                <div class="grid grid-row align-self-end justify-content-space-between align-items-center wrap-submit">
                     <p class="politicks">Нажимая на кнопку «Отправить», вы даете <br> согласие на <a class="weight-700" href="#">Политику конфиденциальности</a></p>
                     <button @click.prevent="onSubmit" type="submit" class="btn width-fit-content application-send">
                         <span class="h6">Отправить</span>
@@ -201,6 +201,21 @@
         transform: rotate(45deg);
         cursor: pointer;
         z-index: 4;
+    }
+
+    @media (max-width: 768px) {
+        .wrap-submit{
+            grid-auto-flow: row;
+            align-items: center;
+            align-content: center;
+            justify-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .grid-3rows{
+            grid-template-columns: 1fr;
+        }
     }
 
 </style>

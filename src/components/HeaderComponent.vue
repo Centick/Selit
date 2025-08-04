@@ -4,7 +4,7 @@
             <!-- <img src="" alt="img"> -->
              <!-- пока так (до лого) -->
             <h3 class="h3"><span style="color: var(--colorMain);" class="h3">S</span>elit</h3>
-            <nav class="grid grid-row align-content-center justify-content-space-between gap-30">
+            <nav class="grid grid-row align-content-center justify-content-space-between gap-30 main_menu">
                 <a class="link header_link" href="#">Кейсы</a>
                 <a class="link header_link" href="#">Разработка</a>
                 <a class="link header_link" href="#">Услуги</a>
@@ -77,5 +77,12 @@
     .header_shadowed{
         box-shadow: #dfdfdf 0 1px 5px 0;
         background-color: var(--colorWhite);
+    }
+
+    /* TODO: Доделать бергер меню */
+    @media (max-width: 768px) {
+        .main_menu{
+            display: none;
+        }
     }
 </style>
