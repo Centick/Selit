@@ -3,7 +3,7 @@
     <main>
         <section class="section section-banner">
             <div class="container container-banner grid grid-column gap-25 justify-items-center align-content-center">
-                <h1 class="h1 banner_h1" data-aos="fade-up"><span class="line">Разрабатываем</span>, продвигаем и развиваем <span class="line">Web-сервисы</span></h1>
+                <h1 class="h1 banner_h1" data-aos="fade-up"><span class="line">Разрабатываем</span>, продвигаем и развиваем <span class="line">Web&#8209;сервисы</span></h1>
                 <p data-aos="fade-up" data-aos-delay="100">Помогаем бизнесу автоматизировать процессы и повышать лояльность клиентов, а стартапам быстро выводить продукт на рынок</p>
                 <button class="btn" data-aos="fade-up" data-aos-delay="150"><span class="h6 span_btn" @click.prevent="emits('openApplication')">Оценить проект</span></button>
                 <MarqueeComponent></MarqueeComponent>
@@ -513,6 +513,7 @@
 
     .line{
          position: relative;
+        white-space: nowrap;
     }
 
     .line::before{
