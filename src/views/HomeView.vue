@@ -14,6 +14,7 @@
 
         <section class="section">
             <div class="container grid grid-column">
+                <img class="arrow_bg" src="@/assets/img/icons/arrow_bg.svg" alt="Курсор">
                 <h2 class="h2 width-100">Услуги</h2>
                 <div class="wrap_services grid grid-column width-100">
                     <div data-aos="fade-up" class="block_services grid align-items-start width-100">
@@ -380,6 +381,12 @@
     };
 
     onMounted(() => {
+        // Cursor Parallax
+        let cursor = document.querySelector('.arrow_bg');
+        window.addEventListener('mousemove', e => {
+            cursor.style = `translate: ${(document.documentElement.clientWidth / 2 - e.x) / 25}px ${(document.documentElement.clientHeight / 2 - e.y) / 25}px`;
+        });
+
         if(window.outerWidth > 576){
             // GSAP Setup
             gsap.registerPlugin(ScrollTrigger);
@@ -546,10 +553,22 @@
         border-radius: var(--borderRadiusBig);
         background-color: var(--colorGrey);
         transition: .1s ease-in all;
+        z-index: 3;
     }
 
     .service_link:hover{
         transform: translateY(-8px);
+    }
+
+    .arrow_bg{
+        position: absolute;
+        right: 0;
+        width: 700px;
+        top: 15%;
+        bottom: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        opacity: .5;
     }
 
     /* projects */
