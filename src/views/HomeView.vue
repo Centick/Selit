@@ -5,7 +5,7 @@
             <div class="container container-banner grid grid-column gap-25 justify-items-center align-content-center">
                 <h1 class="h1 banner_h1" data-aos="fade-up"><span class="line">Разрабатываем</span>, продвигаем и развиваем <span class="line">Web-сервисы</span></h1>
                 <p data-aos="fade-up" data-aos-delay="100">Помогаем бизнесу автоматизировать процессы и повышать лояльность клиентов, а стартапам быстро выводить продукт на рынок</p>
-                <button class="btn" data-aos="fade-up" data-aos-delay="150"><span class="h6 span_btn">Оценить проект</span></button>
+                <button class="btn" data-aos="fade-up" data-aos-delay="150"><span class="h6 span_btn" @click.prevent="emits('openApplication')">Оценить проект</span></button>
                 <MarqueeComponent></MarqueeComponent>
             </div>
         </section>
@@ -19,28 +19,28 @@
                     <div data-aos="fade-up" class="block_services grid align-items-start width-100">
                         <h4 class="h4">Разработка</h4>
                         <div class="name_services gap-10">
-                            <a class="link service_link" href="#">Landing</a>
-                            <a class="link service_link" href="#">eCommerce</a>
-                            <a class="link service_link" href="#">Интернет-магазины</a>
-                            <a class="link service_link" href="#">Веб-приложений</a>
-                            <a class="link service_link" href="#">Многостраничных сайтов</a>
+                            <a class="link service_link" @click.prevent="emits('openApplication')">Landing</a>
+                            <a class="link service_link" @click.prevent="emits('openApplication')">eCommerce</a>
+                            <a class="link service_link" @click.prevent="emits('openApplication')">Интернет-магазины</a>
+                            <a class="link service_link" @click.prevent="emits('openApplication')">Веб-приложений</a>
+                            <a class="link service_link" @click.prevent="emits('openApplication')">Многостраничных сайтов</a>
                         </div>
                     </div>
                     <div data-aos="fade-up" class="block_services grid align-items-start width-100">
                         <h4 class="h4">Поддержка</h4>
                         <div class="name_services gap-10">
-                            <a class="link service_link" href="#">CMS</a>
-                            <a class="link service_link" href="#">Техническое сопровождение</a>
-                            <a class="link service_link" href="#">SEO-продвижение</a>
-                            <a class="link service_link" href="#">Консалтинг</a>
+                            <a class="link service_link" @click.prevent="emits('openApplication')">CMS</a>
+                            <a class="link service_link" @click.prevent="emits('openApplication')">Техническое сопровождение</a>
+                            <a class="link service_link" @click.prevent="emits('openApplication')">SEO-продвижение</a>
+                            <a class="link service_link" @click.prevent="emits('openApplication')">Консалтинг</a>
                         </div> 
                     </div>
                     <div data-aos="fade-up" class="block_services grid align-items-start width-100">
                         <h4 class="h4">Дизайн</h4>
                         <div class="name_services gap-10">
-                            <a class="link service_link" href="#">Разработка веб-дизайна</a>
-                            <a class="link service_link" href="#">Верстка</a>
-                            <a class="link service_link" href="#">Помощь со стилистикой</a>
+                            <a class="link service_link" @click.prevent="emits('openApplication')">Разработка веб-дизайна</a>
+                            <a class="link service_link" @click.prevent="emits('openApplication')">Верстка</a>
+                            <a class="link service_link" @click.prevent="emits('openApplication')">Помощь со стилистикой</a>
                         </div>
                     </div>
                 </div>
@@ -51,7 +51,7 @@
             <div class="container">
                 <h2 class="h2 width-100">Кейсы</h2>
                 <div class="wrap_projects grid gap-25 width-100">
-                    <div data-aos="fade-right" class="block_project grid grid-column gap-15">
+                    <div data-aos="fade-up" class="block_project grid grid-column gap-15">
                         <div class="view_content width-100">
                             <img class="width-100" src="https://i.pinimg.com/originals/19/89/44/198944ea9f57d70ea850fc868efbd4b6.jpg" alt="img">
                             <!-- video -->
@@ -64,7 +64,7 @@
                             <span class="block_character_project">loremrere</span>
                         </div>
                     </div>
-                    <div data-aos="fade-left" class="block_project grid grid-column gap-15">
+                    <div data-aos="fade-up" data-aos-delay="200" class="block_project grid grid-column gap-15">
                         <div class="view_content width-100">
                             <img class="width-100" src="https://i.pinimg.com/originals/19/89/44/198944ea9f57d70ea850fc868efbd4b6.jpg" alt="img">
                             <!-- video -->
@@ -77,7 +77,7 @@
                             <span class="block_character_project">loremrere</span>
                         </div>
                     </div>
-                    <div data-aos="fade-right" class="block_project grid grid-column gap-15">
+                    <div data-aos="fade-up" class="block_project grid grid-column gap-15">
                         <div class="view_content width-100">
                             <img class="width-100" src="https://i.pinimg.com/originals/19/89/44/198944ea9f57d70ea850fc868efbd4b6.jpg" alt="img">
                             <!-- video -->
@@ -90,7 +90,7 @@
                             <span class="block_character_project">loremrere</span>
                         </div>
                     </div>
-                    <div data-aos="fade-left" class="block_project grid grid-column gap-15">
+                    <div data-aos="fade-up" data-aos-delay="200" class="block_project grid grid-column gap-15">
                         <div class="view_content width-100">
                             <img class="width-100" src="https://i.pinimg.com/originals/19/89/44/198944ea9f57d70ea850fc868efbd4b6.jpg" alt="img">
                             <!-- video -->
@@ -220,7 +220,7 @@
                 <h3 class="h2">Наши цены</h3>
                 <div class="wrap_price grid gap-15 width-100">
                     <div></div>
-                    <div data-aos="fade-up" class="price grid align-content-end gap-15">
+                    <div @click.prevent="emits('openApplication')" data-aos="fade-up" class="link price grid align-content-end gap-15">
                         <img class="price-3dObject price-3dObject--lightning" src="../assets/img/3d-icons/3d-lightning.svg" alt="img">
                         <span class="price_time">3-5 дней</span>
                         <div class="grid gap-5">
@@ -229,7 +229,7 @@
                         </div>
                         <text class="weight-700 h6 price_money">от 20 000 ₽</text>
                     </div>
-                    <div data-aos="fade-up" class="price grid align-content-end gap-15">
+                    <div @click.prevent="emits('openApplication')" data-aos="fade-up" class="link price grid align-content-end gap-15">
                         <span class="price_time">3-5 дней</span>
                         <div class="grid gap-5">
                             <h3 class="h4 price_title">Интернет-магазин</h3>
@@ -237,7 +237,7 @@
                         </div>
                         <text class="weight-700 h6 price_money">от 20 000 ₽</text>
                     </div>
-                    <div data-aos="fade-up" class="price grid align-content-end gap-15">
+                    <div @click.prevent="emits('openApplication')" data-aos="fade-up" class="link price grid align-content-end gap-15">
                         <img class="price-3dObject price-3dObject--arrow" src="../assets/img/3d-icons/3d-arrow.svg" alt="img">
                         <span class="price_time">3-5 дней</span>
                         <div class="grid gap-5">
@@ -246,7 +246,7 @@
                         </div>
                         <text class="h6 price_money">от 20 000 ₽</text>
                     </div>
-                    <div data-aos="fade-up" class="price grid align-content-end gap-15">
+                    <div @click.prevent="emits('openApplication')" data-aos="fade-up" class="link price grid align-content-end gap-15">
                         <img class="price-3dObject price-3dObject--plat" src="../assets/img/3d-icons/3d-plat.svg" alt="img">
                         <span class="price_time">3-5 дней</span>
                         <div class="grid gap-5">
@@ -255,7 +255,7 @@
                         </div>
                         <text class="h6 price_money">от 20 000 ₽</text>
                     </div>
-                    <div data-aos="fade-up" class="price grid align-content-end gap-15">
+                    <div @click.prevent="emits('openApplication')" data-aos="fade-up" class="link price grid align-content-end gap-15">
                         <span class="price_time">3-5 дней</span>
                         <div class="grid gap-5">
                             <h3 class="h4 price_title">Landing page</h3>
@@ -263,7 +263,7 @@
                         </div>
                         <text class="h6 price_money">от 20 000 ₽</text>
                     </div>
-                    <div data-aos="fade-up" class="price grid align-content-end gap-15">
+                    <div @click.prevent="emits('openApplication')" data-aos="fade-up" class="link price grid align-content-end gap-15">
                         <img class="price-3dObject price-3dObject--star" src="../assets/img/3d-icons/3d-star.svg" alt="img">
                         <span class="price_time">3-5 дней</span>
                         <div class="grid gap-5">
@@ -272,7 +272,7 @@
                         </div>
                         <text class="h6 price_money">от 20 000 ₽</text>
                     </div>
-                    <div data-aos="fade-up" class="price grid align-content-end gap-15">
+                    <div @click.prevent="emits('openApplication')" data-aos="fade-up" class="link price grid align-content-end gap-15">
                         <span class="price_time">3-5 дней</span>
                         <div class="grid gap-5">
                             <h3 class="h4 price_title">Landing page</h3>
@@ -280,7 +280,7 @@
                         </div>
                         <text class="h6 price_money">от 20 000 ₽</text>
                     </div>
-                    <div data-aos="fade-up" class="price grid align-content-end gap-15">
+                    <div @click.prevent="emits('openApplication')" data-aos="fade-up" class="link price grid align-content-end gap-15">
                         <span class="price_time">3-5 дней</span>
                         <div class="grid gap-5">
                             <h3 class="h4 price_title">Landing page</h3>
@@ -365,6 +365,8 @@
     import SkillsComponent from '@/components/SkillsComponent.vue';
     import MarqueeComponent from "@/components/MarqueeComponent.vue";
     import AOS from 'aos';
+
+    const emits = defineEmits(['openApplication']);
 
     const skills_is_showed: Ref<boolean> = ref(false);
     
@@ -613,7 +615,6 @@
     .block-about--4{
         grid-area: 2 / 1 / 3 / 2;
         cursor: pointer;
-        transition: bottom .2s ease-in;
         scale: 1.1;
         rotate: 2deg;
         z-index: 1;
@@ -742,9 +743,12 @@
         background-color: var(--colorGrey);
         position: relative;
         cursor: pointer;
-        transition: .1s ease-in all;
+        transition: translate .1s ease-in, all .4s ease !important;
         overflow: hidden;
-        
+    }
+
+    .price:hover{
+        translate: 0 -5px;
     }
 
     .price-3dObject{
