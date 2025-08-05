@@ -3,9 +3,9 @@
     <main>
         <section class="section section-banner">
             <div class="container container-banner grid grid-column gap-25 justify-items-center align-content-center">
-                <h1 class="h1 banner_h1"><span class="line">Разрабатываем</span>, продвигаем и развиваем <span class="line">Web-сервисы</span></h1>
-                <p>Помогаем бизнесу автоматизировать процессы и повышать лояльность клиентов, а стартапам быстро выводить продукт на рынок</p>
-                <button class="btn"><span class="h6 span_btn">Оценить проект</span></button>
+                <h1 class="h1 banner_h1" data-aos="fade-up"><span class="line">Разрабатываем</span>, продвигаем и развиваем <span class="line">Web-сервисы</span></h1>
+                <p data-aos="fade-up" data-aos-delay="100">Помогаем бизнесу автоматизировать процессы и повышать лояльность клиентов, а стартапам быстро выводить продукт на рынок</p>
+                <button class="btn" data-aos="fade-up" data-aos-delay="150"><span class="h6 span_btn">Оценить проект</span></button>
                 <MarqueeComponent></MarqueeComponent>
             </div>
         </section>
@@ -16,7 +16,7 @@
             <div class="container grid grid-column">
                 <h2 class="h2 width-100">Услуги</h2>
                 <div class="wrap_services grid grid-column width-100">
-                    <div class="block_services grid align-items-start width-100">
+                    <div data-aos="fade-up" class="block_services grid align-items-start width-100">
                         <h4 class="h4">Разработка</h4>
                         <div class="name_services gap-10">
                             <a class="link service_link" href="#">Landing</a>
@@ -26,7 +26,7 @@
                             <a class="link service_link" href="#">Многостраничных сайтов</a>
                         </div>
                     </div>
-                    <div class="block_services grid align-items-start width-100">
+                    <div data-aos="fade-up" class="block_services grid align-items-start width-100">
                         <h4 class="h4">Поддержка</h4>
                         <div class="name_services gap-10">
                             <a class="link service_link" href="#">CMS</a>
@@ -35,7 +35,7 @@
                             <a class="link service_link" href="#">Консалтинг</a>
                         </div> 
                     </div>
-                    <div class="block_services grid align-items-start width-100">
+                    <div data-aos="fade-up" class="block_services grid align-items-start width-100">
                         <h4 class="h4">Дизайн</h4>
                         <div class="name_services gap-10">
                             <a class="link service_link" href="#">Разработка веб-дизайна</a>
@@ -51,7 +51,7 @@
             <div class="container">
                 <h2 class="h2 width-100">Кейсы</h2>
                 <div class="wrap_projects grid gap-25 width-100">
-                    <div class="block_project grid grid-column gap-15">
+                    <div data-aos="fade-right" class="block_project grid grid-column gap-15">
                         <div class="view_content width-100">
                             <img class="width-100" src="https://i.pinimg.com/originals/19/89/44/198944ea9f57d70ea850fc868efbd4b6.jpg" alt="img">
                             <!-- video -->
@@ -64,7 +64,7 @@
                             <span class="block_character_project">loremrere</span>
                         </div>
                     </div>
-                    <div class="block_project grid grid-column gap-15">
+                    <div data-aos="fade-left" class="block_project grid grid-column gap-15">
                         <div class="view_content width-100">
                             <img class="width-100" src="https://i.pinimg.com/originals/19/89/44/198944ea9f57d70ea850fc868efbd4b6.jpg" alt="img">
                             <!-- video -->
@@ -77,7 +77,7 @@
                             <span class="block_character_project">loremrere</span>
                         </div>
                     </div>
-                    <div class="block_project grid grid-column gap-15">
+                    <div data-aos="fade-right" class="block_project grid grid-column gap-15">
                         <div class="view_content width-100">
                             <img class="width-100" src="https://i.pinimg.com/originals/19/89/44/198944ea9f57d70ea850fc868efbd4b6.jpg" alt="img">
                             <!-- video -->
@@ -90,7 +90,7 @@
                             <span class="block_character_project">loremrere</span>
                         </div>
                     </div>
-                    <div class="block_project grid grid-column gap-15">
+                    <div data-aos="fade-left" class="block_project grid grid-column gap-15">
                         <div class="view_content width-100">
                             <img class="width-100" src="https://i.pinimg.com/originals/19/89/44/198944ea9f57d70ea850fc868efbd4b6.jpg" alt="img">
                             <!-- video -->
@@ -220,7 +220,7 @@
                 <h3 class="h2">Наши цены</h3>
                 <div class="wrap_price grid gap-15 width-100">
                     <div></div>
-                    <div class="price grid align-content-end gap-15">
+                    <div data-aos="fade-up" class="price grid align-content-end gap-15">
                         <img class="price-3dObject price-3dObject--lightning" src="../assets/img/3d-icons/3d-lightning.svg" alt="img">
                         <span class="price_time">3-5 дней</span>
                         <div class="grid gap-5">
@@ -229,7 +229,7 @@
                         </div>
                         <text class="weight-700 h6 price_money">от 20 000 ₽</text>
                     </div>
-                    <div class="price grid align-content-end gap-15">
+                    <div data-aos="fade-up" class="price grid align-content-end gap-15">
                         <span class="price_time">3-5 дней</span>
                         <div class="grid gap-5">
                             <h3 class="h4 price_title">Интернет-магазин</h3>
@@ -237,7 +237,7 @@
                         </div>
                         <text class="weight-700 h6 price_money">от 20 000 ₽</text>
                     </div>
-                    <div class="price grid align-content-end gap-15">
+                    <div data-aos="fade-up" class="price grid align-content-end gap-15">
                         <img class="price-3dObject price-3dObject--arrow" src="../assets/img/3d-icons/3d-arrow.svg" alt="img">
                         <span class="price_time">3-5 дней</span>
                         <div class="grid gap-5">
@@ -246,7 +246,7 @@
                         </div>
                         <text class="h6 price_money">от 20 000 ₽</text>
                     </div>
-                    <div class="price grid align-content-end gap-15">
+                    <div data-aos="fade-up" class="price grid align-content-end gap-15">
                         <img class="price-3dObject price-3dObject--plat" src="../assets/img/3d-icons/3d-plat.svg" alt="img">
                         <span class="price_time">3-5 дней</span>
                         <div class="grid gap-5">
@@ -255,7 +255,7 @@
                         </div>
                         <text class="h6 price_money">от 20 000 ₽</text>
                     </div>
-                    <div class="price grid align-content-end gap-15">
+                    <div data-aos="fade-up" class="price grid align-content-end gap-15">
                         <span class="price_time">3-5 дней</span>
                         <div class="grid gap-5">
                             <h3 class="h4 price_title">Landing page</h3>
@@ -263,7 +263,7 @@
                         </div>
                         <text class="h6 price_money">от 20 000 ₽</text>
                     </div>
-                    <div class="price grid align-content-end gap-15">
+                    <div data-aos="fade-up" class="price grid align-content-end gap-15">
                         <img class="price-3dObject price-3dObject--star" src="../assets/img/3d-icons/3d-star.svg" alt="img">
                         <span class="price_time">3-5 дней</span>
                         <div class="grid gap-5">
@@ -272,7 +272,7 @@
                         </div>
                         <text class="h6 price_money">от 20 000 ₽</text>
                     </div>
-                    <div class="price grid align-content-end gap-15">
+                    <div data-aos="fade-up" class="price grid align-content-end gap-15">
                         <span class="price_time">3-5 дней</span>
                         <div class="grid gap-5">
                             <h3 class="h4 price_title">Landing page</h3>
@@ -280,7 +280,7 @@
                         </div>
                         <text class="h6 price_money">от 20 000 ₽</text>
                     </div>
-                    <div class="price grid align-content-end gap-15">
+                    <div data-aos="fade-up" class="price grid align-content-end gap-15">
                         <span class="price_time">3-5 дней</span>
                         <div class="grid gap-5">
                             <h3 class="h4 price_title">Landing page</h3>
@@ -296,7 +296,7 @@
             <div class="container faq__container">
                 <h2 class="h2 faq__title weight-700">Часто задаваемые вопросы</h2>
                 <Accordion value="0" class="accordion__wrap">
-                    <AccordionPanel value="1" class="accordion__item">
+                    <AccordionPanel data-aos="fade-up" value="1" class="accordion__item">
                         <AccordionHeader class="accordion-item__title"><h4 class="span_btn accordion-item-title__text h5 weight-500">Что нужно от меня, чтобы мы начали работу?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
                         <AccordionContent class="accordion-item__content">
                             <p class="accordion-item__text weight-500 text_accardion">
@@ -304,7 +304,7 @@
                             </p>
                         </AccordionContent>
                     </AccordionPanel>
-                    <AccordionPanel value="2" class="accordion__item">
+                    <AccordionPanel data-aos="fade-up" value="2" class="accordion__item">
                         <AccordionHeader class="accordion-item__title"><h4 class="span_btn accordion-item-title__text h5 weight-500">Можете предложить шаблонный сайт или готовое решение?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
                         <AccordionContent class="accordion-item__content">
                             <p class="accordion-item__text weight-500 text_accardion">
@@ -312,7 +312,7 @@
                             </p>
                         </AccordionContent>
                     </AccordionPanel>
-                    <AccordionPanel value="3" class="accordion__item">
+                    <AccordionPanel data-aos="fade-up" value="3" class="accordion__item">
                         <AccordionHeader class="accordion-item__title"><h4 class="span_btn accordion-item-title__text h5 weight-500">Сколько времени занимает разработка сайта?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
                             <AccordionContent class="accordion-item__content">
                             <p class="accordion-item__text weight-500 text_accardion">
@@ -320,7 +320,7 @@
                             </p>
                         </AccordionContent>
                     </AccordionPanel>
-                    <AccordionPanel value="4" class="accordion__item">
+                    <AccordionPanel data-aos="fade-up" value="4" class="accordion__item">
                         <AccordionHeader class="accordion-item__title"><h4 class="span_btn accordion-item-title__text h5 weight-500">Могу ли я вносить правки в процессе разработки?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
                             <AccordionContent class="accordion-item__content">
                             <p class="accordion-item__text weight-500 text_accardion">
@@ -328,7 +328,7 @@
                             </p>
                         </AccordionContent>
                     </AccordionPanel>
-                    <AccordionPanel value="5" class="accordion__item">
+                    <AccordionPanel data-aos="fade-up" value="5" class="accordion__item">
                         <AccordionHeader class="accordion-item__title"><h4 class="span_btn accordion-item-title__text h5 weight-500">Нужно ли заполнять контент самостоятельно или вы берёте это на себя?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
                             <AccordionContent class="accordion-item__content">
                             <p class="accordion-item__text weight-500 text_accardion">
@@ -336,7 +336,7 @@
                             </p>
                         </AccordionContent>
                     </AccordionPanel>
-                    <AccordionPanel value="6" class="accordion__item">
+                    <AccordionPanel data-aos="fade-up" value="6" class="accordion__item">
                         <AccordionHeader class="accordion-item__title"><h4 class="span_btn accordion-item-title__text h5 weight-500">Нужна ли поддержка сторонних разработчиков для управления моим сайтом?</h4><div class="accordion__arrow weight-300 ">+</div></AccordionHeader>
                             <AccordionContent class="accordion-item__content">
                             <p class="accordion-item__text weight-500 text_accardion">
@@ -364,6 +364,7 @@
     import AccordionContent from 'primevue/accordioncontent';
     import SkillsComponent from '@/components/SkillsComponent.vue';
     import MarqueeComponent from "@/components/MarqueeComponent.vue";
+    import AOS from 'aos';
 
     const skills_is_showed: Ref<boolean> = ref(false);
     
@@ -459,6 +460,7 @@
                 });
             }
         });
+        AOS.init();
     });
 </script>
     
