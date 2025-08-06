@@ -21,7 +21,7 @@
                                 </div>
                             </div>
                             <div class="grid grid-column justify-items-end align-content-start gap-10 footer__submain-info">
-                                <button class="btn btn--white"><span class="h6 span_btn">Обсудить проект</span></button>
+                                <button class="btn btn--white" @click.prevent="emits('openApplication')"><span class="h6 span_btn">Обсудить проект</span></button>
                                 <a href="#" class="link footer_link h3" style="text-align: end;">Заполнить Бриф</a>
                             </div>
                         </div>
@@ -78,7 +78,7 @@
 </template>
 
 <script lang="ts" setup>
-
+    const emits = defineEmits(['openApplication']);
 </script>
 
 <style scoped>

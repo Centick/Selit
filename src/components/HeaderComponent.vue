@@ -4,21 +4,22 @@
             <!-- <img src="" alt="img"> -->
              <!-- пока так (до лого) -->
             <h3 class="h3"><span style="color: var(--colorMain);" class="h3">S</span>elit</h3>
-            <nav class="grid grid-row align-content-center justify-content-space-between gap-30 main_menu">
-                <a class="link header_link" href="#">Кейсы</a>
-                <a class="link header_link" href="#">Разработка</a>
-                <a class="link header_link" href="#">Услуги</a>
-                <a class="link header_link" href="#">О нас</a>
-                <a class="link header_link" href="#">Контакты</a>
+            <nav :class="{'main_menu_active': menu_opened}" class="grid grid-row align-content-center justify-content-space-between gap-30 main_menu">
+                <div class="menu__cross" @click="menu_opened = !menu_opened">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M19 5L4.99998 19M5.00001 5L19 19" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                </div>
+                <a class="link header_link" @click="menu_opened = !menu_opened" href="#">Кейсы</a>
+                <a class="link header_link" @click="menu_opened = !menu_opened" href="#">Разработка</a>
+                <a class="link header_link" @click="menu_opened = !menu_opened" href="#">Услуги</a>
+                <a class="link header_link" @click="menu_opened = !menu_opened" href="#">О нас</a>
+                <a class="link header_link" @click="menu_opened = !menu_opened" href="#">Контакты</a>
             </nav>
-            <a class="link link-special weight-700" @click.prevent="isOpenedApplicationModal()">Обсудить проект <img src="@/assets/img/icons/arrow.svg" alt=""></a>
+            <a class="link link-special weight-700" @click.prevent="emits('openApplication')">Обсудить проект <img src="@/assets/img/icons/arrow.svg" alt=""></a>
+            <div class="menu__burger" @click="menu_opened = !menu_opened">
+                <svg viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"></path> <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"></path> <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"></path> </g></svg>
+            </div>
         </div>
     </header>
-
-    <ApplicationComponent
-        :class="{'modal_active': application_is_showed, 'modal_not_active': !application_is_showed}"
-        @close='closeApplicationModal()'
-    />
 </template>
     
 <script lang="ts" setup>
@@ -26,8 +27,9 @@
     import type { Ref } from "vue";
     import ApplicationComponent from "./ApplicationComponent.vue";
 
+    const menu_opened: Ref<boolean> = ref(false);
+
     const is_header_shadowed: Ref<boolean> = ref(false);
-    const application_is_showed: Ref<boolean> = ref(false);
 
     const checkPositionForHeader = () => {
         is_header_shadowed.value = window.scrollY >= 50;
@@ -36,17 +38,16 @@
     onMounted(()=>{
         window.onscroll = checkPositionForHeader;
         checkPositionForHeader();
+
+        window.addEventListener('click', (e) => {
+            console.log(window.outerWidth - 320, e.x);
+            if(menu_opened.value && window.innerWidth - 320 > e.x){
+                menu_opened.value = false;
+            }
+        })
     });
 
-    const isOpenedApplicationModal = () => {
-        application_is_showed.value = true;
-        document.body.style.overflowY = "hidden";
-        console.log(document.body.style)
-    }
-    const closeApplicationModal = () => {
-        application_is_showed.value = false;
-        document.body.style.overflowY = "visible";
-    }
+    const emits = defineEmits(['openApplication']);
 </script>
 
 <style scoped>
@@ -65,7 +66,7 @@
         background-color: var(--colorMain);
         width: 0;
         height: 1px;
-        bottom: 0px;
+        bottom: 0;
         left: 0;
         transition: 0.2s ease-in all;
     }
@@ -79,10 +80,39 @@
         background-color: var(--colorWhite);
     }
 
+    .menu__burger, .menu__cross{
+        display: none;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+    }
+    .menu__cross{
+        width: 30px;
+        height: 30px;
+    }
+
     /* TODO: Доделать бергер меню */
     @media (max-width: 768px) {
         .main_menu{
-            display: none;
+            grid-auto-flow: row;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            right: -320px;
+            width: 320px;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0) 0 0 0 100vw;
+            padding: 50px;
+            align-content: start;
+            transition: all .3s ease;
+            justify-items: start;
+        }
+        .main_menu_active{
+            right: 0;
+            box-shadow: rgba(0, 0, 0, 0.3) 0 0 0 100vw;
+        }
+        .menu__burger, .menu__cross{
+            display: block;
         }
     }
 </style>
