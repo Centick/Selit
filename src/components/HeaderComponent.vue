@@ -83,8 +83,8 @@
     .menu__burger, .menu__cross{
         display: none;
         cursor: pointer;
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
     }
     .menu__cross{
         width: 30px;

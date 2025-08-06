@@ -49,7 +49,7 @@ body::-webkit-scrollbar-thumb {
 /* TODO: Прописать root'ы */
 /* Global CSS */
 :root{
-    --h1: 76px;
+    --h1: 70px;
     --h2: 58px;
     --h3: 38px;
     --h4: 28px;
@@ -59,9 +59,9 @@ body::-webkit-scrollbar-thumb {
     --colorMain: #3762FD;
     /* --colorMain: orange; */
     --colorGrey:  #f4f4f4;
+    --colorGrayDark: rgb(124, 124, 124);
     --colorWhite: #fff;
     --colorBlack: #292929;
-    
     --borderRadiusSmall: 10px;
     --borderRadius: 25px;
     --borderRadiusBig: 40px;
@@ -247,7 +247,7 @@ footer{
     text-decoration: none;
     color: var(--colorWhite);
     background-color: var(--colorBlack);
-    padding: 25px 30px;
+    padding: 22px 30px;
     border-radius: var(--borderRadiusBig);
     border: none;
     outline: none;
@@ -299,6 +299,9 @@ footer{
 }
 .color-white{
     color: var(--colorWhite);
+}
+.color-gray-dark{
+    color: var(--colorGrayDark);
 }
 .h1, .h1 *{
     font-size: var(--h1);
@@ -464,7 +467,7 @@ footer{
 }
 @media (max-width: 1280px) {
     :root{
-        --h1: 64px;
+        --h1: 60px;
         --h2: 50px;
         --h3: 28px;
         --h4: 24px;
@@ -478,7 +481,7 @@ footer{
 }
 @media (max-width: 1024px) {
     :root{
-        --h1: 54px;
+        --h1: 50px;
         --h2: 44px;
         --h3: 24px;
         --h4: 22px;
@@ -493,13 +496,17 @@ footer{
 }
 @media (max-width: 768px) {
     :root{
-        --h1: 42px;
-        --h2: 40px;
+        --h1: 40px;
+        --h2: 38px;
         --h3: 30px;
         --h4: 22px;
         --h5: 20px;
         --h6: 18px;
         --fontDefault: 16px;
+    }
+
+    .container{
+        gap: 30px;
     }
 
     .modal__container{

@@ -5,12 +5,10 @@
             <div class="container container-banner grid grid-column gap-25 justify-items-center align-content-center">
                 <h1 class="h1 banner_h1" data-aos="fade-up"><span class="line">Разрабатываем</span>, продвигаем и развиваем <span class="line">Web&#8209;сервисы</span></h1>
                 <p data-aos="fade-up" data-aos-delay="100">Помогаем бизнесу автоматизировать процессы и повышать лояльность клиентов, а стартапам быстро выводить продукт на рынок</p>
-                <button class="btn" data-aos="fade-up" data-aos-delay="150"><span class="h6 span_btn" @click.prevent="emits('openApplication')">Оценить проект</span></button>
+                <button class="btn" data-aos="fade-up" data-aos-delay="150" @click.prevent="emits('openApplication')"><span class="h6 span_btn" >Оценить проект</span></button>
                 <MarqueeComponent></MarqueeComponent>
             </div>
         </section>
-
-        
 
         <section class="section">
             <div class="container grid grid-column">
@@ -109,72 +107,103 @@
             </div>
         </section>
 
+        <!-- process -->
         <section class="section">
-            <h2 class="h2 margin-bottom-50">Интересно, как мы работаем?</h2>
-            <div class="container container-about grid gap-15">
-                <div class="block-about block-about--1">
-                    <h3 class="h3"><span class="text-inherit color-main">Selit</span> - Разработка web-решений под ваши задачи</h3>
-                    <p></p>
+            <div class="container grid">
+                <h2 class="h2 width-100">Этапы разработки сайта</h2>
+                <div class="grid gap-100 process_wrap">
+                    <div class="grid grid-column gap-25 align-content-start ">
+                        <div class="grid grid-column gap-5">
+                            <span class="big_number weight-700">1</span>
+                            <h3 class="h3">Созваниваемся</h3>
+                        </div>
+                        <p class="color-gray-dark">После того как заполните форму, менеджер свяжется с вами в течение 24 часов и договорится о встрече. При необходимости готовы подписать NDA. На встрече мы познакомимся и обсудим задачу. Также поговорим о предварительном бюджете и сроках.</p>
+                    </div>
+                    <div class="grid grid-column gap-25 align-content-start">
+                        <div class="grid grid-column gap-5">
+                            <span class="big_number weight-700">2</span>
+                            <h3 class="h3">Анализ</h3>
+                        </div>
+                        <p class="color-gray-dark">После того как заполните форму, менеджер свяжется с вами в течение 24 часов и договорится о встрече. На встрече мы познакомимся и обсудим задачу. Также поговорим о предварительном бюджете и сроках.</p>
+                    </div>
+                    <div class="grid grid-column gap-25 align-content-start">
+                        <div class="grid grid-column gap-5">
+                            <span class="big_number weight-700">3</span>
+                            <h3 class="h3">UI/UX Дизайн</h3>
+                        </div>
+                        <p class="color-gray-dark">После того как заполните форму, менеджер свяжется с вами в течение 24 часов и договорится о встрече. На встрече мы познакомимся и обсудим задачу. Также поговорим о предварительном бюджете и сроках.</p>
+                    </div>
+                    <div class="grid grid-column gap-25 align-content-start">
+                        <div class="grid grid-column gap-5">
+                            <span class="big_number weight-700">4</span>
+                            <h3 class="h3">Разработка</h3>
+                        </div>
+                        <p class="color-gray-dark">После того как заполните форму, менеджер свяжется с вами в течение 24 часов и договорится о встрече. На встрече мы познакомимся и обсудим задачу. Также поговорим о предварительном бюджете и сроках.</p>
+                    </div>
+                    <div class="grid grid-column gap-25 align-content-start">
+                        <div class="grid grid-column gap-5">
+                            <span class="big_number weight-700">5</span>
+                            <h3 class="h3">Тестирование</h3>
+                        </div>
+                        <p class="color-gray-dark">После того как заполните форму, менеджер свяжется с вами в течение 24 часов и договорится о встрече. На встрече мы познакомимся и обсудим задачу. Также поговорим о предварительном бюджете и сроках.</p>
+                    </div>
+                    <div class="grid grid-column gap-25 align-content-start">
+                        <div class="grid grid-column gap-5">
+                            <span class="big_number weight-700">6</span>
+                            <h3 class="h3">Релиз</h3>
+                        </div>
+                        <p class="color-gray-dark">После того как заполните форму, менеджер свяжется с вами в течение 24 часов и договорится о встрече. На встрече мы познакомимся и обсудим задачу. Также поговорим о предварительном бюджете и сроках.</p>
+                    </div>
                 </div>
-                <div class="block-about block-about--3 grid grid-column align-content-start justify-content-start align-content-space-between gap-50">
-                    <h3 class="h3 text-align-center">Процесс разработки</h3>
-                    <div class="grid grid-column gap-50">
-                        <div class="grid grid-row development_wrap align-items-center gap-25">
-                            <span class="h1 color-main big_number text-align-center">1</span>
-                            <div class="grid grid-column align-items-start justify-content-start gap-15">
-                                <h4 class="h4">Созваниваемся</h4>
-                                <p>После того как заполните форму, менеджер свяжется с вами в течение 24 часов и договорится о встрече. На встрече мы познакомимся и обсудим задачу. Также поговорим о предварительном бюджете и сроках.</p>
-                            </div>
+                <div class="grid justify-content-start align-items-start width-100">
+                    <button class="btn width-fit-content" @click.prevent="emits('openApplication')"><span class="h6 span_btn">Заполнить форму</span></button>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container grid grid-column">
+                <h2 class="h2 width-100">Компания</h2>
+                <div class="grid about_wrap gap-15">
+                    <div class="block-about block-about--1 grid grid-column align-content-start gap-15">
+                        <h3 class="h3"><span class="text-inherit color-main">Selit</span> - Разработка web-решений под ваши задачи</h3>
+                        <p>Мы создаем современные сайты и веб-приложения, которые решают бизнес-задачи наших клиентов. От яркого дизайна и удобного интерфейса до надежной технической реализации — мы воплощаем ваши идеи в эффективные онлайн-инструменты.</p>
+                        <button class="btn width-fit-content" @click.prevent="emits('openApplication')"><span class="h6 span_btn">Заполнить форму</span></button>
+                        <img class="about-3dObject" src="../assets/img/3d-icons/3d-Selit.svg" alt="img">
+                    </div>
+                    <div class="grid about_wrap-mini gap-15">
+                        <div class="block-about block-about--3 grid grid-column gap-15 align-content-start">
+                            <h3 class="h4">Качество услуг</h3>
+                            <p>Неограниченное количество бесплатных правок, которые не конфликтуют с исходным техническим заданием </p>
                         </div>
-                        <div class="grid grid-row development_wrap align-items-center gap-25">
-                            <span class="h1 color-main big_number text-align-center">2</span>
-                            <div class="grid grid-column align-items-start justify-content-start gap-15">
-                                <h4 class="h4">Погружаемся в детали проекта</h4>
-                                <p>После того как заполните форму, менеджер свяжется с вами в течение 24 часов и договорится о встрече. На встрече мы познакомимся и обсудим задачу. Также поговорим о предварительном бюджете и сроках.</p>
+                        <div @click.prevent="isOpenedSkillsModal()" class="block-about block-about--2 grid grid-column gap-15">
+                            <h3 class="h4">Наш стек</h3>
+                            <p>Мы постоянно развиваемся и открыты к освоению новых технологий, необходимых для реализации проектов, даже если ранее с ними не сталкивались.
+                            </p>
+                            <div class="about-wrap-skill grid grid-row">
+                                <div class="about-skill">
+                                    <img src="@/assets/img/icons/skills/figmaIcon.svg" alt="img">
+                                </div>
+                                <div class="about-skill">
+                                    <img src="@/assets/img/icons/skills/laravelIcon.svg" alt="img">
+                                </div>
+                                <div class="about-skill">
+                                    <img src="@/assets/img/icons/skills/nodeIcon.svg" alt="img">
+                                </div>
+                                <span class="about-skill">
+                                    <img src="@/assets/img/icons/skills/DjangoIcon.svg" alt="img">
+                                </span>
+                                <div class="about-skill">
+                                    <img src="@/assets/img/icons/skills/vueIcon.svg" alt="img">
+                                </div>
+                                <div class="about-skill">
+                                    <img src="@/assets/img/icons/skills/dockerIcon.svg" alt="img">
+                                </div>
                             </div>
-                        </div>
-                        <div class="grid grid-row development_wrap align-items-center gap-25">
-                            <span class="h1 color-main big_number big_number--lust  text-align-center">3</span>
-                            <div class="grid grid-column align-items-start justify-content-start gap-15">
-                                <h4 class="h4">Готовим и представляем оценку</h4>
-                                <p>После того как заполните форму, менеджер свяжется с вами в течение 24 часов и договорится о встрече. На встрече мы познакомимся и обсудим задачу. Также поговорим о предварительном бюджете и сроках.</p>
-                            </div>
+                            <span class="link">Подробнее <span class="arrow text-inherit">&rarr;</span></span>
                         </div>
                     </div>
-                    <div class="grid justify-content-end">
-                        <img src="@/assets/img/brend/slogan1.svg" alt="img">
-                    </div>
-                    
-                </div>
-                <div @click.prevent="isOpenedSkillsModal()" class="block-about block-about--4 grid grid-column gap-15">
-                    <h3 class="h4">Наш стек</h3>
-                    <p>Мы постоянно развиваемся и открыты к освоению новых технологий, необходимых для реализации проектов, даже если ранее с ними не сталкивались.
-                    </p>
-                    <div class="about-wrap-skill grid grid-row">
-                        <div class="about-skill">
-                            <img src="@/assets/img/icons/skills/figmaIcon.svg" alt="img">
-                        </div>
-                        <div class="about-skill">
-                            <img src="@/assets/img/icons/skills/laravelIcon.svg" alt="img">
-                        </div>
-                        <div class="about-skill">
-                            <img src="@/assets/img/icons/skills/nodeIcon.svg" alt="img">
-                        </div>
-                        <span class="about-skill">
-                            <img src="@/assets/img/icons/skills/DjangoIcon.svg" alt="img">
-                        </span>
-                        <div class="about-skill">
-                            <img src="@/assets/img/icons/skills/vueIcon.svg" alt="img">
-                        </div>
-                        <div class="about-skill">
-                            <img src="@/assets/img/icons/skills/dockerIcon.svg" alt="img">
-                        </div>
-                    </div>
-                    <span class="link">Подробнее <span class="arrow text-inherit">&rarr;</span></span>
-                </div>
-                <div class="block-about block-about--5 grid grid-column gap-15 align-content-start">
-                    <h3 class="h4">Высокое качество услуг</h3>
-                    <p>Неограниченное количество бесплатных правок, которые не конфликтуют с исходным техническим заданием </p>
                 </div>
             </div>
         </section>
@@ -190,27 +219,27 @@
                     <h2 class="h2">Факты о Selit</h2>
                     <div class="grid grid-column">
                         <span class="why-big_number"><span class="number_counting text-inherit number_counting_highest weight-700">30</span><span class="text-inherit color-main">+</span></span>
-                        <p class="why-text">проектов реализованно</p>
+                        <p class="color-gray-dark">проектов реализованно</p>
                     </div>
                 </div>
                 <div class="grid why-inner__card width-100">
                     <div class="grid grid-column gap-10">
                         <span class="h2"><span class="text-inherit color-main number_counting">3</span> года</span>
-                        <p class="why-text">Делаем приложения для стартапов и бизнеса</p>
+                        <p class="color-gray-dark">Делаем приложения для стартапов и бизнеса</p>
                     </div>
                     <div class="grid grid-column gap-10">
                         <span class="h2"><span class="text-inherit number_counting color-main">6</span> человек</span>
-                        <p class="why-text">занимаются вашим проектом днем и ночью</p>
+                        <p class="color-gray-dark">занимаются вашим проектом днем и ночью</p>
                     </div>
                 </div>
                 <div class="grid why-inner__card width-100">
                     <div class="grid grid-column gap-10">
                         <span class="h2"><span class="text-inherit number_counting color-main">18</span> побед</span>
-                        <p class="why-text">в различных хакатонах и конкурсах наших разработчиков</p>
+                        <p class="color-gray-dark">в различных хакатонах и конкурсах наших разработчиков</p>
                     </div>
                     <div class="grid grid-column gap-10">
                         <span class="h2"><span class="text-inherit number_counting color-main">96</span> процентов</span>
-                        <p class="why-text">уровень удовлетворенности клиентов</p>
+                        <p class="color-gray-dark">уровень удовлетворенности клиентов</p>
                     </div>
                 </div>
             </div>
@@ -218,11 +247,12 @@
 
         <section class="section">
             <div class="container">
+                <h2 class="h2 width-100">Наши цены</h2>
                 <div class="wrap_price grid gap-15 width-100">
-<<<<<<< HEAD
-                    <div>
-                        <h3 class="h2">Наши цены</h3>
+                    <div class="first-price_block">
                         <p>Кратно увеличиваем продажи через создание цифровых продуктов c лушими ценами на рынке</p>
+                        <img class="price_arrow" src="../assets/img/icons/price_arrow.svg" alt="arrow">
+                        <img class="price_arrow-mini" src="../assets/img/icons/price_arrow_mini.svg" alt="arrow">
                     </div>
                     <div @click.prevent="emits('openApplication')" data-aos="fade-up" class="link price grid align-content-end gap-15">
                         <img class="price-3dObject price-3dObject--lightning" src="../assets/img/3d-icons/3d-lightning.svg" alt="img">
@@ -397,8 +427,20 @@
                 scrollTrigger: {
                     trigger: '.block-about--1',
                     start: 'top bottom',
-                    end: 'bottom center',
-                    scrub: true
+                    end: 'center center',
+                    scrub: true,
+                },
+                x: 0,
+                y: 0,
+                rotation: 0,
+                scale: 1
+            });
+            gsap.to('.block-about--2', {
+                scrollTrigger: {
+                    trigger: '.block-about--2',
+                    start: 'top bottom',
+                    end: 'center center',
+                    scrub: true,
                 },
                 x: 0,
                 y: 0,
@@ -410,31 +452,6 @@
                     trigger: '.block-about--3',
                     start: 'top bottom',
                     end: 'center center',
-                    scrub: true
-                },
-                x: 0,
-                y: 0,
-                rotation: 0,
-                scale: 1
-            });
-            gsap.to('.block-about--4', {
-                scrollTrigger: {
-                    trigger: '.block-about--1',
-                    start: 'top bottom',
-                    end: 'bottom center',
-                    scrub: true
-                },
-                x: 0,
-                y: 0,
-                rotation: 0,
-                scale: 1
-            });
-            gsap.to('.block-about--5', {
-                scrollTrigger: {
-                    trigger: '.block-about--1',
-                    start: 'top bottom',
-                    end: 'bottom center',
-
                     scrub: true
                 },
                 x: 0,
@@ -601,10 +618,28 @@
         width: fit-content;
     }
 
+    
+
+    /* process */
+    .grid-3rows{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .big_number{
+        font-size: 120px;
+        position: relative;
+    }
+
+    .process_wrap{
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
     /* about */
-    .container-about{
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+    .about_wrap{
+        grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    }
+
+    .about_wrap-mini{
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
 
     .block-about{
@@ -621,73 +656,38 @@
     }
 
     .block-about--1{
-        grid-area: 1 / 1 / 2 / 3;
-        scale: 1.1;
-        rotate: -2deg;
-        translate: -100px -100px;
-    }
-
-    .block-about--3{
-        grid-area: 1 / 3 / 3 / 5;
         scale: 1.1;
         rotate: 2deg;
-        translate: 100px -100px;
-
+        translate: -100px 100px;
+        position: relative;
+        overflow: hidden;
     }
 
-    .block-about--4{
-        grid-area: 2 / 1 / 3 / 2;
+    .block-about--1 > p{
+        width: 80%;
+    }
+
+    .about-3dObject{
+        width: 280px;
+        position: absolute; 
+        bottom: -50px; 
+        right: -50px;  
+    }
+
+    .block-about--2{
         cursor: pointer;
         scale: 1.1;
-        rotate: 2deg;
+        rotate: -2deg;
         z-index: 1;
         position: relative;
-        translate: -100px 100px;
+        translate: 100px 100px;
         background-color: var(--colorBlack);
     }
 
-    .block-about--4 *{
+    .block-about--2 *{
         color: var(--colorWhite);
     }
-    .block-about--5{
-        scale: 1.1;
-        translate: 0 100px;
-    }
 
-    .development_wrap{
-        grid-template-columns: 60px 1fr;
-    }
-    .development_wrap > div{
-        width: 90%;
-    }
-
-    .big_number{
-        font-size: 82px;
-        position: relative;
-    }
-
-    .big_number::after{
-        content: '';
-        position: absolute;
-        bottom: -64px;
-        right: 50%;
-        border: 1px dashed var(--colorBlack);
-        height: 60px;
-        border-radius: 10px;
-    }
-
-    .big_number--lust::after{
-        display: none;
-    }
-
-    .block-about--4:hover{
-        bottom: 5px;
-    }
-
-    .about-wrap-skill{
-        width: fit-content;
-        margin-top: 50px;
-    }
     .about-skill{
         padding: 3px;
         background-color: var(--colorWhite);
@@ -699,6 +699,28 @@
         display: flex; 
         justify-content: center;
         align-items: center;
+    }
+
+    .block-about--3{
+        scale: 1.1;
+        translate: 0 100px;
+        background-color: var(--colorMain);
+    }
+
+    .block-about--3  *{
+        color: var(--colorWhite);
+    }
+
+    .development_wrap{
+        grid-template-columns: 60px 1fr;
+    }
+    .development_wrap > div{
+        width: 90%;
+    }
+
+    .about-wrap-skill{
+        width: fit-content;
+        margin-top: 50px;
     }
     .about-skill > img{
         width: 90%;
@@ -719,17 +741,6 @@
         left: -10px;
         transform: scaleX(2);
     }
-    .block-about--5{
-        grid-area: 2 / 2 / 3 / 3;
-        background-color: var(--colorMain);
-    }
-
-    .block-about--5  *{
-        color: var(--colorWhite);
-    }
-    .block-about--6{
-        grid-area: 2 / 3 / 3 / 5;
-    }
 
     /* why */
     .why-inner__card{
@@ -737,10 +748,6 @@
         border-bottom: 2px solid var(--colorGrey);
         display: grid;
         grid-template-columns: 1fr 1fr;
-    }
-    
-    .why-text{
-        color: grey;
     }
 
     .why-big_number{
@@ -770,8 +777,23 @@
         overflow: hidden;
     }
 
+    .first-price_block{
+        position: relative;
+    }
+
+    .first-price_block > .price_arrow{
+        position: absolute;
+        top: 100px;
+        left: 140px;
+        width: 150px;
+    }
+
+    .first-price_block > .price_arrow-mini{
+        display: none;
+    }
+
     .price:hover{
-        translate: 0 -5px;
+        translate: 0 -7px;
     }
 
     .price-3dObject{
@@ -924,6 +946,21 @@
     @media (max-width: 768px) {
         .wrap_projects{
             grid-template-columns: 1fr;
+        }
+
+        .first-price_block > .price_arrow{
+            display: none;
+        }
+
+        .first-price_block > p{
+            margin-bottom: 80px;
+        }
+
+        .first-price_block > .price_arrow-mini{
+            display: block;
+            position: absolute;
+            left: 50% ;
+            top: calc(50% - 5px);
         }
     }
     
