@@ -217,9 +217,11 @@
 
         <section class="section">
             <div class="container">
-                <h3 class="h2">Наши цены</h3>
                 <div class="wrap_price grid gap-15 width-100">
-                    <div></div>
+                    <div>
+                        <h3 class="h2">Наши цены</h3>
+                        <p>Кратно увеличиваем продажи через создание цифровых продуктов c лушими ценами на рынке</p>
+                    </div>
                     <div data-aos="fade-up" class="price grid align-content-end gap-15">
                         <img class="price-3dObject price-3dObject--lightning" src="../assets/img/3d-icons/3d-lightning.svg" alt="img">
                         <span class="price_time">3-5 дней</span>
