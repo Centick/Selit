@@ -50,156 +50,108 @@
             <div class="container">
                 <h2 class="h2 width-100">Кейсы</h2>
                 <div class="wrap_projects grid gap-25 width-100">
-                    <div data-aos="fade-up" class="block_project grid grid-column gap-15">
-                        <div class="view_content width-100">
-                            <img class="width-100" src="../assets/img/projects/cards/wedding.svg" alt="img">
-                            <!-- video -->
-                        </div>
-                        <h4 class="h4">Advent-календарь от КИБЕРПРОТЕКТ</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente mollitia quidem odit minima dolorum reprehend</p>
-                        <div class="wrap_character_project grid grid-row gap-10">
-                            <span class="block_character_project">lorem</span>
-                            <span class="block_character_project">lorem lor</span>
-                            <span class="block_character_project">loremrere</span>
-                        </div>
-                    </div>
-                    <div data-aos="fade-up" data-aos-delay="200" class="block_project grid grid-column gap-15">
-                        <div class="view_content width-100">
-                            <img class="width-100" src="../assets/img/projects/cards/black-taxi.svg" alt="img">
-                            <!-- video -->
-                        </div>
-                        <h4 class="h4">Advent-календарь от КИБЕРПРОТЕКТ</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente mollitia quidem odit minima dolorum reprehend</p>
-                        <div class="wrap_character_project grid grid-row gap-10">
-                            <span class="block_character_project">lorem</span>
-                            <span class="block_character_project">lorem lor</span>
-                            <span class="block_character_project">loremrere</span>
-                        </div>
-                    </div>
-                    <div data-aos="fade-up" class="block_project grid grid-column gap-15">
-                        <div class="view_content width-100">
-                            <img class="width-100" src="../assets/img/projects/cards/ai.svg" alt="img">
-                            <!-- video -->
-                        </div>
-                        <h4 class="h4">Advent-календарь от КИБЕРПРОТЕКТ</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente mollitia quidem odit minima dolorum reprehend</p>
-                        <div class="wrap_character_project grid grid-row gap-10">
-                            <span class="block_character_project">lorem</span>
-                            <span class="block_character_project">lorem lor</span>
-                            <span class="block_character_project">loremrere</span>
-                        </div>
-                    </div>
-                    <div data-aos="fade-up" data-aos-delay="200" class="block_project grid grid-column gap-15">
-                        <div class="view_content width-100">
-                            <img class="width-100" src="../assets/img/projects/cards/flowers.svg" alt="img">
-                            <!-- video -->
-                        </div>
-                        <h4 class="h4">Advent-календарь от КИБЕРПРОТЕКТ</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente mollitia quidem odit minima dolorum reprehend</p>
-                        <div class="wrap_character_project grid grid-row gap-10">
-                            <span class="block_character_project">lorem</span>
-                            <span class="block_character_project">lorem lor</span>
-                            <span class="block_character_project">loremrere</span>
-                        </div>
-                    </div>
-                    <div data-aos="fade-up" class="block_project grid grid-column gap-15">
-                        <div class="view_content width-100">
-                            <img class="width-100" src="../assets/img/projects/cards/Lipetsk.svg" alt="img">
-                            <!-- video -->
-                        </div>
-                        <h4 class="h4">Advent-календарь от КИБЕРПРОТЕКТ</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente mollitia quidem odit minima dolorum reprehend</p>
-                        <div class="wrap_character_project grid grid-row gap-10">
-                            <span class="block_character_project">lorem</span>
-                            <span class="block_character_project">lorem lor</span>
-                            <span class="block_character_project">loremrere</span>
-                        </div>
-                    </div>
-                    <div data-aos="fade-up" data-aos-delay="200" class="block_project grid grid-column gap-15">
-                        <div class="view_content width-100">
-                            <img class="width-100" src="../assets/img/projects/cards/pensioners.svg" alt="img">
-                            <!-- video -->
-                        </div>
-                        <h4 class="h4">Advent-календарь от КИБЕРПРОТЕКТ</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente mollitia quidem odit minima dolorum reprehend</p>
-                        <div class="wrap_character_project grid grid-row gap-10">
-                            <span class="block_character_project">lorem</span>
-                            <span class="block_character_project">lorem lor</span>
-                            <span class="block_character_project">loremrere</span>
-                        </div>
-                    </div>
-                    <div data-aos="fade-up" class="block_project grid grid-column gap-15">
-                        <div class="view_content width-100">
-                            <img class="width-100" src="../assets/img/projects/cards/junior-skills.svg" alt="img">
-                            <!-- video -->
-                        </div>
-                        <h4 class="h4">Advent-календарь от КИБЕРПРОТЕКТ</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente mollitia quidem odit minima dolorum reprehend</p>
-                        <div class="wrap_character_project grid grid-row gap-10">
-                            <span class="block_character_project">lorem</span>
-                            <span class="block_character_project">lorem lor</span>
-                            <span class="block_character_project">loremrere</span>
-                        </div>
-                    </div>
-                    <div data-aos="fade-up" data-aos-delay="200" class="block_project grid grid-column gap-15">
-                        <div class="view_content width-100">
-                            <img class="width-100" src="../assets/img/projects/cards/kyberprotect.svg" alt="img">
-                            <!-- video -->
-                        </div>
-                        <h4 class="h4">Advent-календарь от КИБЕРПРОТЕКТ</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente mollitia quidem odit minima dolorum reprehend</p>
-                        <div class="wrap_character_project grid grid-row gap-10">
-                            <span class="block_character_project">lorem</span>
-                            <span class="block_character_project">lorem lor</span>
-                            <span class="block_character_project">loremrere</span>
-                        </div>
-                    </div>
+                    <WorkComponent
+                        data-aos="fade-up"
+                        text="lorem lorem lorem lorem lorem lorem lorem lorem"
+                        title="Wedding"
+                        img="wedding.svg"
+                        :technologies="['1', '2', '3']"
+                    ></WorkComponent>
+                    <WorkComponent
+                        data-aos="fade-up" data-aos-delay="200"
+                        text="lorem lorem lorem lorem lorem lorem lorem lorem"
+                        title="Грузоперевозки BlackTaxi"
+                        img="black-taxi.svg"
+                        :technologies="['1', '2', '3']"
+                    ></WorkComponent>
+                    <WorkComponent
+                        data-aos="fade-up"
+                        text="lorem lorem lorem lorem lorem lorem lorem lorem"
+                        title="AI Revolution"
+                        img="ai.svg"
+                        :technologies="['1', '2', '3']"
+                    ></WorkComponent>
+                    <WorkComponent
+                        data-aos="fade-up" data-aos-delay="200"
+                        text="lorem lorem lorem lorem lorem lorem lorem lorem"
+                        title="TulpanStore - цветочный магазин"
+                        img="flowers.svg"
+                        :technologies="['1', '2', '3']"
+                    ></WorkComponent>
+                    <WorkComponent
+                        data-aos="fade-up"
+                        text="lorem lorem lorem lorem lorem lorem lorem lorem"
+                        title="Мой Край - достопримечательности Липецка"
+                        img="Lipetsk.svg"
+                        :technologies="['1', '2', '3']"
+                    ></WorkComponent>
+                    <WorkComponent
+                        data-aos="fade-up" data-aos-delay="200"
+                        text="lorem lorem lorem lorem lorem lorem lorem lorem"
+                        title="Партия Пенсионеров - региональное отделение"
+                        img="pensioners.svg"
+                        :technologies="['1', '2', '3']"
+                    ></WorkComponent>
+                    <WorkComponent
+                        data-aos="fade-up"
+                        text="lorem lorem lorem lorem lorem lorem lorem lorem"
+                        title="Junior Skills - образовательная платформа"
+                        img="junior-skills.svg"
+                        :technologies="['1', '2', '3']"
+                    ></WorkComponent>
+                    <WorkComponent
+                        data-aos="fade-up" data-aos-delay="200"
+                        text="lorem lorem lorem lorem lorem lorem lorem lorem"
+                        title="Кибербезопасный новый год - адвент календарь для КИБЕРПРОТЕКТ"
+                        img="kyberprotect.svg"
+                        :technologies="['1', '2', '3']"
+                    ></WorkComponent>
                 </div>
                 <button class="btn"><span class="h6 span_btn">Смотреть все проекты</span></button>
             </div>
         </section>
 
         <!-- process -->
-        <section class="section">
-            <div class="container grid">
+        <section class="section process__section">
+            <div class="container grid process__container">
                 <h2 class="h2 width-100">Этапы разработки сайта</h2>
                 <div class="grid gap-100 process_wrap">
-                    <div class="grid grid-column gap-25 align-content-start ">
+                    <div class="grid grid-column gap-25 align-content-start process__item">
                         <div class="grid grid-column gap-5">
                             <span class="big_number weight-700">1</span>
                             <h3 class="h3">Созваниваемся</h3>
                         </div>
                         <p class="color-gray-dark">После того как заполните форму, менеджер свяжется с вами в течение 24 часов и договорится о встрече. При необходимости готовы подписать NDA. На встрече мы познакомимся и обсудим задачу. Также поговорим о предварительном бюджете и сроках.</p>
                     </div>
-                    <div class="grid grid-column gap-25 align-content-start">
+                    <div class="grid grid-column gap-25 align-content-start process__item">
                         <div class="grid grid-column gap-5">
                             <span class="big_number weight-700">2</span>
                             <h3 class="h3">Анализ</h3>
                         </div>
                         <p class="color-gray-dark">После того как заполните форму, менеджер свяжется с вами в течение 24 часов и договорится о встрече. На встрече мы познакомимся и обсудим задачу. Также поговорим о предварительном бюджете и сроках.</p>
                     </div>
-                    <div class="grid grid-column gap-25 align-content-start">
+                    <div class="grid grid-column gap-25 align-content-start process__item">
                         <div class="grid grid-column gap-5">
                             <span class="big_number weight-700">3</span>
                             <h3 class="h3">UI/UX Дизайн</h3>
                         </div>
                         <p class="color-gray-dark">После того как заполните форму, менеджер свяжется с вами в течение 24 часов и договорится о встрече. На встрече мы познакомимся и обсудим задачу. Также поговорим о предварительном бюджете и сроках.</p>
                     </div>
-                    <div class="grid grid-column gap-25 align-content-start">
+                    <div class="grid grid-column gap-25 align-content-start process__item">
                         <div class="grid grid-column gap-5">
                             <span class="big_number weight-700">4</span>
                             <h3 class="h3">Разработка</h3>
                         </div>
                         <p class="color-gray-dark">После того как заполните форму, менеджер свяжется с вами в течение 24 часов и договорится о встрече. На встрече мы познакомимся и обсудим задачу. Также поговорим о предварительном бюджете и сроках.</p>
                     </div>
-                    <div class="grid grid-column gap-25 align-content-start">
+                    <div class="grid grid-column gap-25 align-content-start process__item">
                         <div class="grid grid-column gap-5">
                             <span class="big_number weight-700">5</span>
                             <h3 class="h3">Тестирование</h3>
                         </div>
                         <p class="color-gray-dark">После того как заполните форму, менеджер свяжется с вами в течение 24 часов и договорится о встрече. На встрече мы познакомимся и обсудим задачу. Также поговорим о предварительном бюджете и сроках.</p>
                     </div>
-                    <div class="grid grid-column gap-25 align-content-start">
+                    <div class="grid grid-column gap-25 align-content-start process__item">
                         <div class="grid grid-column gap-5">
                             <span class="big_number weight-700">6</span>
                             <h3 class="h3">Релиз</h3>
@@ -221,7 +173,7 @@
                     <div class="block-about block-about--1 grid grid-column align-content-start gap-15">
                         <h3 class="h3"><span class="text-inherit color-main">Selit</span> - Разработка web-решений под ваши задачи</h3>
                         <p>Мы создаем современные сайты и веб-приложения, которые решают бизнес-задачи наших клиентов. От яркого дизайна и удобного интерфейса до надежной технической реализации — мы воплощаем ваши идеи в эффективные онлайн-инструменты.</p>
-                        <button class="btn width-fit-content" @click.prevent="emits('openApplication')"><span class="h6 span_btn">Заполнить форму</span></button>
+                        <button class="btn width-fit-content about__btn" @click.prevent="emits('openApplication')"><span class="h6 span_btn">Заполнить форму</span></button>
                         <img class="about-3dObject" src="../assets/img/3d-icons/3d-Selit.svg" alt="img">
                     </div>
                     <div class="grid about_wrap-mini gap-15">
@@ -382,7 +334,7 @@
             <div class="container faq__container">
                 <h2 class="h2 faq__title weight-700">Часто задаваемые вопросы</h2>
                 <Accordion value="0" class="accordion__wrap">
-                    <AccordionPanel data-aos="fade-up" value="1" class="accordion__item">
+                    <AccordionPanel @click.prevent="AOS.refresh()" data-aos="fade-up" value="1" class="accordion__item">
                         <AccordionHeader class="accordion-item__title"><h4 class="span_btn accordion-item-title__text h5 weight-500">Что нужно от меня, чтобы мы начали работу?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
                         <AccordionContent class="accordion-item__content">
                             <p class="accordion-item__text weight-500 text_accardion">
@@ -390,7 +342,7 @@
                             </p>
                         </AccordionContent>
                     </AccordionPanel>
-                    <AccordionPanel data-aos="fade-up" value="2" class="accordion__item">
+                    <AccordionPanel @click.prevent="AOS.refresh()" data-aos="fade-up" value="2" class="accordion__item">
                         <AccordionHeader class="accordion-item__title"><h4 class="span_btn accordion-item-title__text h5 weight-500">Можете предложить шаблонный сайт или готовое решение?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
                         <AccordionContent class="accordion-item__content">
                             <p class="accordion-item__text weight-500 text_accardion">
@@ -398,7 +350,7 @@
                             </p>
                         </AccordionContent>
                     </AccordionPanel>
-                    <AccordionPanel data-aos="fade-up" value="3" class="accordion__item">
+                    <AccordionPanel @click.prevent="AOS.refresh()" data-aos="fade-up" value="3" class="accordion__item">
                         <AccordionHeader class="accordion-item__title"><h4 class="span_btn accordion-item-title__text h5 weight-500">Сколько времени занимает разработка сайта?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
                             <AccordionContent class="accordion-item__content">
                             <p class="accordion-item__text weight-500 text_accardion">
@@ -406,7 +358,7 @@
                             </p>
                         </AccordionContent>
                     </AccordionPanel>
-                    <AccordionPanel data-aos="fade-up" value="4" class="accordion__item">
+                    <AccordionPanel @click.prevent="AOS.refresh()" data-aos="fade-up" value="4" class="accordion__item">
                         <AccordionHeader class="accordion-item__title"><h4 class="span_btn accordion-item-title__text h5 weight-500">Могу ли я вносить правки в процессе разработки?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
                             <AccordionContent class="accordion-item__content">
                             <p class="accordion-item__text weight-500 text_accardion">
@@ -414,7 +366,7 @@
                             </p>
                         </AccordionContent>
                     </AccordionPanel>
-                    <AccordionPanel data-aos="fade-up" value="5" class="accordion__item">
+                    <AccordionPanel @click.prevent="AOS.refresh()" data-aos="fade-up" value="5" class="accordion__item">
                         <AccordionHeader class="accordion-item__title"><h4 class="span_btn accordion-item-title__text h5 weight-500">Нужно ли заполнять контент самостоятельно или вы берёте это на себя?</h4><div class="accordion__arrow weight-300">+</div></AccordionHeader>
                             <AccordionContent class="accordion-item__content">
                             <p class="accordion-item__text weight-500 text_accardion">
@@ -422,7 +374,7 @@
                             </p>
                         </AccordionContent>
                     </AccordionPanel>
-                    <AccordionPanel data-aos="fade-up" value="6" class="accordion__item">
+                    <AccordionPanel @click.prevent="AOS.refresh()" data-aos="fade-up" value="6" class="accordion__item">
                         <AccordionHeader class="accordion-item__title"><h4 class="span_btn accordion-item-title__text h5 weight-500">Нужна ли поддержка сторонних разработчиков для управления моим сайтом?</h4><div class="accordion__arrow weight-300 ">+</div></AccordionHeader>
                             <AccordionContent class="accordion-item__content">
                             <p class="accordion-item__text weight-500 text_accardion">
@@ -451,6 +403,7 @@
     import SkillsComponent from '@/components/SkillsComponent.vue';
     import MarqueeComponent from "@/components/MarqueeComponent.vue";
     import AOS from 'aos';
+    import WorkComponent from '@/components/WorkComponent.vue';
 
     const emits = defineEmits(['openApplication']);
 
@@ -472,9 +425,9 @@
             cursor.style = `translate: ${(document.documentElement.clientWidth / 2 - e.x) / 25}px ${(document.documentElement.clientHeight / 2 - e.y) / 25}px`;
         });
 
+        gsap.registerPlugin(ScrollTrigger);
         if(window.outerWidth > 576){
             // GSAP Setup
-            gsap.registerPlugin(ScrollTrigger);
             gsap.to('.block-about--1', {
                 scrollTrigger: {
                     trigger: '.block-about--1',
@@ -512,6 +465,39 @@
                 scale: 1
             });
         }
+
+        let process_items = gsap.utils.toArray('.process__item');
+        if(window.outerWidth < 1024){
+            console.log(1);
+            gsap.to(process_items, {
+                xPercent: -110 * (process_items.length - 1),
+                ease: 'none',
+                scrollTrigger: {
+                    start: 'top 10%',
+                    trigger: '.process__section',
+                    pin: true,
+                    snap: 1 / (process_items.length - 1),
+                    scrub: 1,
+                    end: () => '+=' + document.querySelector(".process__section").offsetWidth * 5
+                }
+            });
+        }
+        else{
+            gsap.to(process_items, {
+                xPercent: -75 * (process_items.length - 1),
+                ease: 'none',
+                scrollTrigger: {
+                    start: 'top 10%',
+                    trigger: '.process__section',
+                    pin: true,
+                    snap: 1 / (process_items.length - 1),
+                    scrub: 1,
+                    end: () => '+=' + document.querySelector(".process__section").offsetWidth
+                }
+            });
+        }
+
+
 
         // Counting Numbers
         let numbers = Array.from(document.querySelectorAll('.number_counting')) as HTMLElement[];
@@ -644,30 +630,9 @@
         opacity: .5;
     }
 
-    /* projects */
+
     .wrap_projects{
         grid-template-columns: 1fr 1fr;
-    }
-
-    .view_content{
-        /* height: 500px; */
-        border-radius: var(--borderRadius);
-        overflow: hidden;
-    }
-
-    .view_content > img{
-        object-fit: cover;
-    }
-
-    .block_character_project{
-        padding: 10px 18px;
-        border: 1px rgba(128, 128, 128, 0.5) solid;
-        border-radius: var(--borderRadius);
-        width: fit-content;
-    }
-
-    .wrap_character_project{
-        width: fit-content;
     }
 
     
@@ -677,13 +642,17 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+
     .big_number{
         font-size: 120px;
         position: relative;
     }
 
     .process_wrap{
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        display: flex;
+    }
+    .process__item{
+        width: 25vw;
     }
     /* about */
     .about_wrap{
@@ -710,9 +679,10 @@
     .block-about--1{
         scale: 1.1;
         rotate: 2deg;
-        translate: -100px 100px;
+        translate: -100px 0;
         position: relative;
         overflow: hidden;
+        z-index: 2;
     }
 
     .block-about--1 > p{
@@ -732,7 +702,7 @@
         rotate: -2deg;
         z-index: 1;
         position: relative;
-        translate: 100px 100px;
+        translate: 100px 0;
         background-color: var(--colorBlack);
     }
 
@@ -755,7 +725,7 @@
 
     .block-about--3{
         scale: 1.1;
-        translate: 0 100px;
+        translate: 0 0;
         background-color: var(--colorMain);
     }
 
@@ -993,6 +963,9 @@
         .container-banner > p{
             font-size: var(--fontDefault);
         }
+        .process__item{
+            width: 50vw;
+        }
     }
 
     @media (max-width: 768px) {
@@ -1013,6 +986,9 @@
             position: absolute;
             left: 50% ;
             top: calc(50% - 5px);
+        }
+        .process__item{
+            width: 100vw;
         }
     }
     
