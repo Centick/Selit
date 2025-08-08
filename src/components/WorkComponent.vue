@@ -1,9 +1,6 @@
 <template>
     <div class="block_project grid grid-column gap-15">
-        <div class="view_content width-100">
-            <img class="width-100" :src="'/src/assets/img/projects/cards/' + img" alt="img">
-            <!-- video -->
-        </div>
+        <img class="view_content width-100" :src="'/src/assets/img/projects/cards/' + img" alt="img">
         <h4 class="h4">{{ title }}</h4>
         <p>{{ text }}</p>
         <div class="wrap_character_project grid grid-row gap-10">
@@ -22,10 +19,6 @@
     .view_content{
         /* height: 500px; */
         border-radius: var(--borderRadius);
-        overflow: hidden;
-    }
-
-    .view_content > img{
         object-fit: cover;
     }
 
