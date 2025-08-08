@@ -12,7 +12,7 @@
 body{
     overflow-x: hidden;
     /* user-select: none; */
-    background-color: #fcfcfc;
+    background-color: white;
 }
 
 body::-webkit-scrollbar {
@@ -507,11 +507,15 @@ footer{
     }
 
     .container{
-        gap: 30px;
+        gap: 20px;
     }
 
     .modal__container{
         width: 100%;
+    }
+
+    .section{
+        padding: 50px 0;
     }
 }
 

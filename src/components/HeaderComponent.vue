@@ -4,9 +4,9 @@
             <!-- <img src="" alt="img"> -->
              <!-- пока так (до лого) -->
             <h3 class="h3"><span style="color: var(--colorMain);" class="h3">S</span>elit</h3>
-            <nav :class="{'main_menu_active': menu_opened}" class="grid grid-row align-content-center justify-content-space-between gap-30 main_menu">
+            <nav :class="{'main_menu_active': menu_opened}" class="grid grid-row align-content-center justify-content-space-between gap-25 main_menu">
                 <div class="menu__cross" @click="menu_opened = !menu_opened">
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M19 5L4.99998 19M5.00001 5L19 19" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    <img class="width-100" src="../assets/img/icons/cross.svg" alt="cross">
                 </div>
                 <a class="link header_link" @click="menu_opened = !menu_opened" href="#">Кейсы</a>
                 <a class="link header_link" @click="menu_opened = !menu_opened" href="#">Разработка</a>
@@ -86,9 +86,13 @@
         width: 30px;
         height: 30px;
     }
+
     .menu__cross{
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
+        top: 20px;
+        right: 20px;
+        position: absolute;
     }
 
     /* TODO: Доделать бергер меню */
@@ -113,6 +117,10 @@
         }
         .menu__burger, .menu__cross{
             display: block;
+        }
+
+        .header_link{
+            font-size: var(--h6);
         }
     }
 </style>

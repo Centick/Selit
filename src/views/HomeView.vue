@@ -50,11 +50,8 @@
             <div class="container">
                 <h2 class="h2 width-100">Кейсы</h2>
                 <div class="wrap_projects grid gap-25 width-100">
-                    <div data-aos="fade-up" class="block_project grid grid-column gap-15">
-                        <div class="view_content width-100">
-                            <img class="width-100" src="../assets/img/projects/cards/wedding.svg" alt="img">
-                            <!-- video -->
-                        </div>
+                    <div data-aos="fade-up" class="block_project grid grid-column gap-15"> 
+                        <img class="view_content width-100" src="../assets/img/projects/cards/wedding.svg" alt="img">
                         <h4 class="h4">Advent-календарь от КИБЕРПРОТЕКТ</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente mollitia quidem odit minima dolorum reprehend</p>
                         <div class="wrap_character_project grid grid-row gap-10">
@@ -64,10 +61,7 @@
                         </div>
                     </div>
                     <div data-aos="fade-up" data-aos-delay="200" class="block_project grid grid-column gap-15">
-                        <div class="view_content width-100">
-                            <img class="width-100" src="../assets/img/projects/cards/black-taxi.svg" alt="img">
-                            <!-- video -->
-                        </div>
+                        <img class="view_content width-100" src="../assets/img/projects/cards/black-taxi.svg" alt="img">
                         <h4 class="h4">Advent-календарь от КИБЕРПРОТЕКТ</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente mollitia quidem odit minima dolorum reprehend</p>
                         <div class="wrap_character_project grid grid-row gap-10">
@@ -77,10 +71,7 @@
                         </div>
                     </div>
                     <div data-aos="fade-up" class="block_project grid grid-column gap-15">
-                        <div class="view_content width-100">
-                            <img class="width-100" src="../assets/img/projects/cards/ai.svg" alt="img">
-                            <!-- video -->
-                        </div>
+                        <img class="view_content width-100" src="../assets/img/projects/cards/ai.svg" alt="img">
                         <h4 class="h4">Advent-календарь от КИБЕРПРОТЕКТ</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente mollitia quidem odit minima dolorum reprehend</p>
                         <div class="wrap_character_project grid grid-row gap-10">
@@ -90,10 +81,7 @@
                         </div>
                     </div>
                     <div data-aos="fade-up" data-aos-delay="200" class="block_project grid grid-column gap-15">
-                        <div class="view_content width-100">
-                            <img class="width-100" src="../assets/img/projects/cards/flowers.svg" alt="img">
-                            <!-- video -->
-                        </div>
+                        <img class="view_content width-100" src="../assets/img/projects/cards/kyberprotect.svg" alt="img">
                         <h4 class="h4">Advent-календарь от КИБЕРПРОТЕКТ</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente mollitia quidem odit minima dolorum reprehend</p>
                         <div class="wrap_character_project grid grid-row gap-10">
@@ -103,10 +91,7 @@
                         </div>
                     </div>
                     <div data-aos="fade-up" class="block_project grid grid-column gap-15">
-                        <div class="view_content width-100">
-                            <img class="width-100" src="../assets/img/projects/cards/Lipetsk.svg" alt="img">
-                            <!-- video -->
-                        </div>
+                        <img class="view_content width-100" src="../assets/img/projects/cards/Lipetsk.svg" alt="img">
                         <h4 class="h4">Advent-календарь от КИБЕРПРОТЕКТ</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente mollitia quidem odit minima dolorum reprehend</p>
                         <div class="wrap_character_project grid grid-row gap-10">
@@ -116,10 +101,7 @@
                         </div>
                     </div>
                     <div data-aos="fade-up" data-aos-delay="200" class="block_project grid grid-column gap-15">
-                        <div class="view_content width-100">
-                            <img class="width-100" src="../assets/img/projects/cards/pensioners.svg" alt="img">
-                            <!-- video -->
-                        </div>
+                        <img class="view_content width-100" src="../assets/img/projects/cards/pensioners.svg" alt="img">
                         <h4 class="h4">Advent-календарь от КИБЕРПРОТЕКТ</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente mollitia quidem odit minima dolorum reprehend</p>
                         <div class="wrap_character_project grid grid-row gap-10">
@@ -129,30 +111,14 @@
                         </div>
                     </div>
                     <div data-aos="fade-up" class="block_project grid grid-column gap-15">
-                        <div class="view_content width-100">
-                            <img class="width-100" src="../assets/img/projects/cards/junior-skills.svg" alt="img">
-                            <!-- video -->
-                        </div>
+                        <img class="view_content width-100" src="../assets/img/projects/cards/junior-skills.svg" alt="img">
                         <h4 class="h4">Advent-календарь от КИБЕРПРОТЕКТ</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente mollitia quidem odit minima dolorum reprehend</p>
-                        <div class="wrap_character_project grid grid-row gap-10">
-                            <span class="block_character_project">lorem</span>
-                            <span class="block_character_project">lorem lor</span>
-                            <span class="block_character_project">loremrere</span>
-                        </div>
                     </div>
                     <div data-aos="fade-up" data-aos-delay="200" class="block_project grid grid-column gap-15">
-                        <div class="view_content width-100">
-                            <img class="width-100" src="../assets/img/projects/cards/kyberprotect.svg" alt="img">
-                            <!-- video -->
-                        </div>
+                        <img class="view_content width-100" src="../assets/img/projects/cards/flowers.svg" alt="img">
                         <h4 class="h4">Advent-календарь от КИБЕРПРОТЕКТ</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente mollitia quidem odit minima dolorum reprehend</p>
-                        <div class="wrap_character_project grid grid-row gap-10">
-                            <span class="block_character_project">lorem</span>
-                            <span class="block_character_project">lorem lor</span>
-                            <span class="block_character_project">loremrere</span>
-                        </div>
                     </div>
                 </div>
                 <button class="btn"><span class="h6 span_btn">Смотреть все проекты</span></button>
@@ -613,6 +579,10 @@
         border-bottom: 2px solid var(--colorGrey);
     }
 
+    .block_services:first-child{
+        padding-top: 0;
+    }
+
     .name_services{
         display: flex;
         flex-direction: row;
@@ -647,16 +617,12 @@
     /* projects */
     .wrap_projects{
         grid-template-columns: 1fr 1fr;
+        grid-row-gap: 35px;
     }
 
     .view_content{
-        /* height: 500px; */
-        border-radius: var(--borderRadius);
-        overflow: hidden;
-    }
-
-    .view_content > img{
         object-fit: cover;
+        border-radius: var(--borderRadius);
     }
 
     .block_character_project{
@@ -1013,6 +979,10 @@
             position: absolute;
             left: 50% ;
             top: calc(50% - 5px);
+        }
+
+        .arrow_bg{
+            width: 400px;
         }
     }
     
