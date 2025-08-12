@@ -2,6 +2,9 @@
     <div class="wrap_projects grid gap-25 width-100">
         <WorkComponent
             v-for="(work, index) in PortfolioArr"
+            :key="index"
+            data-aos="fade-up"
+            :data-aos-delay="200 * (index % 2)"
             v-show="index < quantity || quantity == 0"
             :text="work.text"
             :title="work.title"

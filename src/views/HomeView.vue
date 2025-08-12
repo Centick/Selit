@@ -56,6 +56,52 @@
             </div>
         </section>
 
+        <section class="section">
+            <div class="container grid grid-column">
+                <h2 class="h2 width-100">Компания</h2>
+                <div class="grid about_wrap gap-15">
+                    <div class="block-about block-about--1 grid grid-column align-content-start gap-15">
+                        <h3 class="h3"><span class="text-inherit color-main">Selit</span> - Разработка web-решений под ваши задачи</h3>
+                        <p>Мы создаем современные сайты и веб-приложения, которые решают бизнес-задачи наших клиентов. От яркого дизайна и удобного интерфейса до надежной технической реализации — мы воплощаем ваши идеи в эффективные онлайн-инструменты.</p>
+                        <button class="btn width-fit-content about__btn" @click.prevent="emits('openApplication')"><span class="h6 span_btn">Заполнить форму</span></button>
+                        <img class="about-3dObject" src="../assets/img/3d-icons/3d-Selit.svg" alt="img">
+                    </div>
+                    <div class="grid about_wrap-mini gap-15">
+                        <div class="block-about block-about--3 grid grid-column gap-15 align-content-start">
+                            <h3 class="h4">Качество услуг</h3>
+                            <p>Неограниченное количество бесплатных правок, которые не конфликтуют с исходным техническим заданием </p>
+                        </div>
+                        <div @click.prevent="isOpenedSkillsModal()" class="block-about block-about--2 grid grid-column gap-15">
+                            <h3 class="h4">Наш стек</h3>
+                            <p>Мы постоянно развиваемся и открыты к освоению новых технологий, необходимых для реализации проектов, даже если ранее с ними не сталкивались.
+                            </p>
+                            <div class="about-wrap-skill grid grid-row">
+                                <div class="about-skill">
+                                    <img src="@/assets/img/icons/skills/figmaIcon.svg" alt="img">
+                                </div>
+                                <div class="about-skill">
+                                    <img src="@/assets/img/icons/skills/laravelIcon.svg" alt="img">
+                                </div>
+                                <div class="about-skill">
+                                    <img src="@/assets/img/icons/skills/nodeIcon.svg" alt="img">
+                                </div>
+                                <span class="about-skill">
+                                    <img src="@/assets/img/icons/skills/DjangoIcon.svg" alt="img">
+                                </span>
+                                <div class="about-skill">
+                                    <img src="@/assets/img/icons/skills/vueIcon.svg" alt="img">
+                                </div>
+                                <div class="about-skill">
+                                    <img src="@/assets/img/icons/skills/dockerIcon.svg" alt="img">
+                                </div>
+                            </div>
+                            <span class="link">Подробнее <span class="arrow text-inherit">&rarr;</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- process -->
         <section class="section process__section">
             <div class="container grid process__container">
@@ -111,51 +157,6 @@
             </div>
         </section>
 
-        <section class="section">
-            <div class="container grid grid-column">
-                <h2 class="h2 width-100">Компания</h2>
-                <div class="grid about_wrap gap-15">
-                    <div class="block-about block-about--1 grid grid-column align-content-start gap-15">
-                        <h3 class="h3"><span class="text-inherit color-main">Selit</span> - Разработка web-решений под ваши задачи</h3>
-                        <p>Мы создаем современные сайты и веб-приложения, которые решают бизнес-задачи наших клиентов. От яркого дизайна и удобного интерфейса до надежной технической реализации — мы воплощаем ваши идеи в эффективные онлайн-инструменты.</p>
-                        <button class="btn width-fit-content about__btn" @click.prevent="emits('openApplication')"><span class="h6 span_btn">Заполнить форму</span></button>
-                        <img class="about-3dObject" src="../assets/img/3d-icons/3d-Selit.svg" alt="img">
-                    </div>
-                    <div class="grid about_wrap-mini gap-15">
-                        <div class="block-about block-about--3 grid grid-column gap-15 align-content-start">
-                            <h3 class="h4">Качество услуг</h3>
-                            <p>Неограниченное количество бесплатных правок, которые не конфликтуют с исходным техническим заданием </p>
-                        </div>
-                        <div @click.prevent="isOpenedSkillsModal()" class="block-about block-about--2 grid grid-column gap-15">
-                            <h3 class="h4">Наш стек</h3>
-                            <p>Мы постоянно развиваемся и открыты к освоению новых технологий, необходимых для реализации проектов, даже если ранее с ними не сталкивались.
-                            </p>
-                            <div class="about-wrap-skill grid grid-row">
-                                <div class="about-skill">
-                                    <img src="@/assets/img/icons/skills/figmaIcon.svg" alt="img">
-                                </div>
-                                <div class="about-skill">
-                                    <img src="@/assets/img/icons/skills/laravelIcon.svg" alt="img">
-                                </div>
-                                <div class="about-skill">
-                                    <img src="@/assets/img/icons/skills/nodeIcon.svg" alt="img">
-                                </div>
-                                <span class="about-skill">
-                                    <img src="@/assets/img/icons/skills/DjangoIcon.svg" alt="img">
-                                </span>
-                                <div class="about-skill">
-                                    <img src="@/assets/img/icons/skills/vueIcon.svg" alt="img">
-                                </div>
-                                <div class="about-skill">
-                                    <img src="@/assets/img/icons/skills/dockerIcon.svg" alt="img">
-                                </div>
-                            </div>
-                            <span class="link">Подробнее <span class="arrow text-inherit">&rarr;</span></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <SkillsComponent
             :class="{'modal_active': skills_is_showed, 'modal_not_active': !skills_is_showed}"
@@ -372,7 +373,7 @@
         });
 
         gsap.registerPlugin(ScrollTrigger);
-        if(window.outerWidth > 576){
+        if(window.innerWidth > 576){
             // GSAP Setup
             gsap.to('.block-about--1', {
                 scrollTrigger: {
@@ -413,8 +414,49 @@
         }
 
         let process_items = gsap.utils.toArray('.process__item');
-        if(window.outerWidth < 1024){
-            console.log(1);
+        // if(window.innerWidth < 380){
+        //     gsap.to(process_items, {
+        //         xPercent: -133 * (process_items.length - 1),
+        //         ease: 'none',
+        //         scrollTrigger: {
+        //             start: 'top 10%',
+        //             trigger: '.process__section',
+        //             pin: true,
+        //             snap: 1 / (process_items.length - 1),
+        //             scrub: 1,
+        //             end: () => '+=' + document.querySelector(".process__section").offsetWidth
+        //         }
+        //     });
+        // }
+        // else if(window.innerWidth < 576){
+        //     gsap.to(process_items, {
+        //         xPercent: -122 * (process_items.length - 1),
+        //         ease: 'none',
+        //         scrollTrigger: {
+        //             start: 'top 10%',
+        //             trigger: '.process__section',
+        //             pin: true,
+        //             snap: 1 / (process_items.length - 1),
+        //             scrub: 1,
+        //             end: () => '+=' + document.querySelector(".process__section").offsetWidth
+        //         }
+        //     });
+        // }
+        if(window.innerWidth < 768){
+            gsap.to(process_items, {
+                xPercent: -107 * (process_items.length - 1),
+                ease: 'none',
+                scrollTrigger: {
+                    start: 'top 10%',
+                    trigger: '.process__section',
+                    pin: true,
+                    snap: 1 / (process_items.length - 1),
+                    scrub: 1,
+                    end: () => '+=' + document.querySelector(".process__section").offsetWidth
+                }
+            });
+        }
+        else if(window.innerWidth < 1024){
             gsap.to(process_items, {
                 xPercent: -110 * (process_items.length - 1),
                 ease: 'none',
@@ -424,7 +466,21 @@
                     pin: true,
                     snap: 1 / (process_items.length - 1),
                     scrub: 1,
-                    end: () => '+=' + document.querySelector(".process__section").offsetWidth * 5
+                    end: () => '+=' + document.querySelector(".process__section").offsetWidth
+                }
+            });
+        }
+        else if(window.innerWidth < 1180){
+            gsap.to(process_items, {
+                xPercent: -90 * (process_items.length - 1),
+                ease: 'none',
+                scrollTrigger: {
+                    start: 'top 10%',
+                    trigger: '.process__section',
+                    pin: true,
+                    snap: 1 / (process_items.length - 1),
+                    scrub: 1,
+                    end: () => '+=' + document.querySelector(".process__section").offsetWidth
                 }
             });
         }
@@ -454,6 +510,7 @@
         for(let i of numbers){counted.push(false); max_numbers.push(Number(i.textContent)); i.textContent = '0'}
 
         window.addEventListener("scroll", (e) => {
+            AOS.refresh();
             let number_highest_size = number_highest.getBoundingClientRect();
             if(number_highest_size.top + number_highest_size.height + 50 <= window.innerHeight && number_highest_size.top >= -(number_highest_size.height + 50)) {
                 numbers.forEach(number => {
@@ -590,6 +647,7 @@
 
     .process_wrap{
         display: flex;
+        gap: 7vw;
     }
     .process__item{
         width: 25vw;
@@ -873,6 +931,42 @@
     }
 
     /* media */
+    @media (max-width: 1300px) {
+        .block-about--1{
+            scale: 1.1;
+            rotate: 2deg;
+            translate: -100px 0;
+        }
+
+        .block-about--2{
+            scale: 1.1;
+            rotate: -2deg;
+            translate: 100px 0;
+        }
+        .block-about--3{
+            scale: 1.1;
+            rotate: -2deg;
+            transform: translate(100px, 0);
+        }
+    }
+    @media (max-width: 1280px) {
+        .block-about--1{
+            scale: 1.1;
+            rotate: 0deg;
+            translate: 0 0;
+        }
+
+        .block-about--2{
+            scale: 1.1;
+            rotate: -1deg;
+            translate: 0 50px;
+        }
+        .block-about--3{
+            scale: 1.1;
+            rotate: 1deg;
+            transform: translate(0, 50px);
+        }
+    }
     @media (max-width: 1024px) {
         .banner_h1{
             width: 100% !important;
@@ -928,7 +1022,7 @@
             top: calc(50% - 5px);
         }
         .process__item{
-            width: 100vw;
+            width: 80vw;
         }
 
         .arrow_bg{
@@ -958,9 +1052,16 @@
             translate: 0 0;
         }
 
+        .block-about--2{
+            scale: 1;
+            rotate: 0deg;
+            translate: 0 0;
+        }
+
         .block-about--3{
             scale: 1;
             rotate: 0deg;
+            transform: translate(0, 0);
             translate: 0 0;
         }
 
@@ -984,6 +1085,9 @@
         }
         .block-about--3 img{
             width: 100%;
+        }
+        .about_wrap{
+            grid-template-columns: 1fr;
         }
     }
 </style>

@@ -40,7 +40,6 @@
         checkPositionForHeader();
 
         window.addEventListener('click', (e) => {
-            console.log(window.outerWidth - 320, e.x);
             if(menu_opened.value && window.innerWidth - 320 > e.x){
                 menu_opened.value = false;
             }
