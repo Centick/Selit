@@ -49,65 +49,10 @@
         <section class="section">
             <div class="container">
                 <h2 class="h2 width-100">Кейсы</h2>
-                <div class="wrap_projects grid gap-25 width-100">
-                    <WorkComponent
-                        data-aos="fade-up"
-                        text="lorem lorem lorem lorem lorem lorem lorem lorem"
-                        title="Wedding"
-                        img="wedding.svg"
-                        :technologies="['1', '2', '3']"
-                    ></WorkComponent>
-                    <WorkComponent
-                        data-aos="fade-up" data-aos-delay="200"
-                        text="lorem lorem lorem lorem lorem lorem lorem lorem"
-                        title="Грузоперевозки BlackTaxi"
-                        img="black-taxi.svg"
-                        :technologies="['1', '2', '3']"
-                    ></WorkComponent>
-                    <WorkComponent
-                        data-aos="fade-up"
-                        text="lorem lorem lorem lorem lorem lorem lorem lorem"
-                        title="AI Revolution"
-                        img="ai.svg"
-                        :technologies="['1', '2', '3']"
-                    ></WorkComponent>
-                    <WorkComponent
-                        data-aos="fade-up" data-aos-delay="200"
-                        text="lorem lorem lorem lorem lorem lorem lorem lorem"
-                        title="TulpanStore - цветочный магазин"
-                        img="flowers.svg"
-                        :technologies="['1', '2', '3']"
-                    ></WorkComponent>
-                    <WorkComponent
-                        data-aos="fade-up"
-                        text="lorem lorem lorem lorem lorem lorem lorem lorem"
-                        title="Мой Край - достопримечательности Липецка"
-                        img="Lipetsk.svg"
-                        :technologies="['1', '2', '3']"
-                    ></WorkComponent>
-                    <WorkComponent
-                        data-aos="fade-up" data-aos-delay="200"
-                        text="lorem lorem lorem lorem lorem lorem lorem lorem"
-                        title="Партия Пенсионеров - региональное отделение"
-                        img="pensioners.svg"
-                        :technologies="['1', '2', '3']"
-                    ></WorkComponent>
-                    <WorkComponent
-                        data-aos="fade-up"
-                        text="lorem lorem lorem lorem lorem lorem lorem lorem"
-                        title="Junior Skills - образовательная платформа"
-                        img="junior-skills.svg"
-                        :technologies="['1', '2', '3']"
-                    ></WorkComponent>
-                    <WorkComponent
-                        data-aos="fade-up" data-aos-delay="200"
-                        text="lorem lorem lorem lorem lorem lorem lorem lorem"
-                        title="Кибербезопасный новый год - адвент календарь для КИБЕРПРОТЕКТ"
-                        img="kyberprotect.svg"
-                        :technologies="['1', '2', '3']"
-                    ></WorkComponent>
-                </div>
-                <button class="btn"><span class="h6 span_btn">Смотреть все проекты</span></button>
+                <PortfolioComponent
+                :quantity = 4
+                />
+                <router-link :to="'/portfolio'"><button class="btn"><span class="h6 span_btn">Смотреть все проекты</span></button></router-link>
             </div>
         </section>
 
@@ -207,8 +152,8 @@
                 </div>
                 <div class="grid justify-content-start align-items-start width-100">
                     <button class="btn width-fit-content" @click.prevent="emits('openApplication')"><span class="h6 span_btn">Заполнить форму</span></button>
-                </div>
-                
+                </div> 
+
             </div>
         </section>
 
@@ -403,6 +348,7 @@
     import AccordionContent from 'primevue/accordioncontent';
     import SkillsComponent from '@/components/SkillsComponent.vue';
     import MarqueeComponent from "@/components/MarqueeComponent.vue";
+    import PortfolioComponent from '@/components/PortfolioComponent.vue';
     import AOS from 'aos';
     import WorkComponent from '@/components/WorkComponent.vue';
 
@@ -686,12 +632,6 @@
         margin-bottom: auto;
         opacity: .5;
     }
-
-
-    .wrap_projects{
-        grid-template-columns: 1fr 1fr;
-    }
-
     
 
     /* process */
@@ -1083,6 +1023,10 @@
         }
         .process__item{
             width: 80vw;
+        }
+
+        .arrow_bg{
+            width: 400px;
         }
     }
     

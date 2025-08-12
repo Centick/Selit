@@ -3,12 +3,12 @@
         <div class="container align-content-center grid grid-row align-items-center justify-content-space-between">
             <!-- <img src="" alt="img"> -->
              <!-- пока так (до лого) -->
-            <h3 class="h3"><span style="color: var(--colorMain);" class="h3">S</span>elit</h3>
+            <router-link :to="'/'"><img src="../assets/img/brand/mainLogo.svg" class="mainLogo" alt="img"></router-link>
             <nav :class="{'main_menu_active': menu_opened}" class="grid grid-row align-content-center justify-content-space-between gap-25 main_menu">
                 <div class="menu__cross" @click="menu_opened = !menu_opened">
                     <img class="width-100" src="../assets/img/icons/cross.svg" alt="cross">
                 </div>
-                <a class="link header_link" @click="menu_opened = !menu_opened" href="#">Кейсы</a>
+                <router-link :to="'/portfolio'" class="link header_link" @click="menu_opened = !menu_opened">Кейсы</router-link>
                 <a class="link header_link" @click="menu_opened = !menu_opened" href="#">Разработка</a>
                 <a class="link header_link" @click="menu_opened = !menu_opened" href="#">Услуги</a>
                 <a class="link header_link" @click="menu_opened = !menu_opened" href="#">О нас</a>
@@ -53,6 +53,10 @@
     header{
         z-index: 5;
         transition: box-shadow .3s ease, background-color .3s ease;
+    }
+
+    .mainLogo{
+        width: 70px;
     }
 
     .header_link{

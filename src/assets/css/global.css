@@ -64,7 +64,7 @@ body::-webkit-scrollbar-thumb {
     --colorWhite: #fff;
     --colorBlack: #292929;
     --borderRadiusSmall: 10px;
-    --borderRadius: 25px;
+    --borderRadius: 22px;
     --borderRadiusBig: 40px;
 }
 html{
@@ -74,7 +74,7 @@ header{
     z-index: 9;
     position: fixed;
     width: 100%;
-    padding: 15px 0;
+    padding: 24px 0;
 }
 .header_relative{
     position: relative;
@@ -452,6 +452,12 @@ footer{
     /* position: absolute; */
     width: 22px;
     fill: red;
+}
+
+/* navigation */
+.navigation *{
+    color: gray;
+    font-size: 16px;
 }
 @keyframes particle_rotate {
     0%{
