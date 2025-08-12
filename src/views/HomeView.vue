@@ -161,7 +161,6 @@
                 </div>
                 <div class="grid justify-content-start align-items-start width-100">
                     <button class="btn width-fit-content" @click.prevent="emits('openApplication')"><span class="h6 span_btn">Заполнить форму</span></button>
-                </div>
                 </div> 
                 
             </div>
