@@ -101,6 +101,9 @@
 
     /* TODO: Доделать бергер меню */
     @media (max-width: 768px) {
+        .mainLogo{
+            width: 50px;
+        }
         .main_menu{
             grid-auto-flow: row;
             height: 100vh;
