@@ -351,6 +351,8 @@
     import PortfolioComponent from '@/components/PortfolioComponent.vue';
     import AOS from 'aos';
     import WorkComponent from '@/components/WorkComponent.vue';
+    
+    document.title = "Selit - Разработка цифровых решений для ваших задач";
 
     const emits = defineEmits(['openApplication']);
 

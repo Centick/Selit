@@ -35,7 +35,7 @@
         document.body.style.overflowY = "visible";
     }
 
-    document.title = "Разработка цифровых решений для ваших задач";
+    
 </script>
 
 <style>

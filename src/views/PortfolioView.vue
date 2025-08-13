@@ -14,6 +14,8 @@
 
 <script lang="ts" setup>
     import PortfolioComponent from '@/components/PortfolioComponent.vue';
+
+    document.title = "Кейсы Selit по разработке и дизайну web-приложений";
 </script>
 
 <style scoped>
