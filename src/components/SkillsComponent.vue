@@ -134,4 +134,8 @@
         justify-content: flex-end;
         /* max-width: 90%; */
     }
+
+    .modal__container{
+        overflow-y: overlay;
+    }
 </style>

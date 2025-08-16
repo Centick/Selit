@@ -14,6 +14,9 @@
 
 <script lang="ts" setup>
     import PortfolioComponent from '@/components/PortfolioComponent.vue';
+
+    const emits = defineEmits(['loaded']);
+    emits('loaded');
 </script>
 
 <style scoped>

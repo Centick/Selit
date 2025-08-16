@@ -1,6 +1,6 @@
 <template>
-    <section @click.prevent="close()" class="section modal__section grid justify-items-end">
-        <div @click.prevent="container_clicked()" class="container modal__container grid justify-content-start gap-20">
+    <section @click="close()" class="section modal__section grid justify-items-end">
+        <div @click="container_clicked()" class="container modal__container grid justify-content-start gap-20">
             <img class="cross" @click.prevent="close()" src="../assets/img/icons/cross.svg" alt="img">
             <h3 class="h2 width-100">Обсудить проект</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quas id saepe suscipit ipsum voluptatibus doloribus quibusdam aperiam. Delectus cumque voluptates provident quas sunt deleniti natus reiciendis optio dolor exercitationem!</p>
@@ -21,7 +21,7 @@
                 <label class="input input_file grid grid-row gap-10 align-items-center width-fit-content" for="TZfile">
                     <img class="input_file-icon" src="@/assets/img/icons/paper-clip.svg" alt="paper-clip">
                     <span class="input_file-text weight-700" >Прикрепить файл</span>
-                    <input id="TZfile" multiple type="file">
+                    <input id="TZfile" type="file">
                 </label>
                 <div class="grid grid-row align-self-end justify-content-space-between align-items-center wrap-submit">
                     <p class="politicks">Нажимая на кнопку «Отправить», вы даете <br> согласие на <a class="weight-700" href="#">Политику конфиденциальности</a></p>
@@ -201,6 +201,11 @@
         transform: rotate(45deg);
         cursor: pointer;
         z-index: 4;
+    }
+
+
+    .modal__container{
+        overflow-y: overlay;
     }
 
     @media (max-width: 768px) {

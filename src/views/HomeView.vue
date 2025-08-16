@@ -105,7 +105,7 @@
         <!-- process -->
         <section class="section process__section">
             <div class="container grid process__container">
-                <h2 class="h2 width-100">Этапы разработки сайта</h2>
+                <h2 class="h2 width-100 process__title">Этапы разработки сайта</h2>
                 <div class="grid gap-100 process_wrap">
                     <div class="grid grid-column gap-25 align-content-start process__item">
                         <div class="grid grid-column gap-5">
@@ -352,7 +352,7 @@
     import AOS from 'aos';
     import WorkComponent from '@/components/WorkComponent.vue';
 
-    const emits = defineEmits(['openApplication']);
+    const emits = defineEmits(['openApplication', 'loaded']);
 
     const skills_is_showed: Ref<boolean> = ref(false);
     
@@ -447,7 +447,7 @@
                 xPercent: -107 * (process_items.length - 1),
                 ease: 'none',
                 scrollTrigger: {
-                    start: 'top 10%',
+                    start: 'top 15%',
                     trigger: '.process__section',
                     pin: true,
                     snap: 1 / (process_items.length - 1),
@@ -530,7 +530,11 @@
                 });
             }
         });
-        AOS.init();
+        let loadImgCheck = new Image();
+        loadImgCheck.src = '/src/assets/img/3d-icons/3d-star.svg';
+        loadImgCheck.onload = () => {
+            emits('loaded');
+        };
     });
 </script>
     
@@ -706,6 +710,10 @@
 
     .block-about--2 *{
         color: var(--colorWhite);
+    }
+
+    .about__btn{
+        z-index: 9;
     }
 
     .about-skill{
@@ -1031,6 +1039,10 @@
     }
     
     @media (max-width: 576px) {
+        .process__title{
+            width: 320px !important;
+            justify-self: start;
+        }
         .why-inner__card{
             grid-template-columns: 1fr;
             padding: 0;

@@ -4,6 +4,13 @@ import PortfolioView from '@/views/PortfolioView.vue';
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
+    scrollBehavior: function(to, from, savedPosition) {
+        if (to.hash) {
+            return {el: to.hash}
+        } else {
+            return { el: '#header' }
+        }
+    },
     routes: [
         {
             path: '/',
@@ -16,6 +23,23 @@ const router = createRouter({
             component: PortfolioView,
         }
     ],
+});
+
+router.beforeEach((to, from, next) => {
+    if(to.hash){
+        next();
+        window.scrollTo(0, document.querySelector(to.hash).getBoundingClientRect().top + window.scrollY);
+    }
+    else{
+        document.documentElement.style.scrollBehavior = 'unset';
+        setTimeout(() => {
+            next();
+            window.scrollTo(0, 0);
+        }, 1);
+        setTimeout(() => {
+            document.documentElement.style.scrollBehavior = '';
+        }, 1);
+    }
 });
 
 export default router;

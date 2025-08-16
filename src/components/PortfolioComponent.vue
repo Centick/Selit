@@ -17,6 +17,7 @@
 
 <script lang="ts" setup>
     import WorkComponent from '@/components/WorkComponent.vue';
+    import {onMounted} from "vue";
     
     // props
     const props = defineProps({
@@ -31,7 +32,7 @@
         {
             title: "Wedding",
             img: "wedding.svg",
-            technologies: ['', '2', '3'],
+            technologies: ['1', '2', '3'],
             text: "lorem lorem lorem lorem lorem lorem lorem lorem"
         },
         {
@@ -76,8 +77,8 @@
             technologies: ['1', '2', '3'],
             text: "lorem lorem lorem lorem lorem lorem lorem lorem"
         },
+    ];
 
-    ]
 </script>
 
 <style scoped>

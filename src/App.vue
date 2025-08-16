@@ -2,9 +2,11 @@
     <HeaderComponent @openApplication="isOpenedApplicationModal"/>
 
     <!--  Шаблон страницы  -->
-    <RouterView @openApplication="isOpenedApplicationModal"/>
+    <RouterView @loaded="isLoaded = true" @openApplication="isOpenedApplicationModal"/>
 
     <Cursor/>
+
+    <PreloaderComponent v-if="!isLoaded"></PreloaderComponent>
 
     <FooterComponent @openApplication="isOpenedApplicationModal"/>
 
@@ -22,13 +24,16 @@
     import Cursor from '@/components/CursorComponent.vue'
     import {onMounted, ref, type Ref} from "vue";
     import ApplicationComponent from "@/components/ApplicationComponent.vue";
+    import PreloaderComponent from "@/components/PreloaderComponent.vue";
+    import AOS from 'aos';
 
     const application_is_showed: Ref<boolean> = ref(false);
+
+    const isLoaded: Ref<boolean> = ref(false);
 
     const isOpenedApplicationModal = () => {
         application_is_showed.value = true;
         document.body.style.overflowY = "hidden";
-        console.log(document.body.style)
     }
     const closeApplicationModal = () => {
         application_is_showed.value = false;
@@ -36,6 +41,10 @@
     }
 
     document.title = "Разработка цифровых решений для ваших задач";
+
+    onMounted(() => {
+        AOS.init();
+    });
 </script>
 
 <style>
