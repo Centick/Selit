@@ -30,52 +30,52 @@
     // array of works
     const PortfolioArr = [
         {
-            title: "Wedding",
+            title: "The Wedding",
             img: "wedding.svg",
-            technologies: ['1', '2', '3'],
-            text: "lorem lorem lorem lorem lorem lorem lorem lorem"
+            technologies: ['Landing', 'Дизайн', 'Брендинг'],
+            text: "Сайт для приглашения близких на свадебное мероприятие"
         },
         {
             title: "Грузоперевозки BlackTaxi",
             img: "black-taxi.svg",
-            technologies: ['1', '2', '3'],
-            text: "lorem lorem lorem lorem lorem lorem lorem lorem"
+            technologies: ['Многостроничный сайт', 'Дизайн', 'Брендинг'],
+            text: "Сайт таксомоторной компания с функциональностью заказа такси "
         },
         {
             title: "AI Revolution",
             img: "ai.svg",
-            technologies: ['1', '2', '3'],
-            text: "lorem lorem lorem lorem lorem lorem lorem lorem"
+            technologies: ['AI', 'Многостроничный сайт', 'Дизайн'],
+            text: "Информационный веб-сервис c функцией чата с нейросетью"
         },
         {
             title: "TulpanStore - цветочный магазин",
             img: "flowers.svg",
-            technologies: ['1', '2', '3'],
-            text: "lorem lorem lorem lorem lorem lorem lorem lorem"
+            technologies: ['Интернет-магазин', 'Дизайн', 'Оплата'],
+            text: "Интернет-магазин для цветочной компании TulpanStore"
         },
         {
-            title: "Мой Край - достопримечательности Липецка",
+            title: "Мой Край: достопримечательности Липецка",
             img: "Lipetsk.svg",
-            technologies: ['1', '2', '3'],
-            text: "lorem lorem lorem lorem lorem lorem lorem lorem"
+            technologies: ['Landing', 'Дзайн'],
+            text: "Информационный сайт для липецкой области"
         },
         {
             title: "Партия Пенсионеров - региональное отделение",
             img: "pensioners.svg",
-            technologies: ['1', '2', '3'],
-            text: "lorem lorem lorem lorem lorem lorem lorem lorem"
+            technologies: ['Landing', 'Разработка', 'UI/UX'],
+            text: "Многостраничный сайт для организации Партии Пенсионеров"
         },
         {
-            title: "Junior Skills - образовательная платформа",
+            title: "Junior Skills",
             img: "junior-skills.svg",
-            technologies: ['1', '2', '3'],
-            text: "lorem lorem lorem lorem lorem lorem lorem lorem"
+            technologies: ['Образование', 'Дизайн', 'Разработка', 'Пользователи'],
+            text: "Образовательная платформа для учащихся IT-cube"
         },
         {
-            title: "Кибербезопасный новый год - адвент календарь для КИБЕРПРОТЕКТ",
+            title: "Кибербезопасный новый год ",
             img: "kyberprotect.svg",
-            technologies: ['1', '2', '3'],
-            text: "lorem lorem lorem lorem lorem lorem lorem lorem"
+            technologies: ['Landing', 'Календарь', 'Дизайн'],
+            text: "Адвент календарь для компании КИБЕРПРОТЕКТ"
         },
     ];
 

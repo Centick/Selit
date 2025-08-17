@@ -63,7 +63,7 @@
                     <div class="block-about block-about--1 grid grid-column align-content-start gap-15">
                         <h3 class="h3"><span class="text-inherit color-main">Selit</span> - Разработка web-решений под ваши задачи</h3>
                         <p>Мы создаем современные сайты и веб-приложения, которые решают бизнес-задачи наших клиентов. От яркого дизайна и удобного интерфейса до надежной технической реализации — мы воплощаем ваши идеи в эффективные онлайн-инструменты.</p>
-                        <button class="btn width-fit-content about__btn" @click.prevent="emits('openApplication')"><span class="h6 span_btn">Заполнить форму</span></button>
+                        <button class="btn width-fit-content about__btn align-self-end" @click.prevent="emits('openApplication')"><span class="h6 span_btn">Заполнить форму</span></button>
                         <img class="about-3dObject" src="../assets/img/3d-icons/3d-Selit.svg" alt="img">
                     </div>
                     <div class="grid about_wrap-mini gap-15">
@@ -112,42 +112,47 @@
                             <span class="big_number weight-700">1</span>
                             <h3 class="h3">Созваниваемся</h3>
                         </div>
-                        <p class="color-gray-dark">После того как заполните форму, менеджер свяжется с вами в течение 24 часов и договорится о встрече. При необходимости готовы подписать NDA. На встрече мы познакомимся и обсудим задачу. Также поговорим о предварительном бюджете и сроках.</p>
+                        <p class="color-gray-dark">После того как вы заполните форму, наш менеджер свяжется с вами в течение 24 часов, чтобы согласовать удобное время для встречи.
+                        <br><br>
+                        На встрече мы познакомимся и обсудим задачу. Также поговорим о предварительном бюджете и сроках.</p>
                     </div>
                     <div class="grid grid-column gap-25 align-content-start process__item">
                         <div class="grid grid-column gap-5">
                             <span class="big_number weight-700">2</span>
                             <h3 class="h3">Анализ</h3>
                         </div>
-                        <p class="color-gray-dark">После того как заполните форму, менеджер свяжется с вами в течение 24 часов и договорится о встрече. На встрече мы познакомимся и обсудим задачу. Также поговорим о предварительном бюджете и сроках.</p>
+                        <p class="color-gray-dark">Проводим анализ проекта. Обсуждаем с клиентом его бизнес-цели и ожидаемый результат работы. А также конечных пользователей, ключевые потребности вашей аудитории. 
+                        Анализируем конкурентов и их преимущества, разрабатываем персонализированное решение под ваш запрос</p>
                     </div>
                     <div class="grid grid-column gap-25 align-content-start process__item">
                         <div class="grid grid-column gap-5">
                             <span class="big_number weight-700">3</span>
                             <h3 class="h3">UI/UX Дизайн</h3>
                         </div>
-                        <p class="color-gray-dark">После того как заполните форму, менеджер свяжется с вами в течение 24 часов и договорится о встрече. На встрече мы познакомимся и обсудим задачу. Также поговорим о предварительном бюджете и сроках.</p>
+                        <p class="color-gray-dark">Разрабатываем уникальный интерфейс, который подчеркивает образ бренда. Работаем над виуалом опираясь на вашу деятельность.
+                        А также заботимся, чтобы пользователям было удобно взаимодействовать с сайтом. 
+                        </p>
                     </div>
                     <div class="grid grid-column gap-25 align-content-start process__item">
                         <div class="grid grid-column gap-5">
                             <span class="big_number weight-700">4</span>
                             <h3 class="h3">Разработка</h3>
                         </div>
-                        <p class="color-gray-dark">После того как заполните форму, менеджер свяжется с вами в течение 24 часов и договорится о встрече. На встрече мы познакомимся и обсудим задачу. Также поговорим о предварительном бюджете и сроках.</p>
+                        <p class="color-gray-dark">Разработка один из важнейших этапов создания веб-сайта. Мы четко ствим цели и достигаем их. Используем гибки технологии постраивая их под вашу задачу. Четко работем над адаптивом и всеми нужными функциями сайта, ничего лишнего.</p>
                     </div>
                     <div class="grid grid-column gap-25 align-content-start process__item">
                         <div class="grid grid-column gap-5">
                             <span class="big_number weight-700">5</span>
                             <h3 class="h3">Тестирование</h3>
                         </div>
-                        <p class="color-gray-dark">После того как заполните форму, менеджер свяжется с вами в течение 24 часов и договорится о встрече. На встрече мы познакомимся и обсудим задачу. Также поговорим о предварительном бюджете и сроках.</p>
+                        <p class="color-gray-dark">Параллельно с разработкой веб-приложения мы тестируем функионал, чтобы в процессе найти и исправить максимальное количество багов, а также обеспечить высокое качество и стабильную работу веб-продукта.</p>
                     </div>
                     <div class="grid grid-column gap-25 align-content-start process__item">
                         <div class="grid grid-column gap-5">
                             <span class="big_number weight-700">6</span>
                             <h3 class="h3">Релиз</h3>
                         </div>
-                        <p class="color-gray-dark">После того как заполните форму, менеджер свяжется с вами в течение 24 часов и договорится о встрече. На встрече мы познакомимся и обсудим задачу. Также поговорим о предварительном бюджете и сроках.</p>
+                        <p class="color-gray-dark">Выпускаем веб-приложение в релиз. Согласовываем доменное имя, разворачивем сайт и публикуем на хостинге. Смотрим работоспособность сайта и отдельных функций. Редактирем отклонения и отдаем заказчику.</p>
                     </div>
                 </div>
                 <div class="grid justify-content-start align-items-start width-100">
@@ -206,44 +211,44 @@
                     </div>
                     <div @click.prevent="emits('openApplication')" data-aos="fade-up" class="link price grid align-content-end gap-15">
                         <img class="price-3dObject price-3dObject--lightning" src="../assets/img/3d-icons/3d-lightning.svg" alt="img">
-                        <span class="price_time">3-5 дней</span>
+                        <span class="price_time">15-20 дней</span>
                         <div class="grid gap-5">
-                            <h3 class="h4 price_title">Landing page</h3>
+                            <h3 class="h4 price_title">Лендинг</h3>
                             <p class="weight-300 price-text">Быстрый способ донести информацию до клиентов</p>
                         </div>
                         <text class="weight-700 h6 price_money">от 20 000 ₽</text>
                     </div>
                     <div @click.prevent="emits('openApplication')" data-aos="fade-up" class="link price grid align-content-end gap-15">
-                        <span class="price_time">3-5 дней</span>
+                        <span class="price_time">3-4 недели</span>
                         <div class="grid gap-5">
-                            <h3 class="h4 price_title">Интернет-магазин</h3>
-                            <p class="weight-300 price-text">Высококонверсионный инструмент для ваших онлайн-продаж</p>
+                            <h3 class="h4 price_title">Многостраничный сайт</h3>
+                            <p class="weight-300 price-text">Детальная информация о ваших услугах с интуитивным интерфейсом</p>
                         </div>
                         <text class="weight-700 h6 price_money">от 20 000 ₽</text>
                     </div>
                     <div @click.prevent="emits('openApplication')" data-aos="fade-up" class="link price grid align-content-end gap-15">
                         <img class="price-3dObject price-3dObject--arrow" src="../assets/img/3d-icons/3d-arrow.svg" alt="img">
-                        <span class="price_time">3-5 дней</span>
+                        <span class="price_time">3-5 недель</span>
                         <div class="grid gap-5">
-                            <h3 class="h4 price_title">Landing page</h3>
-                            <p class="weight-300 price-text">Быстрый способ донести информацию до клиентов</p>
+                            <h3 class="h4 price_title">Интернет-магазин</h3>
+                            <p class="weight-300 price-text">Лучший инструмент для ваших онлайн-продаж</p>
                         </div>
                         <text class="h6 price_money">от 20 000 ₽</text>
                     </div>
                     <div @click.prevent="emits('openApplication')" data-aos="fade-up" class="link price grid align-content-end gap-15">
                         <img class="price-3dObject price-3dObject--plat" src="../assets/img/3d-icons/3d-plat.svg" alt="img">
-                        <span class="price_time">3-5 дней</span>
+                        <span class="price_time">1-2 месяца</span>
                         <div class="grid gap-5">
-                            <h3 class="h4 price_title">Landing page</h3>
-                            <p class="weight-300 price-text">Быстрый способ донести информацию до клиентов</p>
+                            <h3 class="h4 price_title">eCommerce</h3>
+                            <p class="weight-300 price-text">Комерческие порталы для компаний любых масштабов</p>
                         </div>
                         <text class="h6 price_money">от 20 000 ₽</text>
                     </div>
                     <div @click.prevent="emits('openApplication')" data-aos="fade-up" class="link price grid align-content-end gap-15">
-                        <span class="price_time">3-5 дней</span>
+                        <span class="price_time">2-3 недели</span>
                         <div class="grid gap-5">
-                            <h3 class="h4 price_title">Landing page</h3>
-                            <p class="weight-300 price-text">Быстрый способ донести информацию до клиентов</p>
+                            <h3 class="h4 price_title">Перенос на CMS</h3>
+                            <p class="weight-300 price-text">Улучшие управления сайтом вашими руками</p>
                         </div>
                         <text class="h6 price_money">от 20 000 ₽</text>
                     </div>
@@ -251,24 +256,24 @@
                         <img class="price-3dObject price-3dObject--star" src="../assets/img/3d-icons/3d-star.svg" alt="img">
                         <span class="price_time">3-5 дней</span>
                         <div class="grid gap-5">
-                            <h3 class="h4 price_title">Landing page</h3>
-                            <p class="weight-300 price-text">Быстрый способ донести информацию до клиентов</p>
+                            <h3 class="h4 price_title">Продвижение</h3>
+                            <p class="weight-300 price-text">Актуальные практики улучшения воронки продаж</p>
                         </div>
                         <text class="h6 price_money">от 20 000 ₽</text>
                     </div>
                     <div @click.prevent="emits('openApplication')" data-aos="fade-up" class="link price grid align-content-end gap-15">
                         <span class="price_time">3-5 дней</span>
                         <div class="grid gap-5">
-                            <h3 class="h4 price_title">Landing page</h3>
-                            <p class="weight-300 price-text">Быстрый способ донести информацию до клиентов</p>
+                            <h3 class="h4 price_title">Техническое сопровождение</h3>
+                            <p class="weight-300 price-text">Бесперебойная работа всех ваших сервисов</p>
                         </div>
-                        <text class="h6 price_money">от 20 000 ₽</text>
+                        <text class="h6 price_money">от 10 000 ₽ / мес</text>
                     </div>
                     <div @click.prevent="emits('openApplication')" data-aos="fade-up" class="link price grid align-content-end gap-15">
                         <span class="price_time">3-5 дней</span>
                         <div class="grid gap-5">
-                            <h3 class="h4 price_title">Landing page</h3>
-                            <p class="weight-300 price-text">Быстрый способ донести информацию до клиентов</p>
+                            <h3 class="h4 price_title">Консалтинг</h3>
+                            <p class="weight-300 price-text">Анализ всей структуры сайта </p>
                         </div>
                         <text class="h6 price_money">от 20 000 ₽</text>
                     </div>
@@ -687,6 +692,7 @@
         position: relative;
         overflow: hidden;
         z-index: 2;
+        grid-template-rows: auto auto 1fr;
     }
 
     .block-about--1 > p{
