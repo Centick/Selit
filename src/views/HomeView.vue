@@ -31,7 +31,7 @@
                             <a class="link service_link" @click.prevent="emits('openApplication')">CMS</a>
                             <a class="link service_link" @click.prevent="emits('openApplication')">Техническое сопровождение</a>
                             <a class="link service_link" @click.prevent="emits('openApplication')">SEO-продвижение</a>
-                            <a class="link service_link" @click.prevent="emits('openApplication')">Консалтинг</a>
+                            <a class="link service_link" @click.prevent="emits('openApplication')">Аудит</a>
                         </div> 
                     </div>
                     <div data-aos="fade-up" class="block_services grid align-items-start width-100">
@@ -138,7 +138,7 @@
                             <span class="big_number weight-700">4</span>
                             <h3 class="h3">Разработка</h3>
                         </div>
-                        <p class="color-gray-dark">Разработка один из важнейших этапов создания веб-сайта. Мы четко ствим цели и достигаем их. Используем гибки технологии постраивая их под вашу задачу. Четко работем над адаптивом и всеми нужными функциями сайта, ничего лишнего.</p>
+                        <p class="color-gray-dark">Разработка один из важнейших этапов создания веб-сайта. Мы четко ствим цели и достигаем их. Используем гибкии технологии постраивая их под вашу задачу. Четко работем над адаптивом и всеми нужными функциями сайта, ничего лишнего.</p>
                     </div>
                     <div class="grid grid-column gap-25 align-content-start process__item">
                         <div class="grid grid-column gap-5">
@@ -211,7 +211,7 @@
                     </div>
                     <div @click.prevent="emits('openApplication')" data-aos="fade-up" class="link price grid align-content-end gap-15">
                         <img class="price-3dObject price-3dObject--lightning" src="../assets/img/3d-icons/3d-lightning.svg" alt="img">
-                        <span class="price_time">15-20 дней</span>
+                        <span class="price_time">2-3 недели</span>
                         <div class="grid gap-5">
                             <h3 class="h4 price_title">Лендинг</h3>
                             <p class="weight-300 price-text">Быстрый способ донести информацию до клиентов</p>
@@ -224,7 +224,7 @@
                             <h3 class="h4 price_title">Многостраничный сайт</h3>
                             <p class="weight-300 price-text">Детальная информация о ваших услугах с интуитивным интерфейсом</p>
                         </div>
-                        <text class="weight-700 h6 price_money">от 20 000 ₽</text>
+                        <text class="weight-700 h6 price_money">от 30 000 ₽</text>
                     </div>
                     <div @click.prevent="emits('openApplication')" data-aos="fade-up" class="link price grid align-content-end gap-15">
                         <img class="price-3dObject price-3dObject--arrow" src="../assets/img/3d-icons/3d-arrow.svg" alt="img">
@@ -233,16 +233,16 @@
                             <h3 class="h4 price_title">Интернет-магазин</h3>
                             <p class="weight-300 price-text">Лучший инструмент для ваших онлайн-продаж</p>
                         </div>
-                        <text class="h6 price_money">от 20 000 ₽</text>
+                        <text class="h6 price_money">от 35 000 ₽</text>
                     </div>
                     <div @click.prevent="emits('openApplication')" data-aos="fade-up" class="link price grid align-content-end gap-15">
                         <img class="price-3dObject price-3dObject--plat" src="../assets/img/3d-icons/3d-plat.svg" alt="img">
-                        <span class="price_time">1-2 месяца</span>
+                        <span class="price_time">2-3 месяца</span>
                         <div class="grid gap-5">
                             <h3 class="h4 price_title">eCommerce</h3>
                             <p class="weight-300 price-text">Комерческие порталы для компаний любых масштабов</p>
                         </div>
-                        <text class="h6 price_money">от 20 000 ₽</text>
+                        <text class="h6 price_money">от 120 000 ₽</text>
                     </div>
                     <div @click.prevent="emits('openApplication')" data-aos="fade-up" class="link price grid align-content-end gap-15">
                         <span class="price_time">2-3 недели</span>
@@ -254,15 +254,15 @@
                     </div>
                     <div @click.prevent="emits('openApplication')" data-aos="fade-up" class="link price grid align-content-end gap-15">
                         <img class="price-3dObject price-3dObject--star" src="../assets/img/3d-icons/3d-star.svg" alt="img">
-                        <span class="price_time">3-5 дней</span>
+                        <span class="price_time">2-3 недели</span>
                         <div class="grid gap-5">
-                            <h3 class="h4 price_title">Продвижение</h3>
-                            <p class="weight-300 price-text">Актуальные практики улучшения воронки продаж</p>
+                            <h3 class="h4 price_title">Верстка</h3>
+                            <p class="weight-300 price-text">Создание сайта по вашему макету</p>
                         </div>
-                        <text class="h6 price_money">от 20 000 ₽</text>
+                        <text class="h6 price_money">от 15 000 ₽</text>
                     </div>
                     <div @click.prevent="emits('openApplication')" data-aos="fade-up" class="link price grid align-content-end gap-15">
-                        <span class="price_time">3-5 дней</span>
+                        <span class="price_time">По договоренности</span>
                         <div class="grid gap-5">
                             <h3 class="h4 price_title">Техническое сопровождение</h3>
                             <p class="weight-300 price-text">Бесперебойная работа всех ваших сервисов</p>
@@ -272,10 +272,10 @@
                     <div @click.prevent="emits('openApplication')" data-aos="fade-up" class="link price grid align-content-end gap-15">
                         <span class="price_time">3-5 дней</span>
                         <div class="grid gap-5">
-                            <h3 class="h4 price_title">Консалтинг</h3>
+                            <h3 class="h4 price_title">Аудит</h3>
                             <p class="weight-300 price-text">Анализ всей структуры сайта </p>
                         </div>
-                        <text class="h6 price_money">от 20 000 ₽</text>
+                        <text class="h6 price_money">от 10 000 ₽</text>
                     </div>
                 </div>
             </div>

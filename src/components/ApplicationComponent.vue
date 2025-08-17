@@ -3,7 +3,7 @@
         <div @click="container_clicked()" class="container modal__container grid justify-content-start gap-20">
             <img class="cross" @click.prevent="close()" src="../assets/img/icons/cross.svg" alt="img">
             <h3 class="h2 width-100">Обсудить проект</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quas id saepe suscipit ipsum voluptatibus doloribus quibusdam aperiam. Delectus cumque voluptates provident quas sunt deleniti natus reiciendis optio dolor exercitationem!</p>
+            <p>Поделитесь с нами информацией о вашем проекте. Мы готовы рассмотреть его детально и обсудить возможные пути реализации или развития. Опишите вашу идею в любом удобном формате — мы проанализируем предложение и дадим обратную связь.</p>
             <form class="modal-form width-100 grid grid-column gap-10">
                 <div class="width-100 grid grid-column gap-5">
                     <div class="grid grid-3rows gap-10">
