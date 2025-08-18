@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '@/views/HomeView.vue';
 import PortfolioView from '@/views/PortfolioView.vue';
+import Error404View from '@/views/Error404View.vue';
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -21,7 +22,11 @@ const router = createRouter({
             path: '/portfolio',
             name: 'portfolio',
             component: PortfolioView,
-
+        },
+        {
+            path: '/:catchAll(.*)',
+            name: 'error404',
+            component: Error404View,
         }
     ],
 });

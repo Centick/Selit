@@ -4,7 +4,9 @@
     <!--  Шаблон страницы  -->
     <RouterView @loaded="isLoaded = true" @openApplication="isOpenedApplicationModal"/>
 
-    <Cursor/>
+    <Cursor
+    v-if="!isCursor"
+    />
 
     <PreloaderComponent v-if="!isLoaded"></PreloaderComponent>
 
@@ -22,7 +24,7 @@
     import HeaderComponent from '@/components/HeaderComponent.vue';
     import FooterComponent from '@/components/FooterComponent.vue'
     import Cursor from '@/components/CursorComponent.vue'
-    import {onMounted, ref, type Ref} from "vue";
+    import {onMounted, onBeforeUnmount, ref, type Ref} from "vue";
     import ApplicationComponent from "@/components/ApplicationComponent.vue";
     import PreloaderComponent from "@/components/PreloaderComponent.vue";
     import AOS from 'aos';
@@ -45,6 +47,25 @@
     onMounted(() => {
         AOS.init();
     });
+
+
+    // Cursor убирается если width < 1024px
+    const isCursor = ref(false);
+
+    function checkScreenSize() {
+        isCursor.value = window.innerWidth < 1024;
+    }
+
+    onMounted(() => {
+        checkScreenSize();
+        window.addEventListener('resize', checkScreenSize);
+    });
+
+    onBeforeUnmount(() => {
+        window.removeEventListener('resize', checkScreenSize);
+    });
+
+    
 </script>
 
 <style>

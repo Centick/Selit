@@ -30,19 +30,19 @@
                         <div class="grid grid-column gap-10 ">
                             <span class="h6">Новигация</span>
                             <nav class="grid grid-column gap-5 align-items-center justify-content-start">
-                                <a href="#" class="link footer_link footer_link--mini weight-300">Lorem</a>
-                                <a href="#" class="link footer_link footer_link--mini weight-300">Lorem</a>
-                                <a href="#" class="link footer_link footer_link--mini weight-300">Lorem</a>
-                                <a href="#" class="link footer_link footer_link--mini weight-300">Lorem</a>
+                                <a href="#" class="link footer_link footer_link--mini weight-300">Разработка</a>
+                                <a href="#" class="link footer_link footer_link--mini weight-300">Услуги</a>
+                                <a href="#" class="link footer_link footer_link--mini weight-300">О нас</a>
+                                <a href="#" class="link footer_link footer_link--mini weight-300">Контакты</a>
                             </nav>
                         </div>
                         <div class="grid grid-column gap-10 ">
                             <span class="h6">О компании</span>
                             <nav class="grid grid-column gap-5 align-items-center justify-content-start">
-                                <a href="#" class="link footer_link footer_link--mini weight-300">Selit</a>
-                                <a href="#" class="link footer_link footer_link--mini weight-300">Отзывы</a>
-                                <a href="#" class="link footer_link footer_link--mini weight-300">Портфолио</a>
-                                <a href="#" class="link footer_link footer_link--mini weight-300">Вакансии</a>
+                                <router-link :to="'/selit'" href="#" class="link footer_link footer_link--mini weight-300">Selit</router-link>
+                                <router-link :to="'/reviews'" href="#" class="link footer_link footer_link--mini weight-300">Отзывы</router-link>
+                                <router-link :to="'/portfolio'" href="#" class="link footer_link footer_link--mini weight-300">Портфолио</router-link>
+                                <router-link :to="'/job'" href="#" class="link footer_link footer_link--mini weight-300">Вакансии</router-link>
                             </nav>
                         </div>
                         <div class="grid grid-column gap-10 ">
@@ -57,7 +57,7 @@
                                     <img class="footer_icon--link" src="@/assets/img/icons/link.svg" alt="img">
                                 </a>
                                 <a href="#" class="link footer_link footer_link--mini weight-300 grid grid-row gap-5 align-items-center justify-content-start">
-                                    YouTube
+                                    TikTok
                                     <img class="footer_icon--link" src="@/assets/img/icons/link.svg" alt="img">
                                 </a>
                             </nav>

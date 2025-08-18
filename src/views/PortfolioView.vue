@@ -8,6 +8,7 @@
             </nav>
             <h1 class="h1 width-100">Кейсы</h1>
             <PortfolioComponent/>
+            
         </div>
     </section>
 </template>

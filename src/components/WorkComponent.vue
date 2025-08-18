@@ -1,9 +1,9 @@
 <template>
-    <div class="block_project grid grid-column gap-15">
+    <div class="block_project align-content-start justify-items-start grid grid-column gap-15">
         <img class="view_content width-100" :src="'/src/assets/img/projects/cards/' + img" alt="img">
         <h4 class="h4">{{ title }}</h4>
         <p>{{ text }}</p>
-        <div class="wrap_character_project grid grid-row gap-10">
+        <div class="wrap_character_project gap-10">
             <span class="block_character_project" v-for="tech in technologies">{{ tech }}</span>
         </div>
     </div>
@@ -31,5 +31,8 @@
 
     .wrap_character_project{
         width: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
     }
 </style>
