@@ -10,7 +10,7 @@
 
     <PreloaderComponent v-if="!isLoaded"></PreloaderComponent>
 
-    <FooterComponent @openApplication="isOpenedApplicationModal"/>
+    <FooterComponent id="contacts" @openApplication="isOpenedApplicationModal"/>
 
     <ApplicationComponent
         :class="{'modal_active': application_is_showed, 'modal_not_active': !application_is_showed}"

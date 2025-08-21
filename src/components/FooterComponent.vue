@@ -7,7 +7,7 @@
                         <span class="h6">Свяжитесь с нами</span>
                         <div class="grid grid-2rows">
                             <div class="grid grid-column gap-5 justify-content-start footer__main-info">
-                                <a href="mail:hello@selit.ru" class="link footer_link h2">hello@selit.ru</a>
+                                <a href="mailto:hello@selit.ru" class="link footer_link h2">hello@selit.ru</a>
                                 <a href="tel:+7 909 223 90 03" class="link footer_link h2">+7&nbsp;909&nbsp;223&nbsp;90&nbsp;03</a>
                                 <div class="grid grid-row align-items-center justify-content-start gap-25">
                                     <a href="#" class="link footer_link h4 grid grid-row align-items-center justify-content-start gap-10">
@@ -39,10 +39,10 @@
                         <div class="grid grid-column gap-10 ">
                             <span class="h6">О компании</span>
                             <nav class="grid grid-column gap-5 align-items-center justify-content-start">
-                                <router-link :to="'/selit'" href="#" class="link footer_link footer_link--mini weight-300">Selit</router-link>
-                                <router-link :to="'/reviews'" href="#" class="link footer_link footer_link--mini weight-300">Отзывы</router-link>
-                                <router-link :to="'/portfolio'" href="#" class="link footer_link footer_link--mini weight-300">Портфолио</router-link>
-                                <router-link :to="'/job'" href="#" class="link footer_link footer_link--mini weight-300">Вакансии</router-link>
+                                <router-link :to="'/selit'" class="link footer_link footer_link--mini weight-300">Selit</router-link>
+                                <router-link :to="'/reviews'" class="link footer_link footer_link--mini weight-300">Отзывы</router-link>
+                                <router-link :to="'/portfolio'" class="link footer_link footer_link--mini weight-300">Портфолио</router-link>
+                                <router-link :to="'/job'" class="link footer_link footer_link--mini weight-300">Вакансии</router-link>
                             </nav>
                         </div>
                         <div class="grid grid-column gap-10 ">

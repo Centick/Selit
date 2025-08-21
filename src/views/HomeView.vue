@@ -56,7 +56,7 @@
             </div>
         </section>
 
-        <section class="section">
+        <section class="section" id="about">
             <div class="container grid grid-column">
                 <h2 class="h2 width-100">Компания</h2>
                 <div class="grid about_wrap gap-15">
@@ -103,7 +103,7 @@
         </section>
 
         <!-- process -->
-        <section class="section process__section">
+        <section class="section process__section" id="development">
             <div class="container grid process__container">
                 <h2 class="h2 width-100 process__title">Этапы разработки сайта</h2>
                 <div class="grid gap-100 process_wrap">
@@ -200,7 +200,7 @@
             </div>
         </section>
 
-        <section class="section">
+        <section class="section" id="services">
             <div class="container">
                 <h2 class="h2 width-100">Наши цены</h2>
                 <div class="wrap_price grid gap-15 width-100">

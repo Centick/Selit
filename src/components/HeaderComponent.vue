@@ -9,10 +9,10 @@
                     <img class="width-100" src="../assets/img/icons/cross.svg" alt="cross">
                 </div>
                 <router-link :to="'/portfolio'" class="link header_link" @click="menu_opened = !menu_opened">Кейсы</router-link>
-                <a class="link header_link" @click="menu_opened = !menu_opened" href="#">Разработка</a>
-                <a class="link header_link" @click="menu_opened = !menu_opened" href="#">Услуги</a>
-                <a class="link header_link" @click="menu_opened = !menu_opened" href="#">О нас</a>
-                <a class="link header_link" @click="menu_opened = !menu_opened" href="#">Контакты</a>
+                <router-link :to="'/#about'" class="link header_link" @click="menu_opened = !menu_opened">О нас</router-link>
+                <router-link :to="'/#development'" class="link header_link" @click="menu_opened = !menu_opened">Разработка</router-link>
+                <router-link :to="'/#services'" class="link header_link" @click="menu_opened = !menu_opened">Услуги</router-link>
+                <router-link :to="'#contacts'" class="link header_link" @click="menu_opened = !menu_opened">Контакты</router-link>
             </nav>
             <a class="link link-special weight-700" @click.prevent="emits('openApplication')">Обсудить проект</a>
             <div class="menu__burger" @click="menu_opened = !menu_opened">
