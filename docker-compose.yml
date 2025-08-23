@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  server:
+    build: ./
+    command: nodemon server/index.cjs
+    ports:
+      - '80:80'
+    depends_on:
+      - db
+    volumes:
+      - .:/usr/src/app
+#  db:
+#    image: mysql
+#    restart: always
+#    volumes:
+#      - db:/var/lib/mysql
+#    environment:
+#      MYSQL_DATABASE: 'selit'
+#      MYSQL_ROOT_PASSWORD: 'UjkjdjkjvrfSELIT'
+#    ports:
+#      - '3306:3306'
+
+volumes:
+  db:

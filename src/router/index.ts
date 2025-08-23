@@ -34,7 +34,10 @@ const router = createRouter({
 router.beforeEach((to, from, next) => {
     if(to.hash){
         next();
-        window.scrollTo(0, document.querySelector(to.hash).getBoundingClientRect().top + window.scrollY);
+        let hashObj = document.querySelector(to.hash);
+        if(hashObj){
+            window.scrollTo(0, hashObj.getBoundingClientRect().top + window.scrollY);
+        }
     }
     else{
         document.documentElement.style.scrollBehavior = 'unset';

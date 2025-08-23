@@ -16,7 +16,7 @@
                         <span class="error-text">{{ phoneError }}</span>
                         <span class="error-text">{{ emailError }}</span>
                     </div>
-                    <textarea class="input width-100 input_textarea" name="" id="" placeholder="Расскажите о проекте"></textarea>
+                    <textarea class="input width-100 input_textarea" v-model="text" name="" id="" placeholder="Расскажите о проекте"></textarea>
                 </div>
                 <label class="input input_file grid grid-row gap-10 align-items-center width-fit-content" for="TZfile">
                     <img class="input_file-icon" src="@/assets/img/icons/paper-clip.svg" alt="paper-clip">
@@ -39,19 +39,21 @@
     import { ref } from 'vue';
     import type { Ref } from "vue";
     import { MaskInput } from 'vue-3-mask';
+    import { sendMail } from "@/api/Send.ts";
 
     const emits = defineEmits(['close']);
 
     const phone: Ref<string> = ref("");
     const name: Ref<string> = ref("");
     const email: Ref<string> = ref("");
+    const text: Ref<string> = ref("");
 
     const phoneError: Ref<string> = ref("");
     const nameError: Ref<string> = ref("");
     const emailError: Ref<string> = ref("");
 
     const is_container_clicked: Ref<boolean> = ref(false);
-    const onSubmit = () => {
+    const onSubmit = async () => {
         // Name Validate
         if(!name.value.trim()){
             nameError.value = errorText.errorName.emptyInput;
@@ -83,7 +85,7 @@
         }
 
         if(!nameError.value && !emailError.value && !phoneError.value){
-            alert(`Умница`);
+            console.log((await sendMail(name.value, phone.value, email.value, text.value)).data);
         }
     };
 

@@ -374,9 +374,11 @@
 
     onMounted(() => {
         // Cursor Parallax
-        let cursor = document.querySelector('.arrow_bg');
+        let cursor: HTMLElement = document.querySelector('.arrow_bg') as HTMLElement;
         window.addEventListener('mousemove', e => {
-            cursor.style = `translate: ${(document.documentElement.clientWidth / 2 - e.x) / 25}px ${(document.documentElement.clientHeight / 2 - e.y) / 25}px`;
+            if(cursor){
+                cursor.style = `translate: ${(document.documentElement.clientWidth / 2 - e.x) / 25}px ${(document.documentElement.clientHeight / 2 - e.y) / 25}px`;
+            }
         });
 
         gsap.registerPlugin(ScrollTrigger);
@@ -449,6 +451,7 @@
         //         }
         //     });
         // }
+        let processSection: HTMLElement = document.querySelector(".process__section") as HTMLElement;
         if(window.innerWidth < 768){
             gsap.to(process_items, {
                 xPercent: -107 * (process_items.length - 1),
@@ -459,7 +462,7 @@
                     pin: true,
                     snap: 1 / (process_items.length - 1),
                     scrub: 1,
-                    end: () => '+=' + document.querySelector(".process__section").offsetWidth
+                    end: () => '+=' + processSection.offsetWidth
                 }
             });
         }
@@ -473,7 +476,7 @@
                     pin: true,
                     snap: 1 / (process_items.length - 1),
                     scrub: 1,
-                    end: () => '+=' + document.querySelector(".process__section").offsetWidth
+                    end: () => '+=' + processSection.offsetWidth
                 }
             });
         }
@@ -487,7 +490,7 @@
                     pin: true,
                     snap: 1 / (process_items.length - 1),
                     scrub: 1,
-                    end: () => '+=' + document.querySelector(".process__section").offsetWidth
+                    end: () => '+=' + processSection.offsetWidth
                 }
             });
         }
@@ -501,7 +504,7 @@
                     pin: true,
                     snap: 1 / (process_items.length - 1),
                     scrub: 1,
-                    end: () => '+=' + document.querySelector(".process__section").offsetWidth
+                    end: () => '+=' + processSection.offsetWidth
                 }
             });
         }
@@ -538,7 +541,7 @@
             }
         });
         let loadImgCheck = new Image();
-        loadImgCheck.src = '/src/assets/img/3d-icons/3d-star.svg';
+        loadImgCheck.src = '/favicon.ico';
         loadImgCheck.onload = () => {
             emits('loaded');
         };
