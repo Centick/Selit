@@ -77,7 +77,7 @@
         if(!email.value.trim()){
             emailError.value = errorText.errorEmail.emptyInput;
         }
-        else if(!email.value.includes('@') ||  !email.value.includes('.') || email.value[-1] === '.' || email.value[email.value.indexOf('@') + 1] === '.' || email.value[0] === '@'){
+        else if(!email.value.includes('@') ||  !email.value.includes('.') || email.value[-1] === '.' || email.value[email.value.indexOf('@') + 1] === '.' || email.value[0] === '@' || email.value[email.value.length - 1] === '.'){
             emailError.value = errorText.errorEmail.incorrectInput;
         }
         else{
@@ -85,7 +85,15 @@
         }
 
         if(!nameError.value && !emailError.value && !phoneError.value){
-            console.log((await sendMail(name.value, phone.value, email.value, text.value)).data);
+            let file: any = document.getElementById('TZfile') as HTMLInputElement;
+            file = file.files as FileList;
+            if(file[0]){
+                file = file[0] as File;
+            }
+            else{
+                file = null;
+            }
+            console.log((await sendMail(name.value, phone.value, email.value, text.value, file)).data);
         }
     };
 

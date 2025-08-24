@@ -7,6 +7,8 @@ const {request} = require("express");
 const MySQLStore = require('express-mysql-session')(session);
 const fs = require('fs');
 const nodemailer = require("nodemailer");
+const multer = require("multer");
+const path = require('path');
 
 // Mail Sender Init
 const transporter = nodemailer.createTransport({
@@ -17,6 +19,10 @@ const transporter = nodemailer.createTransport({
         user: "filan333@yandex.ru",
         pass: "viumelzuqmvoxquf",
     },
+});
+
+const upload = multer({
+    dest: path.join(__dirname, "../dist/files")
 });
 
 // const sessionStore = new MySQLStore({}, sql);
@@ -51,11 +57,24 @@ app.use(cors(corsOption));
 // }
 
 // Routes Init
-app.post("/api/send/", function(req, res){
+app.post("/api/send/", upload.single("file"), function(req, res){
     let name = req.body.name.trim();
     let phone = req.body.phone.trim();
     let email = req.body.email.trim();
     let text = req.body.text.trim();
+
+    let filename = 'Отсутствует';
+    if(req.file){
+        const tempPath = req.file.path;
+        filename = String(Math.round(Math.random() * 9999999)) + path.extname(req.file.originalname).toLowerCase();
+        const targetPath = path.join(__dirname, "../dist/files/" + filename);
+        fs.rename(tempPath, targetPath, err => {
+            console.log(err);
+            fs.copyFile(targetPath, path.join(__dirname, "../public/files/" + filename), (err) => {
+                console.log(err);
+            });
+        });
+    }
 
     try{
         (async () => {
@@ -63,13 +82,13 @@ app.post("/api/send/", function(req, res){
                 from: '"Selit" <filan333@yandex.ru>',
                 to: email,
                 subject: "Спасибо, что выбрали нас!",
-                html: "<b>Ваше обращение будет рассмотренно в юлижайшее время!</b><br>Ответ вышлем на эту почту",
+                html: "<b>Ваше обращение будет рассмотрено в ближайшее время!</b><br>Ответ вышлем на эту почту",
             });
             const us = await transporter.sendMail({
                 from: '"Selit" <filan333@yandex.ru>',
                 to: 'filan333@yandex.ru',
                 subject: "Поступило обращение",
-                html: `<b>Поступило новое обращение от пользователя: ${name}, ${phone}, ${email}</b><br>Текст: ${text}`,
+                html: `<b>Поступило новое обращение от пользователя: ${name}, ${phone}, ${email}</b><br>Текст: ${text}<br> Файл ТЗ: ${filename}`,
             });
 
             console.log("Message sent:", user.messageId);

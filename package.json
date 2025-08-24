@@ -22,6 +22,7 @@
     "express-mysql-session": "^3.0.3",
     "express-session": "^1.18.2",
     "gsap": "^3.13.0",
+    "multer": "^2.0.2",
     "nodemailer": "^7.0.5",
     "nodemon": "^3.1.10",
     "primevue": "^4.3.5",
