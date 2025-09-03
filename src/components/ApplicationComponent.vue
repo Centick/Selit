@@ -20,9 +20,10 @@
                 </div>
                 <label class="input input_file grid grid-row gap-10 align-items-center width-fit-content" for="TZfile">
                     <img class="input_file-icon" src="@/assets/img/icons/paper-clip.svg" alt="paper-clip">
-                    <span class="input_file-text weight-700" >Прикрепить файл</span>
+                    <span class="input_file-text weight-700">Прикрепить файл</span>
                     <input id="TZfile" type="file">
                 </label>
+                <p v-show='isSend' style="color: #0c560c;">Обращение успешно отпровленно, мы свяжемся с вами в скором времени</p>
                 <div class="grid grid-row align-self-end justify-content-space-between align-items-center wrap-submit">
                     <p class="politicks">Нажимая на кнопку «Отправить», вы даете <br> согласие на <a class="weight-700" href="#">Политику конфиденциальности</a></p>
                     <button @click.prevent="onSubmit" type="submit" class="btn width-fit-content application-send">
@@ -51,6 +52,8 @@
     const phoneError: Ref<string> = ref("");
     const nameError: Ref<string> = ref("");
     const emailError: Ref<string> = ref("");
+
+    const isSend: Ref<boolean> = ref(false);
 
     const is_container_clicked: Ref<boolean> = ref(false);
     const onSubmit = async () => {
@@ -93,7 +96,13 @@
             else{
                 file = null;
             }
-            console.log((await sendMail(name.value, phone.value, email.value, text.value, file)).data);
+            if(!isSend.value){
+                isSend.value = true;
+                setTimeout(() => {
+                    isSend.value = false;
+                }, 10000);
+                await sendMail(name.value, phone.value, email.value, text.value, file);
+            }
         }
     };
 
