@@ -6,8 +6,6 @@ services:
     command: nodemon server/index.cjs
     ports:
       - '80:80'
-    depends_on:
-      - db
     volumes:
       - .:/usr/src/app
 #  db:
