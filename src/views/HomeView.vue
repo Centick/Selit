@@ -21,8 +21,8 @@
                             <a class="link service_link" @click.prevent="emits('openApplication')">Landing</a>
                             <a class="link service_link" @click.prevent="emits('openApplication')">eCommerce</a>
                             <a class="link service_link" @click.prevent="emits('openApplication')">Интернет-магазины</a>
-                            <a class="link service_link" @click.prevent="emits('openApplication')">Веб-приложений</a>
-                            <a class="link service_link" @click.prevent="emits('openApplication')">Многостраничных сайтов</a>
+                            <a class="link service_link" @click.prevent="emits('openApplication')">Веб-приложения</a>
+                            <a class="link service_link" @click.prevent="emits('openApplication')">Многостраничные сайты</a>
                         </div>
                     </div>
                     <div data-aos="fade-up" class="block_services grid align-items-start width-100">
@@ -112,16 +112,16 @@
                             <span class="big_number weight-700">1</span>
                             <h3 class="h3">Созваниваемся</h3>
                         </div>
-                        <p class="color-gray-dark">После того как вы заполните форму, наш менеджер свяжется с вами в течение 24 часов, чтобы согласовать удобное время для встречи.
+                        <p class="color-gray-dark">После того как вы заполните форму, наш менеджер свяжется с вами в течение 24 часов.
                         <br><br>
-                        На встрече мы познакомимся и обсудим задачу. Также поговорим о предварительном бюджете и сроках.</p>
+                        Мы обсудим задачу, а также поговорим о предварительном бюджете и сроках.</p>
                     </div>
                     <div class="grid grid-column gap-25 align-content-start process__item">
                         <div class="grid grid-column gap-5">
                             <span class="big_number weight-700">2</span>
                             <h3 class="h3">Анализ</h3>
                         </div>
-                        <p class="color-gray-dark">Проводим анализ проекта. Обсуждаем с клиентом его бизнес-цели и ожидаемый результат работы. А также конечных пользователей, ключевые потребности вашей аудитории. 
+                        <p class="color-gray-dark">Проводим анализ проекта. Обсуждаем с клиентом его бизнес-цели и ожидаемый результат работы. А также целевую аудиторию и её ключевые потребности.
                         Анализируем конкурентов и их преимущества, разрабатываем персонализированное решение под ваш запрос</p>
                     </div>
                     <div class="grid grid-column gap-25 align-content-start process__item">
@@ -138,7 +138,7 @@
                             <span class="big_number weight-700">4</span>
                             <h3 class="h3">Разработка</h3>
                         </div>
-                        <p class="color-gray-dark">Разработка один из важнейших этапов создания веб-сайта. Мы четко ствим цели и достигаем их. Используем гибкии технологии постраивая их под вашу задачу. Четко работем над адаптивом и всеми нужными функциями сайта, ничего лишнего.</p>
+                        <p class="color-gray-dark">Разработка один из важнейших этапов создания веб-сайта. Мы четко ставим цели и достигаем их. Используем гибкие технологии, подстраивая их под вашу задачу. Четко работаем над адаптивностью и всеми нужными функциями сайта, ничего лишнего.</p>
                     </div>
                     <div class="grid grid-column gap-25 align-content-start process__item">
                         <div class="grid grid-column gap-5">

@@ -8,13 +8,13 @@
                         <div class="grid grid-2rows">
                             <div class="grid grid-column gap-5 justify-content-start footer__main-info">
                                 <a href="mailto:hello@selit.ru" class="link footer_link h2">hello@selit.ru</a>
-                                <a href="tel:+7 909 223 90 03" class="link footer_link h2">+7&nbsp;909&nbsp;223&nbsp;90&nbsp;03</a>
+                                <a href="tel:+7 909 221 42 92" class="link footer_link h2">+7&nbsp;909&nbsp;221&nbsp;42&nbsp;92</a>
                                 <div class="grid grid-row align-items-center justify-content-start gap-25">
-                                    <a href="#" class="link footer_link h4 grid grid-row align-items-center justify-content-start gap-10">
+                                    <a href="https://t.me/ffilann" target="_blank" class="link footer_link h4 grid grid-row align-items-center justify-content-start gap-10">
                                         <img class="footer_icon-network" src="@/assets/img/icons/telegramm.svg" alt="img">
-                                        Telegramm
+                                        Telegram
                                     </a>
-                                    <a href="#" class="link footer_link h4 grid grid-row align-items-center justify-content-start gap-10">
+                                    <a href="https://wa.me/89092214292" target="_blank" class="link footer_link h4 grid grid-row align-items-center justify-content-start gap-10">
                                         <img class="footer_icon-network" src="../assets/img/icons/whatsapp.svg" alt="img">
                                         Whatsapp
                                     </a>
@@ -28,43 +28,42 @@
                     </div>
                     <div class="grid grid-row align-items-start justify-content-space-between gap-15">
                         <div class="grid grid-column gap-10 ">
-                            <span class="h6">Новигация</span>
+                            <span class="h6">Навигация</span>
                             <nav class="grid grid-column gap-5 align-items-center justify-content-start">
-                                <a href="#" class="link footer_link footer_link--mini weight-300">Разработка</a>
-                                <a href="#" class="link footer_link footer_link--mini weight-300">Услуги</a>
-                                <a href="#" class="link footer_link footer_link--mini weight-300">О нас</a>
-                                <a href="#" class="link footer_link footer_link--mini weight-300">Контакты</a>
-                            </nav>
-                        </div>
-                        <div class="grid grid-column gap-10 ">
-                            <span class="h6">О компании</span>
-                            <nav class="grid grid-column gap-5 align-items-center justify-content-start">
-                                <router-link :to="'/selit'" class="link footer_link footer_link--mini weight-300">Selit</router-link>
-                                <router-link :to="'/reviews'" class="link footer_link footer_link--mini weight-300">Отзывы</router-link>
+                                <router-link :to="'/#development'" class="link footer_link footer_link--mini weight-300">Разработка</router-link>
+                                <router-link :to="'/#services'" class="link footer_link footer_link--mini weight-300">Услуги</router-link>
+                                <router-link :to="'/#about'" class="link footer_link footer_link--mini weight-300">О нас</router-link>
                                 <router-link :to="'/portfolio'" class="link footer_link footer_link--mini weight-300">Портфолио</router-link>
-                                <router-link :to="'/job'" class="link footer_link footer_link--mini weight-300">Вакансии</router-link>
                             </nav>
                         </div>
+<!--                        <div class="grid grid-column gap-10 ">-->
+<!--                            <span class="h6">О компании</span>-->
+<!--                            <nav class="grid grid-column gap-5 align-items-center justify-content-start">-->
+<!--                                <router-link :to="'/selit'" class="link footer_link footer_link&#45;&#45;mini weight-300">Selit</router-link>-->
+<!--                                <router-link :to="'/reviews'" class="link footer_link footer_link&#45;&#45;mini weight-300">Отзывы</router-link>-->
+<!--                                <router-link :to="'/job'" class="link footer_link footer_link&#45;&#45;mini weight-300">Вакансии</router-link>-->
+<!--                            </nav>-->
+<!--                        </div>-->
                         <div class="grid grid-column gap-10 ">
                             <span class="h6">Сообщества</span>
                             <nav class="grid grid-column gap-5 align-items-center justify-content-start">
-                                <a href="#" class="link footer_link footer_link--mini weight-300 grid grid-row gap-5 align-items-center justify-content-start">
-                                    Telegramm
+                                <a href="https://t.me/selitnews" target="_blank" class="link footer_link footer_link--mini weight-300 grid grid-row gap-5 align-items-center justify-content-start">
+                                    Telegram
                                     <img class="footer_icon--link" src="@/assets/img/icons/link.svg" alt="img">
                                 </a>
-                                <a href="#" class="link footer_link footer_link--mini weight-300 grid grid-row gap-5 align-items-center justify-content-start">
+                                <a href="https://vk.ru/sselitt" target="_blank" class="link footer_link footer_link--mini weight-300 grid grid-row gap-5 align-items-center justify-content-start">
                                     Вконтакте
                                     <img class="footer_icon--link" src="@/assets/img/icons/link.svg" alt="img">
                                 </a>
-                                <a href="#" class="link footer_link footer_link--mini weight-300 grid grid-row gap-5 align-items-center justify-content-start">
-                                    TikTok
+                                <a href="https://www.avito.ru/brands/1ec4e17ed053ef9b04c52714e4802f5a/all?sellerId=995d36cbd7b2b4e244a014f849075b7e" target="_blank" class="link footer_link footer_link--mini weight-300 grid grid-row gap-5 align-items-center justify-content-start">
+                                    Авито
                                     <img class="footer_icon--link" src="@/assets/img/icons/link.svg" alt="img">
                                 </a>
                             </nav>
                         </div>
                     </div>
                     <div class="grid grid-row align-items-start justify-content-space-between gap-15">
-                        <p>© 2025 Selit</p>
+                        <p>© 2026 Selit</p>
                         <a href="#">Политика конфиденциальности</a>
                     </div>
                 </div>
