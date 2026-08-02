@@ -7,7 +7,7 @@
                         <span class="h6">Свяжитесь с нами</span>
                         <div class="grid grid-2rows">
                             <div class="grid grid-column gap-5 justify-content-start footer__main-info">
-                                <a href="mailto:hello@selit.ru" class="link footer_link h2">hello@selit.ru</a>
+                                <a href="mailto:hello@selitdigital.ru" class="link footer_link h2">hello@selitdigital.ru</a>
                                 <a href="tel:+7 909 221 42 92" class="link footer_link h2">+7&nbsp;909&nbsp;221&nbsp;42&nbsp;92</a>
                                 <div class="grid grid-row align-items-center justify-content-start gap-25">
                                     <a href="https://t.me/ffilann" target="_blank" class="link footer_link h4 grid grid-row align-items-center justify-content-start gap-10">
