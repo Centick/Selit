@@ -3,11 +3,23 @@ version: '3'
 services:
   server:
     build: ./
-    command: nodemon server/index.cjs
+    command: node server/index.cjs
     ports:
-      - '80:80'
+      - '8000:8000'
     volumes:
       - .:/usr/src/app
+  nginx:
+    container_name: ob_nginx
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - web
+    volumes:
+      - ./nginx/certs:/etc/ssl/certs
 #  db:
 #    image: mysql
 #    restart: always
