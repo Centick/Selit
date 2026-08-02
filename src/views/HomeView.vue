@@ -663,6 +663,10 @@
         display: flex;
         gap: 7vw;
     }
+
+    .process__container{
+        overflow: hidden;
+    }
     .process__item{
         width: 25vw;
     }
